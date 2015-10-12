@@ -36,8 +36,8 @@
 - (instancetype)init {
     @throw [NSException
             exceptionWithName:NSInternalInconsistencyException
-                       reason:@"deadly init"
-                     userInfo:nil];
+            reason:@"deadly init"
+            userInfo:nil];
     return nil;
 }
 

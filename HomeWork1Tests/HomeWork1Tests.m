@@ -7,6 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "YANCash.h"
+#import "YANBalance.h"
+#import "YANCashOperation.h"
+#import "YANOperationHistory.h"
 
 @interface HomeWork1Tests : XCTestCase
 
@@ -36,4 +40,43 @@
     }];
 }
 
+- (void)testImpossibleToCreateNUllCash {
+    
+    XCTAssertThrows([YANCash new]);
+    
+    
+    float badValue = -1;
+    XCTAssertThrows([[YANCash alloc] initWithCashCount:badValue andCurrency:@"Р"]);
+
+    NSString * badName = nil;
+    XCTAssertThrows([[YANCash alloc] initWithCashCount:5 andCurrency:badName]);
+}
+
+-(void) testImpossibleToCreateNullBalance {
+    YANCash *badCash = nil;
+    XCTAssertThrows([[YANBalance alloc] initWithCash:badCash]);
+}
+
+-(void) testImpossibleToCreateNullCashOperation {
+    
+    XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:nil WithDescription:nil WithCash:nil WithDirection:nil]);
+    XCTAssertThrows([YANCashOperation new]);
+}
+
+-(void) testImpossibleToAddNUllOperation {
+    
+    YANOperationHistory *history = [YANOperationHistory new];
+    YANCashOperation *badoperation = nil;
+    
+    XCTAssertThrows([history addOperation:badoperation]);
+
+}
+-(void) testImpossibleToChangeCurrencyAfterInitialization {
+    
+    NSMutableString *evilName = [NSMutableString stringWithString:@"Р"];
+    YANCash *cash = [[YANCash alloc] initWithCashCount:100 andCurrency:evilName];
+    [evilName setString:@"$"];
+    XCTAssertEqualObjects(cash.currency, @"Р");
+    
+}
 @end

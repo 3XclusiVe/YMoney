@@ -20,6 +20,6 @@
 - (nonnull instancetype)initWithCashCount:(float)count
                               andCurrency:(nonnull NSString *)currency;
 
-- (nullable instancetype)init;
+- (instancetype)init;
 
 @end
