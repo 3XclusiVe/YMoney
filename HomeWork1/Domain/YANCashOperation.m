@@ -6,17 +6,18 @@
 #import "YANCashOperation.h"
 #import "YANCash.h"
 
+
 @implementation YANCashOperation {
 
 }
 
 - (instancetype)initOperationWithDate:(nonnull NSDate *)operationDate
-                      WithDescription:(nonnull NSString *)operationDescription
-                             WithCash:(nonnull YANCash *)operationSum
-                        WithDirection:(int)operationDirection {
+                          Description:(nonnull NSString *)operationDescription
+                                 Cash:(nonnull YANCash *)operationSum
+                            Direction:(OperationDirection)operationDirection {
 
     if ((operationDate == nil) || (operationDescription == nil) ||
-            (operationSum == nil) || (operationDirection == nil)) {
+            (operationSum == nil)) {
         @throw [NSException
                 exceptionWithName:NSInternalInconsistencyException
                            reason:@"precondition failed"
@@ -28,6 +29,7 @@
         _operationSum = operationSum;
         _operationDirection = operationDirection;
     }
+
     return self;
 }
 

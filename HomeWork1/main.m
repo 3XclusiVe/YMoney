@@ -19,4 +19,25 @@ int main(int argc, char *argv[]) {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
+    /*YANBalance *balance = [[YANBalance alloc] init];
+
+    YANCash *cash = [[YANCash alloc] initWithCashCount:100
+                                              Currency:@"P"];
+
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:now];
+    [components setHour:10];
+    NSDate *today10am = [calendar dateFromComponents:components];
+
+    OperationDirection operationDirection = IN;
+    OperationDirection *op = &operationDirection;
+
+    YANCashOperation *operation = [[YANCashOperation alloc]
+            initOperationWithDate:now
+                      Description:@"steam"
+                             Cash:cash
+                        Direction:nil];
+
+    NSLog(@"%i", operationDirection == NULL);   */
 }

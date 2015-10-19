@@ -9,7 +9,8 @@
 @implementation YANCash {
 
 }
-- (instancetype)initWithCashCount:(float)count andCurrency:(NSString *)currency {
+- (instancetype)initWithCashCount:(float)count
+                         Currency:(NSString *)currency {
 
     /// Обязательно должно присутствовать название валюты.
     if (!(currency.length > 0)) {
@@ -36,8 +37,8 @@
 - (instancetype)init {
     @throw [NSException
             exceptionWithName:NSInternalInconsistencyException
-            reason:@"deadly init"
-            userInfo:nil];
+                       reason:@"deadly init"
+                     userInfo:nil];
     return nil;
 }
 

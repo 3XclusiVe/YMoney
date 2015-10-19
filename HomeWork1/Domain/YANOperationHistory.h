@@ -10,5 +10,7 @@
 
 @interface YANOperationHistory : NSObject
 
+- (instancetype)init;
+
 - (void)addOperation:(YANCashOperation *)Operation;
 @end

@@ -11,15 +11,12 @@
 /// Валюта. Не может быть нулевая.
 @property(nonatomic, nonnull, readonly) NSString *currency;
 
-/// Значение. Должно быть больше нуля.
+/// Значение. Должно быть больше нуля либо равно нулю.
 @property(nonatomic, readonly) float count;
 
 /// @brief Первичный инициализатор. Инициализатор "init" не поддерживатеся.
 /// @param длина currency должна быть больше нуля.
 /// @param count должно быть больше нуля.
 - (nonnull instancetype)initWithCashCount:(float)count
-                              andCurrency:(nonnull NSString *)currency;
-
-- (instancetype)init;
-
+                                 Currency:(nonnull NSString *)currency;
 @end

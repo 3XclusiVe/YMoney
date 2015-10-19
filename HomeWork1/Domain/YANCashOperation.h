@@ -5,6 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum Direction {
+    IN,
+    OUT
+} OperationDirection;
+
 @class YANCash;
 
 @interface YANCashOperation : NSObject
@@ -22,15 +27,13 @@
 // 1 - пополнения.
 // -1 - платежи.
 // в дальнейшем будет enum.
-@property(nonatomic, readonly) int operationDirection;
+@property(nonatomic, readonly) OperationDirection operationDirection;
 
 /// @brief Первичный инициализатор. Инициализатор "init" не поддерживатеся.
 /// @param аргументы не должны быть нулевыми.
 - (nonnull instancetype)initOperationWithDate:(nonnull NSDate *)operationDate
-                              WithDescription:(nonnull NSString *)operationDescription
-                                     WithCash:(nonnull YANCash *)operationSum
-                                WithDirection:(int)operationDirection;
-
-- (nullable instancetype)init;
-
+                                  Description:(nonnull NSString *)operationDescription
+                                         Cash:(nonnull YANCash *)operationSum
+                                    Direction:(OperationDirection )
+                                            operationDirection;
 @end

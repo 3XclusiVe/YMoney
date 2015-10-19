@@ -17,6 +17,4 @@
 /// @param startCash не может быть пустым.
 - (nonnull instancetype)initWithCash:(YANCash *)startCash;
 
-/// Инициализирует нулевой баланс.
-- (instancetype)init;
 @end

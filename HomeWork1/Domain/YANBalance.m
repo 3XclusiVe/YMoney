@@ -26,7 +26,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _currentBalance = [[YANCash alloc] initWithCashCount:0
-                                                 andCurrency:@"P"];
+                                                    Currency:@"P"];
     }
     return self;
 }
