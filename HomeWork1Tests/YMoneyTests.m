@@ -12,11 +12,11 @@
 #import "YANCashOperation.h"
 #import "YANOperationHistory.h"
 
-@interface HomeWork1Tests : XCTestCase
+@interface YMoneyTests : XCTestCase
 
 @end
 
-@implementation HomeWork1Tests
+@implementation YMoneyTests
 
 - (void)setUp {
     [super setUp];
