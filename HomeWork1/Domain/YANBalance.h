@@ -15,6 +15,6 @@
 
 /// @brief Инициализатор "init" не поддерживатеся.
 /// @param startCash не может быть пустым.
-- (nonnull instancetype)initWithCash:(YANCash *)startCash;
+- (nonnull instancetype)initWithCash:(nonnull YANCash *)startCash;
 
 @end

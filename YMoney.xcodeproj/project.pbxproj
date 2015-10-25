@@ -8,17 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		36EBC0E5AFC696A4CD9BB7CB /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
-		36EBC1074352DE37310DC1F1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC183AA92723E5DD7A881 /* Info.plist */; };
 		36EBC2C9CD84E5A2FB92E97B /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
 		36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC21597D331BA35AC3424 /* ViewController.m */; };
 		36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC657364FF8A1D94BACDD /* Main.storyboard */; };
 		36EBC3DF2ECCB75323169158 /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
-		36EBC42393B07D39F6B9522D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36EBCFB8F1E9545964A335C7 /* Info.plist */; };
 		36EBC5067916594F6FB51B84 /* YMoneyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */; };
 		36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
 		36EBC595B88961F49C82200D /* YMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCFA765A9630E71CCB22F /* YMoneyTests.m */; };
 		36EBC619A519F9AE23BEA870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC46EB9D54C9037E90B9F /* main.m */; };
-		36EBC979D36BEC1F7DF26556 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC24066A6F348A557D302 /* Info.plist */; };
 		36EBC9821D7FF5FC27BD214B /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
 		36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
 		36EBCBD57B0E5794E439A802 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
@@ -263,6 +260,7 @@
 		36EBC73C5D66AF6B00CAE276 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DMA;
 			};
 			buildConfigurationList = 36EBC4ADEEF3C25131ED4C39 /* Build configuration list for PBXProject "YMoney" */;
@@ -289,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EBC979D36BEC1F7DF26556 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EBC42393B07D39F6B9522D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EBC1074352DE37310DC1F1 /* Info.plist in Resources */,
 				36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */,
 				36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */,
 				36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */,
