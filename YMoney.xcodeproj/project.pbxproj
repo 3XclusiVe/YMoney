@@ -26,6 +26,9 @@
 		36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC94E75F1C9321B0A11AA /* Assets.xcassets */; };
 		36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */; };
 		36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
+		CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* AuthorizationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* WalletViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,12 @@
 		36EBCE7ADB7F9D26CCE27571 /* YANBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANBalance.h; sourceTree = "<group>"; };
 		36EBCFA765A9630E71CCB22F /* YMoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyTests.m; sourceTree = "<group>"; };
 		36EBCFB8F1E9545964A335C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CED80B9F1BDD032500159505 /* AuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
+		CED80BA01BDD032500159505 /* AuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
+		CED80BA21BDD05D600159505 /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		CED80BA31BDD05D600159505 /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationHistoryViewController.h; sourceTree = "<group>"; };
+		CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationHistoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,15 +157,13 @@
 		36EBCDB4BD2F202B4AD3BF37 /* Ymoney */ = {
 			isa = PBXGroup;
 			children = (
-				36EBC183AA92723E5DD7A881 /* Info.plist */,
-				36EBC94E75F1C9321B0A11AA /* Assets.xcassets */,
-				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
+				CED80B9E1BDCF67E00159505 /* Controllers */,
 				36EBC267E661B0905C9A3749 /* Supporting Files */,
 				36EBCC836E1C6A99AB0643A2 /* AppDelegate.h */,
 				36EBCC604A86151F2B78B580 /* AppDelegate.m */,
-				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
-				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
-				36EBC21597D331BA35AC3424 /* ViewController.m */,
+				36EBC183AA92723E5DD7A881 /* Info.plist */,
+				36EBC94E75F1C9321B0A11AA /* Assets.xcassets */,
+				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
 				36EBCF64167FF1DDB598E750 /* Domain */,
 			);
 			name = Ymoney;
@@ -176,6 +183,22 @@
 				36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		CED80B9E1BDCF67E00159505 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
+				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
+				36EBC21597D331BA35AC3424 /* ViewController.m */,
+				CED80B9F1BDD032500159505 /* AuthorizationViewController.h */,
+				CED80BA01BDD032500159505 /* AuthorizationViewController.m */,
+				CED80BA21BDD05D600159505 /* WalletViewController.h */,
+				CED80BA31BDD05D600159505 /* WalletViewController.m */,
+				CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */,
+				CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,10 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */,
 				36EBC619A519F9AE23BEA870 /* main.m in Sources */,
 				36EBCCFC2EB1AEDB91E4B3BB /* AppDelegate.m in Sources */,
+				CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */,
 				36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */,
 				36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */,
+				CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */,
 				36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */,
 				36EBC0E5AFC696A4CD9BB7CB /* YANCashOperation.m in Sources */,
 				36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */,

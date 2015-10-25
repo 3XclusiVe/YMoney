@@ -28,4 +28,11 @@
 }
 
 
+- (IBAction)enterButtonTouch:(id)sender {
+    NSLog(@"enter button touched");
+}
+
+- (IBAction)createWalletButtonTouch:(id)sender {
+    NSLog(@"create wallet button touched");
+}
 @end

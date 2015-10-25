@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,59 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2el-N9-4xx">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.97605877585414491" blue="0.029403086835522285" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="3jf-ow-Ua8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="FOX-bp-uPU"/>
+                                    <constraint firstAttribute="width" constant="480" id="W4Z-RJ-DSo"/>
+                                    <constraint firstAttribute="height" constant="480" id="aDc-pX-5g1"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="dhx-Wd-0Gx"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="hmb-Iw-AAF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="iP2-kX-9jT"/>
+                                    <constraint firstAttribute="width" constant="240" id="oTC-kx-x6P"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="ubp-Q4-BMK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3jf-ow-Ua8"/>
+                                        <exclude reference="FOX-bp-uPU"/>
+                                        <exclude reference="W4Z-RJ-DSo"/>
+                                        <exclude reference="aDc-pX-5g1"/>
+                                        <exclude reference="dhx-Wd-0Gx"/>
+                                        <exclude reference="hmb-Iw-AAF"/>
+                                        <exclude reference="iP2-kX-9jT"/>
+                                        <exclude reference="oTC-kx-x6P"/>
+                                        <exclude reference="ubp-Q4-BMK"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="6Kj-e0-Arl"/>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9uv-b8-s7c"/>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IlB-1U-086"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2el-N9-4xx" secondAttribute="bottom" id="K9A-kx-bKI"/>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="Uv7-VV-RBx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2el-N9-4xx" secondAttribute="trailing" id="VGw-Df-XgB"/>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="160" id="dRs-S8-6ci"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2el-N9-4xx" secondAttribute="trailing" constant="160" id="mue-M0-QYJ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2el-N9-4xx" secondAttribute="bottom" constant="180" id="pM9-mA-Fdi"/>
+                            <constraint firstItem="2el-N9-4xx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="x3i-eu-nWf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Uv7-VV-RBx"/>
+                                <exclude reference="dRs-S8-6ci"/>
+                                <exclude reference="mue-M0-QYJ"/>
+                                <exclude reference="pM9-mA-Fdi"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
