@@ -34,6 +34,5 @@ typedef enum Direction {
 - (nonnull instancetype)initOperationWithDate:(nonnull NSDate *)operationDate
                                   Description:(nonnull NSString *)operationDescription
                                          Cash:(nonnull YANCash *)operationSum
-                                    Direction:(OperationDirection )
-                                            operationDirection;
+                                    Direction:(OperationDirection )operationDirection;
 @end
