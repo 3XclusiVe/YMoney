@@ -14,4 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
 
+@property (weak, nonatomic) IBOutlet UITabBarItem *walletButton;
+
 @end

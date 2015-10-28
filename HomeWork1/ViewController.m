@@ -12,6 +12,12 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UINavigationItem *navigationBar;
+
+- (IBAction)enterButtonTouch:(id)sender;
+
+- (IBAction)createWalletButtonTouch:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -32,7 +38,9 @@
     NSLog(@"enter button touched");
 }
 
+
 - (IBAction)createWalletButtonTouch:(id)sender {
     NSLog(@"create wallet button touched");
 }
+
 @end

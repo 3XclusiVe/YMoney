@@ -10,6 +10,8 @@
 
 @interface AuthorizationViewController ()
 
+- (IBAction)autorizationSuccess:(id)sender;
+
 @end
 
 @implementation AuthorizationViewController
@@ -24,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)autorizationSuccess:(id)sender {
+    NSLog(@"authorization success");
+}
 @end

@@ -39,7 +39,7 @@
                                 <animations/>
                                 <state key="normal" title="Регистрация кошелька"/>
                                 <connections>
-                                    <action selector="createWalletButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="A1B-sI-AhC"/>
+                                    <action selector="createWalletButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="C0X-9n-tDg"/>
                                     <segue destination="mbu-1n-TQv" kind="show" id="rdY-PE-sgP"/>
                                 </connections>
                             </button>
@@ -48,7 +48,7 @@
                                 <animations/>
                                 <state key="normal" title="Вход"/>
                                 <connections>
-                                    <action selector="enterButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="pfl-V9-sly"/>
+                                    <action selector="enterButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="qau-Gu-la4"/>
                                     <segue destination="mbu-1n-TQv" kind="show" id="fBT-hO-Y89"/>
                                 </connections>
                             </button>
@@ -72,7 +72,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="4m8-QX-KUg"/>
                     <connections>
-                        <outlet property="createWalletButton" destination="tb1-mT-SSV" id="1oz-VG-bkz"/>
                         <outlet property="enterButton" destination="ASJ-iF-Qc6" id="8E5-XV-ghD"/>
                     </connections>
                 </viewController>
@@ -122,6 +121,7 @@
                     <tabBarItem key="tabBarItem" title="История платежей" id="uFK-3B-Mcr"/>
                     <connections>
                         <outlet property="operationHistory" destination="qEC-NF-ibG" id="K7i-LA-KCH"/>
+                        <outlet property="operationHistoryButton" destination="uFK-3B-Mcr" id="luO-12-EjI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjV-6C-TIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +168,7 @@
                     <connections>
                         <outlet property="balanceLabel" destination="Thf-aY-opI" id="DAG-8c-Afq"/>
                         <outlet property="userNameLabel" destination="W0m-M4-6XE" id="DQf-JR-MAZ"/>
+                        <outlet property="walletButton" destination="udj-zc-zCE" id="qNo-19-wYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCt-gM-71o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,6 +216,7 @@
                                 <animations/>
                                 <state key="normal" title="authorization success"/>
                                 <connections>
+                                    <action selector="autorizationSuccess:" destination="mbu-1n-TQv" eventType="touchUpInside" id="Dms-LG-Su9"/>
                                     <segue destination="cxq-yR-zJp" kind="presentation" id="d3j-cl-Eew"/>
                                 </connections>
                             </button>

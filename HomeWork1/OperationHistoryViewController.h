@@ -11,5 +11,6 @@
 @interface OperationHistoryViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *operationHistory;
+@property (weak, nonatomic) IBOutlet UITabBarItem *operationHistoryButton;
 
 @end
