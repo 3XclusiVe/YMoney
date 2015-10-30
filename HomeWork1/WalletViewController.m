@@ -10,6 +10,12 @@
 
 @interface WalletViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
+
+@property (weak, nonatomic) IBOutlet UITabBarItem *walletButton;
+
 @end
 
 @implementation WalletViewController

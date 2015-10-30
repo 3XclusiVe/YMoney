@@ -12,6 +12,8 @@
 
 - (IBAction)autorizationSuccess:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIWebView *authorizationWebView;
+
 @end
 
 @implementation AuthorizationViewController

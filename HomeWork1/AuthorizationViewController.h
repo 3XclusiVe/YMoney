@@ -10,6 +10,5 @@
 
 @interface AuthorizationViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIWebView *authorizationWebView;
 
 @end

@@ -12,12 +12,5 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *enterButton;
-
-@property (weak, nonatomic) IBOutlet UIButton *createWalletButton;
-
-- (IBAction)enterButtonTouch:(id)sender;
-
-- (IBAction)createWalletButtonTouch:(id)sender;
 
 @end
