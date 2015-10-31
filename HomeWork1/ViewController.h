@@ -9,8 +9,8 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface ViewController : UIViewController
+@protocol ChildViewControllerDelegate;
+@interface ViewController : UIViewController <ChildViewControllerDelegate>
 
 
 @end

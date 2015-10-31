@@ -14,6 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *authorizationWebView;
 
+
+- (IBAction)authorizationFailed:(id)sender;
+
 @end
 
 @implementation AuthorizationViewController
@@ -30,5 +33,12 @@
 
 - (IBAction)autorizationSuccess:(id)sender {
     NSLog(@"authorization success");
+}
+- (IBAction)authorizationFailed:(id)sender {
+    id<ChildViewControllerDelegate> strongDelegate = self.delegate;
+    
+    if ([strongDelegate respondsToSelector:@selector(childViewController:didChooseValue:)]) {
+        [strongDelegate childViewController:self didChooseValue:5];
+    }
 }
 @end
