@@ -11,21 +11,21 @@
 		36EBC2C9CD84E5A2FB92E97B /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
 		36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC21597D331BA35AC3424 /* ViewController.m */; };
 		36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC657364FF8A1D94BACDD /* Main.storyboard */; };
-		36EBC3DF2ECCB75323169158 /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
 		36EBC5067916594F6FB51B84 /* YMoneyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */; };
 		36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
-		36EBC595B88961F49C82200D /* YMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCFA765A9630E71CCB22F /* YMoneyTests.m */; };
 		36EBC619A519F9AE23BEA870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC46EB9D54C9037E90B9F /* main.m */; };
-		36EBC9821D7FF5FC27BD214B /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
 		36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
-		36EBCBD57B0E5794E439A802 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
 		36EBCCFC2EB1AEDB91E4B3BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCC604A86151F2B78B580 /* AppDelegate.m */; };
 		36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC94E75F1C9321B0A11AA /* Assets.xcassets */; };
 		36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */; };
 		36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
-		CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* AuthorizationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* WalletViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CE011B141BE56B8700D820A3 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
+		CE011B151BE56B8C00D820A3 /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
+		CE011B161BE56B9000D820A3 /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
+		CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */; };
+		CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* AuthorizationViewController.m */; };
+		CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* WalletViewController.m */; };
+		CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +43,18 @@
 			remoteGlobalIDString = 36EBCDB9B3A5AD0AA8AD9F1F;
 			remoteInfo = HomeWork1;
 		};
+		CE011B201BE56BE100D820A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36EBC73C5D66AF6B00CAE276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EBCDB9B3A5AD0AA8AD9F1F;
+			remoteInfo = YMoney;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36EBC00AAA552839EF148BDD /* YMoney.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoney.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36EBC183AA92723E5DD7A881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		36EBC183AA92723E5DD7A881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HomeWork1/Info.plist; sourceTree = "<group>"; };
 		36EBC21597D331BA35AC3424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36EBC24066A6F348A557D302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		36EBC46EB9D54C9037E90B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,7 +62,7 @@
 		36EBC7AB21378EEFB10EDA1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36EBC7C44C90513F55016D16 /* YMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EBC896DD3DB61BB53F1D76 /* YANBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANBalance.m; sourceTree = "<group>"; };
-		36EBC94E75F1C9321B0A11AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36EBC94E75F1C9321B0A11AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HomeWork1/Assets.xcassets; sourceTree = "<group>"; };
 		36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyUITests.m; sourceTree = "<group>"; };
 		36EBCA0F94697E72E920E80A /* YANCashOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANCashOperation.h; sourceTree = "<group>"; };
 		36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationHistory.h; sourceTree = "<group>"; };
@@ -68,8 +75,9 @@
 		36EBCE60636C7417B7747425 /* YANCash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANCash.h; sourceTree = "<group>"; };
 		36EBCE702E9BD62F1A17CB73 /* YMoney.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoney.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EBCE7ADB7F9D26CCE27571 /* YANBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANBalance.h; sourceTree = "<group>"; };
-		36EBCFA765A9630E71CCB22F /* YMoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyTests.m; sourceTree = "<group>"; };
-		36EBCFB8F1E9545964A335C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CE011B1B1BE56BE100D820A3 /* YMoneyTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoneyTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyTest.m; sourceTree = "<group>"; };
+		CE011B1F1BE56BE100D820A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED80B9F1BDD032500159505 /* AuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
 		CED80BA01BDD032500159505 /* AuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
 		CED80BA21BDD05D600159505 /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
@@ -100,25 +108,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE011B181BE56BE100D820A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36EBC0C69AE963EE32107E31 /* YMoneyTests */ = {
-			isa = PBXGroup;
-			children = (
-				36EBCFB8F1E9545964A335C7 /* Info.plist */,
-				36EBCFA765A9630E71CCB22F /* YMoneyTests.m */,
-			);
-			name = YMoneyTests;
-			path = HomeWork1Tests;
-			sourceTree = "<group>";
-		};
 		36EBC1C1A9A48AAAB8031E8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				36EBC7C44C90513F55016D16 /* YMoney.app */,
 				36EBCE702E9BD62F1A17CB73 /* YMoney.xctest */,
 				36EBC00AAA552839EF148BDD /* YMoney.xctest */,
+				CE011B1B1BE56BE100D820A3 /* YMoneyTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,30 +150,129 @@
 		36EBCC89866B793A0110D134 = {
 			isa = PBXGroup;
 			children = (
-				36EBC1C1A9A48AAAB8031E8E /* Products */,
-				36EBCDB4BD2F202B4AD3BF37 /* Ymoney */,
-				36EBC0C69AE963EE32107E31 /* YMoneyTests */,
+				CEE7F4DF1BE5631A00683229 /* InfoPlist */,
+				CEE7F4E01BE5636500683229 /* Resources */,
+				36EBCDB4BD2F202B4AD3BF37 /* Sources */,
 				36EBC7787EEB4DF81878A825 /* YMoneyUITests */,
+				CE011B1C1BE56BE100D820A3 /* YMoneyTest */,
+				36EBC1C1A9A48AAAB8031E8E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		36EBCDB4BD2F202B4AD3BF37 /* Ymoney */ = {
+		36EBCDB4BD2F202B4AD3BF37 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CED80B9E1BDCF67E00159505 /* Controllers */,
+				CED80B9E1BDCF67E00159505 /* Application */,
+				36EBCF64167FF1DDB598E750 /* Domain */,
+				CEE7F4E91BE5665800683229 /* Ifrastructure */,
 				36EBC267E661B0905C9A3749 /* Supporting Files */,
 				36EBCC836E1C6A99AB0643A2 /* AppDelegate.h */,
 				36EBCC604A86151F2B78B580 /* AppDelegate.m */,
-				36EBC183AA92723E5DD7A881 /* Info.plist */,
-				36EBC94E75F1C9321B0A11AA /* Assets.xcassets */,
-				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
-				36EBCF64167FF1DDB598E750 /* Domain */,
 			);
-			name = Ymoney;
+			name = Sources;
 			path = HomeWork1;
 			sourceTree = "<group>";
 		};
 		36EBCF64167FF1DDB598E750 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7F4E81BE5661B00683229 /* Services */,
+				CEE7F4E71BE565DB00683229 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CE011B1C1BE56BE100D820A3 /* YMoneyTest */ = {
+			isa = PBXGroup;
+			children = (
+				CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */,
+				CE011B1F1BE56BE100D820A3 /* Info.plist */,
+			);
+			path = YMoneyTest;
+			sourceTree = "<group>";
+		};
+		CED80B9E1BDCF67E00159505 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7F4E11BE5642000683229 /* Presentation */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CEE7F4DF1BE5631A00683229 /* InfoPlist */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC183AA92723E5DD7A881 /* Info.plist */,
+			);
+			name = InfoPlist;
+			sourceTree = "<group>";
+		};
+		CEE7F4E01BE5636500683229 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
+				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
+				36EBC94E75F1C9321B0A11AA /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEE7F4E11BE5642000683229 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7F4E21BE5642900683229 /* LaunchPage */,
+				CEE7F4E41BE564AC00683229 /* StartPage */,
+				CEE7F4E31BE5646800683229 /* AuthorizationPage */,
+				CEE7F4E61BE564CE00683229 /* OperationHistoryPage */,
+				CEE7F4E51BE564C200683229 /* WalletPage */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE7F4E21BE5642900683229 /* LaunchPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LaunchPage;
+			sourceTree = "<group>";
+		};
+		CEE7F4E31BE5646800683229 /* AuthorizationPage */ = {
+			isa = PBXGroup;
+			children = (
+				CED80B9F1BDD032500159505 /* AuthorizationViewController.h */,
+				CED80BA01BDD032500159505 /* AuthorizationViewController.m */,
+			);
+			name = AuthorizationPage;
+			sourceTree = "<group>";
+		};
+		CEE7F4E41BE564AC00683229 /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
+				36EBC21597D331BA35AC3424 /* ViewController.m */,
+			);
+			name = StartPage;
+			sourceTree = "<group>";
+		};
+		CEE7F4E51BE564C200683229 /* WalletPage */ = {
+			isa = PBXGroup;
+			children = (
+				CED80BA21BDD05D600159505 /* WalletViewController.h */,
+				CED80BA31BDD05D600159505 /* WalletViewController.m */,
+			);
+			name = WalletPage;
+			sourceTree = "<group>";
+		};
+		CEE7F4E61BE564CE00683229 /* OperationHistoryPage */ = {
+			isa = PBXGroup;
+			children = (
+				CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */,
+				CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */,
+			);
+			name = OperationHistoryPage;
+			sourceTree = "<group>";
+		};
+		CEE7F4E71BE565DB00683229 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				36EBCCC518EADF7505E3B087 /* YANCash.m */,
@@ -176,26 +281,24 @@
 				36EBCE7ADB7F9D26CCE27571 /* YANBalance.h */,
 				36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */,
 				36EBCA0F94697E72E920E80A /* YANCashOperation.h */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		CEE7F4E81BE5661B00683229 /* Services */ = {
+			isa = PBXGroup;
+			children = (
 				36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */,
 				36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */,
 			);
-			path = Domain;
+			name = Services;
 			sourceTree = "<group>";
 		};
-		CED80B9E1BDCF67E00159505 /* Controllers */ = {
+		CEE7F4E91BE5665800683229 /* Ifrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
-				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
-				36EBC21597D331BA35AC3424 /* ViewController.m */,
-				CED80B9F1BDD032500159505 /* AuthorizationViewController.h */,
-				CED80BA01BDD032500159505 /* AuthorizationViewController.m */,
-				CED80BA21BDD05D600159505 /* WalletViewController.h */,
-				CED80BA31BDD05D600159505 /* WalletViewController.m */,
-				CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */,
-				CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */,
 			);
-			name = Controllers;
+			name = Ifrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +357,24 @@
 			productReference = 36EBCE702E9BD62F1A17CB73 /* YMoney.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE011B1A1BE56BE100D820A3 /* YMoneyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE011B221BE56BE100D820A3 /* Build configuration list for PBXNativeTarget "YMoneyTest" */;
+			buildPhases = (
+				CE011B171BE56BE100D820A3 /* Sources */,
+				CE011B181BE56BE100D820A3 /* Frameworks */,
+				CE011B191BE56BE100D820A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE011B211BE56BE100D820A3 /* PBXTargetDependency */,
+			);
+			name = YMoneyTest;
+			productName = YMoneyTest;
+			productReference = CE011B1B1BE56BE100D820A3 /* YMoneyTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +383,13 @@
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DMA;
+				TargetAttributes = {
+					CE011B1A1BE56BE100D820A3 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HHL7MPZ557;
+						TestTargetID = 36EBCDB9B3A5AD0AA8AD9F1F;
+					};
+				};
 			};
 			buildConfigurationList = 36EBC4ADEEF3C25131ED4C39 /* Build configuration list for PBXProject "YMoney" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,6 +406,7 @@
 				36EBCDB9B3A5AD0AA8AD9F1F /* YMoney */,
 				36EBCF25253588D21457D3BE /* YMoneyTests */,
 				36EBC1988E84CEE77EF1FFB2 /* YMoneyUITests */,
+				CE011B1A1BE56BE100D820A3 /* YMoneyTest */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +436,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE011B191BE56BE100D820A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -322,10 +458,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EBC595B88961F49C82200D /* YMoneyTests.m in Sources */,
-				36EBCBD57B0E5794E439A802 /* YANCash.m in Sources */,
-				36EBC9821D7FF5FC27BD214B /* YANBalance.m in Sources */,
-				36EBC3DF2ECCB75323169158 /* YANCashOperation.m in Sources */,
+				CE011B161BE56B9000D820A3 /* YANCashOperation.m in Sources */,
+				CE011B151BE56B8C00D820A3 /* YANBalance.m in Sources */,
+				CE011B141BE56B8700D820A3 /* YANCash.m in Sources */,
 				36EBC2C9CD84E5A2FB92E97B /* YANOperationHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +482,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE011B171BE56BE100D820A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -360,6 +503,11 @@
 			target = 36EBCDB9B3A5AD0AA8AD9F1F /* YMoney */;
 			targetProxy = 36EBC083411CABA5E7135D84 /* PBXContainerItemProxy */;
 		};
+		CE011B211BE56BE100D820A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36EBCDB9B3A5AD0AA8AD9F1F /* YMoney */;
+			targetProxy = CE011B201BE56BE100D820A3 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -369,6 +517,7 @@
 				36EBC62C8ECD757606340326 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = HomeWork1;
 			sourceTree = "<group>";
 		};
 		36EBC657364FF8A1D94BACDD /* Main.storyboard */ = {
@@ -377,6 +526,7 @@
 				36EBCC8E13ED1129E3BBBA13 /* Base */,
 			);
 			name = Main.storyboard;
+			path = HomeWork1;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -532,6 +682,32 @@
 			};
 			name = Release;
 		};
+		CE011B231BE56BE100D820A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YMoneyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.YMoneyTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMoney.app/YMoney";
+			};
+			name = Debug;
+		};
+		CE011B241BE56BE100D820A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YMoneyTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.YMoneyTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YMoney.app/YMoney";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +746,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CE011B221BE56BE100D820A3 /* Build configuration list for PBXNativeTarget "YMoneyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE011B231BE56BE100D820A3 /* Debug */,
+				CE011B241BE56BE100D820A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

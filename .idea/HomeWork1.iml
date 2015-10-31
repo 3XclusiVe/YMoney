@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/AuthorizationViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/AuthorizationViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Domain/YANBalance.h" isTestSource="false" />
@@ -16,13 +18,17 @@
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Domain/YANOperationHistory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Domain/YANOperationHistory.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/OperationHistoryViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/OperationHistoryViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/WalletViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1/WalletViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HomeWork1Tests/HomeWork1Tests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1Tests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HomeWork1UITests/HomeWork1UITests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1Tests/YMoneyTests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HomeWork1UITests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HomeWork1UITests/YMoneyUITests.m" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -24,9 +24,6 @@ typedef enum Direction {
 @property(nonatomic, nonnull, readonly) YANCash *operationSum;
 
 /// Направление операции. Платежи или пополнения.
-// 1 - пополнения.
-// -1 - платежи.
-// в дальнейшем будет enum.
 @property(nonatomic, readonly) OperationDirection operationDirection;
 
 /// @brief Первичный инициализатор. Инициализатор "init" не поддерживатеся.

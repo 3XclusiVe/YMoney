@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>-[YMoneyTests testImpossibleToCreateNullBalance].xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>All in HomeWork1Tests.m.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>YMoney 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>YMoney.xcscheme</key>
 		<dict>
@@ -43,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>36EBCF25253588D21457D3BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE011B1A1BE56BE100D820A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

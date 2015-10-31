@@ -9,8 +9,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class AuthorizationViewController;
+
 @protocol ChildViewControllerDelegate;
+
 @interface ViewController : UIViewController <ChildViewControllerDelegate>
 
+- (void)childViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value;
 
 @end

@@ -24,11 +24,11 @@
 }
 
 - (instancetype)init {
-    if (self = [super init]) {
-        _currentBalance = [[YANCash alloc] initWithCashCount:0
-                                                    Currency:@"P"];
-    }
-    return self;
+    @throw [NSException
+            exceptionWithName:NSInternalInconsistencyException
+            reason:@"deadly init"
+            userInfo:nil];
+    return nil;
 }
 
 @end
