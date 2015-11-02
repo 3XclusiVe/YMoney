@@ -24,6 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSURL *websiteUrl = [NSURL URLWithString:@"http://www.google.com"];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:websiteUrl];
+    [_authorizationWebView loadRequest:urlRequest];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

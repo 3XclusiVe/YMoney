@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1E99A7C0D471FCFCCEB3314447A1B46148D0DFA1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1E99A7C0D471FCFCCEB3314447A1B46148D0DFA1" : 0,
+    "FCC541C177D5DCE3194ACA14EB915A41FA4BF3B0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4C1C1B1A-DF41-42DA-B9E8-40888B791875",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1E99A7C0D471FCFCCEB3314447A1B46148D0DFA1" : "Ymoney\/",
+    "FCC541C177D5DCE3194ACA14EB915A41FA4BF3B0" : "YandexMoneySdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YMoney",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YMoney.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/3XclusiVe\/YMoney",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1E99A7C0D471FCFCCEB3314447A1B46148D0DFA1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yandex-money\/yandex-money-sdk-objc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCC541C177D5DCE3194ACA14EB915A41FA4BF3B0"
+    }
+  ]
+}
