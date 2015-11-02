@@ -65,36 +65,6 @@
 		CEC37F551BE7F54A00700DAF /* YMAConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37ED61BE7F54A00700DAF /* YMAConnection.m */; };
 		CEC37F561BE7F54A00700DAF /* YMAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37ED81BE7F54A00700DAF /* YMAConstants.m */; };
 		CEC37F571BE7F54A00700DAF /* YMAHostsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EDA1BE7F54A00700DAF /* YMAHostsProvider.m */; };
-		CEC37F581BE7F54A00700DAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EE01BE7F54A00700DAF /* AppDelegate.m */; };
-		CEC37F591BE7F54A00700DAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EE11BE7F54A00700DAF /* Default-568h@2x.png */; };
-		CEC37F5A1BE7F54A00700DAF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EE21BE7F54A00700DAF /* Default.png */; };
-		CEC37F5B1BE7F54A00700DAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EE31BE7F54A00700DAF /* Default@2x.png */; };
-		CEC37F5C1BE7F54A00700DAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EE41BE7F54A00700DAF /* InfoPlist.strings */; };
-		CEC37F5D1BE7F54A00700DAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EE61BE7F54A00700DAF /* main.m */; };
-		CEC37F5E1BE7F54A00700DAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EE81BE7F54A00700DAF /* ViewController.m */; };
-		CEC37F5F1BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EE91BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */; };
-		CEC37F601BE7F54A00700DAF /* uiymcpssdkios.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEC37EF11BE7F54A00700DAF /* uiymcpssdkios.bundle */; };
-		CEC37F611BE7F54A00700DAF /* YMABaseCpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EF51BE7F54A00700DAF /* YMABaseCpsViewController.m */; };
-		CEC37F621BE7F54A00700DAF /* YMABaseCscView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EF81BE7F54A00700DAF /* YMABaseCscView.m */; };
-		CEC37F631BE7F54A00700DAF /* YMABaseMoneySourcesView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EFA1BE7F54A00700DAF /* YMABaseMoneySourcesView.m */; };
-		CEC37F641BE7F54A00700DAF /* YMABaseResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EFC1BE7F54A00700DAF /* YMABaseResultView.m */; };
-		CEC37F651BE7F54A00700DAF /* YMACpsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37EFE1BE7F54A00700DAF /* YMACpsController.m */; };
-		CEC37F661BE7F54A00700DAF /* YMACpsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F001BE7F54A00700DAF /* YMACpsManager.m */; };
-		CEC37F671BE7F54A00700DAF /* YMACpsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F021BE7F54A00700DAF /* YMACpsViewController.m */; };
-		CEC37F681BE7F54A00700DAF /* YMACscView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F041BE7F54A00700DAF /* YMACscView.m */; };
-		CEC37F691BE7F54A00700DAF /* YMALocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F061BE7F54A00700DAF /* YMALocalization.m */; };
-		CEC37F6A1BE7F54A00700DAF /* YMAMoneySourcesView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F081BE7F54A00700DAF /* YMAMoneySourcesView.m */; };
-		CEC37F6B1BE7F54A00700DAF /* YMAResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F0A1BE7F54A00700DAF /* YMAResultView.m */; };
-		CEC37F6C1BE7F54A00700DAF /* YMASecureStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F0C1BE7F54A00700DAF /* YMASecureStorage.m */; };
-		CEC37F6D1BE7F54A00700DAF /* YMAUIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F0E1BE7F54A00700DAF /* YMAUIConstants.m */; };
-		CEC37F6E1BE7F54A00700DAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F111BE7F54A00700DAF /* AppDelegate.m */; };
-		CEC37F6F1BE7F54A00700DAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F121BE7F54A00700DAF /* Default-568h@2x.png */; };
-		CEC37F701BE7F54A00700DAF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F131BE7F54A00700DAF /* Default.png */; };
-		CEC37F711BE7F54A00700DAF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F141BE7F54A00700DAF /* Default@2x.png */; };
-		CEC37F721BE7F54A00700DAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F151BE7F54A00700DAF /* InfoPlist.strings */; };
-		CEC37F731BE7F54A00700DAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F171BE7F54A00700DAF /* main.m */; };
-		CEC37F741BE7F54A00700DAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC37F191BE7F54A00700DAF /* ViewController.m */; };
-		CEC37F751BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F1A1BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */; };
 		CEC37F761BE7F54A00700DAF /* payment.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F201BE7F54A00700DAF /* payment.PNG */; };
 		CEC37F771BE7F54A00700DAF /* start.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F211BE7F54A00700DAF /* start.PNG */; };
 		CEC37F781BE7F54A00700DAF /* success.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CEC37F221BE7F54A00700DAF /* success.PNG */; };
@@ -143,20 +113,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 43C6B1D918987E78001BA093;
 			remoteInfo = "ymcpssdk-ios";
-		};
-		CEC37F851BE7F54A00700DAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC37F1C1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 60D4224418A51CBA0018E439;
-			remoteInfo = "YandexMoneySDK-example";
-		};
-		CEC37F881BE7F54A00700DAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC37EEB1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 60D4224418A51CBA0018E439;
-			remoteInfo = "YandexMoneySDK-example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -270,59 +226,6 @@
 		CEC37ED81BE7F54A00700DAF /* YMAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAConstants.m; sourceTree = "<group>"; };
 		CEC37ED91BE7F54A00700DAF /* YMAHostsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAHostsProvider.h; sourceTree = "<group>"; };
 		CEC37EDA1BE7F54A00700DAF /* YMAHostsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAHostsProvider.m; sourceTree = "<group>"; };
-		CEC37EDF1BE7F54A00700DAF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CEC37EE01BE7F54A00700DAF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEC37EE11BE7F54A00700DAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CEC37EE21BE7F54A00700DAF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEC37EE31BE7F54A00700DAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEC37EE51BE7F54A00700DAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEC37EE61BE7F54A00700DAF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEC37EE71BE7F54A00700DAF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEC37EE81BE7F54A00700DAF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEC37EE91BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "YandexMoneySDK-example-Info.plist"; sourceTree = "<group>"; };
-		CEC37EEA1BE7F54A00700DAF /* YandexMoneySDK-example-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YandexMoneySDK-example-Prefix.pch"; sourceTree = "<group>"; };
-		CEC37EEB1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "YandexMoneySDK-example.xcodeproj"; sourceTree = "<group>"; };
-		CEC37EF11BE7F54A00700DAF /* uiymcpssdkios.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = uiymcpssdkios.bundle; sourceTree = "<group>"; };
-		CEC37EF31BE7F54A00700DAF /* uiymcpssdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiymcpssdk.h; sourceTree = "<group>"; };
-		CEC37EF41BE7F54A00700DAF /* YMABaseCpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMABaseCpsViewController.h; sourceTree = "<group>"; };
-		CEC37EF51BE7F54A00700DAF /* YMABaseCpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMABaseCpsViewController.m; sourceTree = "<group>"; };
-		CEC37EF61BE7F54A00700DAF /* YMABaseCpsViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMABaseCpsViewDelegate.h; sourceTree = "<group>"; };
-		CEC37EF71BE7F54A00700DAF /* YMABaseCscView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMABaseCscView.h; sourceTree = "<group>"; };
-		CEC37EF81BE7F54A00700DAF /* YMABaseCscView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMABaseCscView.m; sourceTree = "<group>"; };
-		CEC37EF91BE7F54A00700DAF /* YMABaseMoneySourcesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMABaseMoneySourcesView.h; sourceTree = "<group>"; };
-		CEC37EFA1BE7F54A00700DAF /* YMABaseMoneySourcesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMABaseMoneySourcesView.m; sourceTree = "<group>"; };
-		CEC37EFB1BE7F54A00700DAF /* YMABaseResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMABaseResultView.h; sourceTree = "<group>"; };
-		CEC37EFC1BE7F54A00700DAF /* YMABaseResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMABaseResultView.m; sourceTree = "<group>"; };
-		CEC37EFD1BE7F54A00700DAF /* YMACpsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMACpsController.h; sourceTree = "<group>"; };
-		CEC37EFE1BE7F54A00700DAF /* YMACpsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMACpsController.m; sourceTree = "<group>"; };
-		CEC37EFF1BE7F54A00700DAF /* YMACpsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMACpsManager.h; sourceTree = "<group>"; };
-		CEC37F001BE7F54A00700DAF /* YMACpsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMACpsManager.m; sourceTree = "<group>"; };
-		CEC37F011BE7F54A00700DAF /* YMACpsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMACpsViewController.h; sourceTree = "<group>"; };
-		CEC37F021BE7F54A00700DAF /* YMACpsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMACpsViewController.m; sourceTree = "<group>"; };
-		CEC37F031BE7F54A00700DAF /* YMACscView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMACscView.h; sourceTree = "<group>"; };
-		CEC37F041BE7F54A00700DAF /* YMACscView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMACscView.m; sourceTree = "<group>"; };
-		CEC37F051BE7F54A00700DAF /* YMALocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMALocalization.h; sourceTree = "<group>"; };
-		CEC37F061BE7F54A00700DAF /* YMALocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMALocalization.m; sourceTree = "<group>"; };
-		CEC37F071BE7F54A00700DAF /* YMAMoneySourcesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAMoneySourcesView.h; sourceTree = "<group>"; };
-		CEC37F081BE7F54A00700DAF /* YMAMoneySourcesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAMoneySourcesView.m; sourceTree = "<group>"; };
-		CEC37F091BE7F54A00700DAF /* YMAResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAResultView.h; sourceTree = "<group>"; };
-		CEC37F0A1BE7F54A00700DAF /* YMAResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAResultView.m; sourceTree = "<group>"; };
-		CEC37F0B1BE7F54A00700DAF /* YMASecureStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMASecureStorage.h; sourceTree = "<group>"; };
-		CEC37F0C1BE7F54A00700DAF /* YMASecureStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMASecureStorage.m; sourceTree = "<group>"; };
-		CEC37F0D1BE7F54A00700DAF /* YMAUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAUIConstants.h; sourceTree = "<group>"; };
-		CEC37F0E1BE7F54A00700DAF /* YMAUIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAUIConstants.m; sourceTree = "<group>"; };
-		CEC37F101BE7F54A00700DAF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CEC37F111BE7F54A00700DAF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEC37F121BE7F54A00700DAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CEC37F131BE7F54A00700DAF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEC37F141BE7F54A00700DAF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEC37F161BE7F54A00700DAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEC37F171BE7F54A00700DAF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEC37F181BE7F54A00700DAF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEC37F191BE7F54A00700DAF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CEC37F1A1BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "YandexMoneySDK-example-Info.plist"; sourceTree = "<group>"; };
-		CEC37F1B1BE7F54A00700DAF /* YandexMoneySDK-example-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YandexMoneySDK-example-Prefix.pch"; sourceTree = "<group>"; };
-		CEC37F1C1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "YandexMoneySDK-example.xcodeproj"; sourceTree = "<group>"; };
 		CEC37F201BE7F54A00700DAF /* payment.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payment.PNG; sourceTree = "<group>"; };
 		CEC37F211BE7F54A00700DAF /* start.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.PNG; sourceTree = "<group>"; };
 		CEC37F221BE7F54A00700DAF /* success.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.PNG; sourceTree = "<group>"; };
@@ -678,134 +581,9 @@
 		CEC37EDC1BE7F54A00700DAF /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				CEC37EDD1BE7F54A00700DAF /* Example1 */,
-				CEC37EEE1BE7F54A00700DAF /* Example2 */,
 				CEC37F1F1BE7F54A00700DAF /* Screenshots */,
 			);
 			path = ios;
-			sourceTree = "<group>";
-		};
-		CEC37EDD1BE7F54A00700DAF /* Example1 */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EDE1BE7F54A00700DAF /* YandexMoneySDK-example */,
-				CEC37EEB1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */,
-			);
-			path = Example1;
-			sourceTree = "<group>";
-		};
-		CEC37EDE1BE7F54A00700DAF /* YandexMoneySDK-example */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EDF1BE7F54A00700DAF /* AppDelegate.h */,
-				CEC37EE01BE7F54A00700DAF /* AppDelegate.m */,
-				CEC37EE11BE7F54A00700DAF /* Default-568h@2x.png */,
-				CEC37EE21BE7F54A00700DAF /* Default.png */,
-				CEC37EE31BE7F54A00700DAF /* Default@2x.png */,
-				CEC37EE41BE7F54A00700DAF /* InfoPlist.strings */,
-				CEC37EE61BE7F54A00700DAF /* main.m */,
-				CEC37EE71BE7F54A00700DAF /* ViewController.h */,
-				CEC37EE81BE7F54A00700DAF /* ViewController.m */,
-				CEC37EE91BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */,
-				CEC37EEA1BE7F54A00700DAF /* YandexMoneySDK-example-Prefix.pch */,
-			);
-			path = "YandexMoneySDK-example";
-			sourceTree = "<group>";
-		};
-		CEC37EEC1BE7F54A00700DAF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37F891BE7F54A00700DAF /* YandexMoneySDK-example.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CEC37EEE1BE7F54A00700DAF /* Example2 */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EEF1BE7F54A00700DAF /* BaseUI */,
-				CEC37F0F1BE7F54A00700DAF /* YandexMoneySDK-example */,
-				CEC37F1C1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */,
-			);
-			path = Example2;
-			sourceTree = "<group>";
-		};
-		CEC37EEF1BE7F54A00700DAF /* BaseUI */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EF01BE7F54A00700DAF /* Assets */,
-				CEC37EF21BE7F54A00700DAF /* Classes */,
-			);
-			path = BaseUI;
-			sourceTree = "<group>";
-		};
-		CEC37EF01BE7F54A00700DAF /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EF11BE7F54A00700DAF /* uiymcpssdkios.bundle */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		CEC37EF21BE7F54A00700DAF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37EF31BE7F54A00700DAF /* uiymcpssdk.h */,
-				CEC37EF41BE7F54A00700DAF /* YMABaseCpsViewController.h */,
-				CEC37EF51BE7F54A00700DAF /* YMABaseCpsViewController.m */,
-				CEC37EF61BE7F54A00700DAF /* YMABaseCpsViewDelegate.h */,
-				CEC37EF71BE7F54A00700DAF /* YMABaseCscView.h */,
-				CEC37EF81BE7F54A00700DAF /* YMABaseCscView.m */,
-				CEC37EF91BE7F54A00700DAF /* YMABaseMoneySourcesView.h */,
-				CEC37EFA1BE7F54A00700DAF /* YMABaseMoneySourcesView.m */,
-				CEC37EFB1BE7F54A00700DAF /* YMABaseResultView.h */,
-				CEC37EFC1BE7F54A00700DAF /* YMABaseResultView.m */,
-				CEC37EFD1BE7F54A00700DAF /* YMACpsController.h */,
-				CEC37EFE1BE7F54A00700DAF /* YMACpsController.m */,
-				CEC37EFF1BE7F54A00700DAF /* YMACpsManager.h */,
-				CEC37F001BE7F54A00700DAF /* YMACpsManager.m */,
-				CEC37F011BE7F54A00700DAF /* YMACpsViewController.h */,
-				CEC37F021BE7F54A00700DAF /* YMACpsViewController.m */,
-				CEC37F031BE7F54A00700DAF /* YMACscView.h */,
-				CEC37F041BE7F54A00700DAF /* YMACscView.m */,
-				CEC37F051BE7F54A00700DAF /* YMALocalization.h */,
-				CEC37F061BE7F54A00700DAF /* YMALocalization.m */,
-				CEC37F071BE7F54A00700DAF /* YMAMoneySourcesView.h */,
-				CEC37F081BE7F54A00700DAF /* YMAMoneySourcesView.m */,
-				CEC37F091BE7F54A00700DAF /* YMAResultView.h */,
-				CEC37F0A1BE7F54A00700DAF /* YMAResultView.m */,
-				CEC37F0B1BE7F54A00700DAF /* YMASecureStorage.h */,
-				CEC37F0C1BE7F54A00700DAF /* YMASecureStorage.m */,
-				CEC37F0D1BE7F54A00700DAF /* YMAUIConstants.h */,
-				CEC37F0E1BE7F54A00700DAF /* YMAUIConstants.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		CEC37F0F1BE7F54A00700DAF /* YandexMoneySDK-example */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37F101BE7F54A00700DAF /* AppDelegate.h */,
-				CEC37F111BE7F54A00700DAF /* AppDelegate.m */,
-				CEC37F121BE7F54A00700DAF /* Default-568h@2x.png */,
-				CEC37F131BE7F54A00700DAF /* Default.png */,
-				CEC37F141BE7F54A00700DAF /* Default@2x.png */,
-				CEC37F151BE7F54A00700DAF /* InfoPlist.strings */,
-				CEC37F171BE7F54A00700DAF /* main.m */,
-				CEC37F181BE7F54A00700DAF /* ViewController.h */,
-				CEC37F191BE7F54A00700DAF /* ViewController.m */,
-				CEC37F1A1BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist */,
-				CEC37F1B1BE7F54A00700DAF /* YandexMoneySDK-example-Prefix.pch */,
-			);
-			path = "YandexMoneySDK-example";
-			sourceTree = "<group>";
-		};
-		CEC37F1D1BE7F54A00700DAF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEC37F861BE7F54A00700DAF /* YandexMoneySDK-example.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CEC37F1F1BE7F54A00700DAF /* Screenshots */ = {
@@ -1052,14 +830,6 @@
 					ProductGroup = CEC37F2B1BE7F54A00700DAF /* Products */;
 					ProjectRef = CEC37F2A1BE7F54A00700DAF /* yandex-money-sdk-objc.xcodeproj */;
 				},
-				{
-					ProductGroup = CEC37F1D1BE7F54A00700DAF /* Products */;
-					ProjectRef = CEC37F1C1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */;
-				},
-				{
-					ProductGroup = CEC37EEC1BE7F54A00700DAF /* Products */;
-					ProjectRef = CEC37EEB1BE7F54A00700DAF /* YandexMoneySDK-example.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1086,20 +856,6 @@
 			remoteRef = CEC37F821BE7F54A00700DAF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CEC37F861BE7F54A00700DAF /* YandexMoneySDK-example.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "YandexMoneySDK-example.app";
-			remoteRef = CEC37F851BE7F54A00700DAF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CEC37F891BE7F54A00700DAF /* YandexMoneySDK-example.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "YandexMoneySDK-example.app";
-			remoteRef = CEC37F881BE7F54A00700DAF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1121,26 +877,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC37F711BE7F54A00700DAF /* Default@2x.png in Resources */,
-				CEC37F5F1BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist in Resources */,
-				CEC37F5B1BE7F54A00700DAF /* Default@2x.png in Resources */,
-				CEC37F721BE7F54A00700DAF /* InfoPlist.strings in Resources */,
-				CEC37F751BE7F54A00700DAF /* YandexMoneySDK-example-Info.plist in Resources */,
-				CEC37F5C1BE7F54A00700DAF /* InfoPlist.strings in Resources */,
 				CEC37F7C1BE7F54A00700DAF /* ymcpssdk-os-Info.plist in Resources */,
 				CEC37F7D1BE7F54A00700DAF /* YandexMoneySDKObjc.podspec in Resources */,
 				CEC37F7A1BE7F54A00700DAF /* LICENSE in Resources */,
-				CEC37F6F1BE7F54A00700DAF /* Default-568h@2x.png in Resources */,
 				36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */,
-				CEC37F601BE7F54A00700DAF /* uiymcpssdkios.bundle in Resources */,
-				CEC37F591BE7F54A00700DAF /* Default-568h@2x.png in Resources */,
 				CEC37F771BE7F54A00700DAF /* start.PNG in Resources */,
 				36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */,
 				CEC37F781BE7F54A00700DAF /* success.PNG in Resources */,
 				CEC37F761BE7F54A00700DAF /* payment.PNG in Resources */,
 				36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */,
-				CEC37F5A1BE7F54A00700DAF /* Default.png in Resources */,
-				CEC37F701BE7F54A00700DAF /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,18 +923,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC37F481BE7F54A00700DAF /* YMAAccountInfoResponse.m in Sources */,
-				CEC37F741BE7F54A00700DAF /* ViewController.m in Sources */,
 				CEC37F401BE7F54A00700DAF /* YMAOperationDetailsRequest.m in Sources */,
 				CEC37F421BE7F54A00700DAF /* YMAProcessExternalPaymentRequest.m in Sources */,
 				CEC37F311BE7F54A00700DAF /* YMAHistoryOperationModel.m in Sources */,
-				CEC37F621BE7F54A00700DAF /* YMABaseCscView.m in Sources */,
 				CEC37F791BE7F54A00700DAF /* README.md in Sources */,
 				CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */,
 				36EBC619A519F9AE23BEA870 /* main.m in Sources */,
 				CEC37F4B1BE7F54A00700DAF /* YMAExternalPaymentResponse.m in Sources */,
 				CEC37F3E1BE7F54A00700DAF /* YMAChangeAvatarRequest.m in Sources */,
 				CEC37F471BE7F54A00700DAF /* YMABaseRequest.m in Sources */,
-				CEC37F651BE7F54A00700DAF /* YMACpsController.m in Sources */,
 				CEC37F351BE7F54A00700DAF /* YMAMoneySourceModel.m in Sources */,
 				CEC37F491BE7F54A00700DAF /* YMAHistoryOperationsResponse.m in Sources */,
 				CEC37F461BE7F54A00700DAF /* YMAProcessPaymentRequest.m in Sources */,
@@ -1197,56 +939,40 @@
 				CEC37F521BE7F54A00700DAF /* YMAAPISession.m in Sources */,
 				CEC37F301BE7F54A00700DAF /* YMABalanceDetailsModel.m in Sources */,
 				CEC37F371BE7F54A00700DAF /* YMAWalletSourceGroupModel.m in Sources */,
-				CEC37F5D1BE7F54A00700DAF /* main.m in Sources */,
 				36EBCCFC2EB1AEDB91E4B3BB /* AppDelegate.m in Sources */,
 				CEC37F4E1BE7F54A00700DAF /* YMAPaymentResponse.m in Sources */,
 				CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */,
 				CEC37F551BE7F54A00700DAF /* YMAConnection.m in Sources */,
-				CEC37F6E1BE7F54A00700DAF /* AppDelegate.m in Sources */,
 				CEC37F4C1BE7F54A00700DAF /* YMAProcessExternalPaymentResponse.m in Sources */,
 				CEC37F411BE7F54A00700DAF /* YMAExternalPaymentRequest.m in Sources */,
 				CEC37F361BE7F54A00700DAF /* YMAMoneySourcesModel.m in Sources */,
 				CEC37F431BE7F54A00700DAF /* YMAIncomingTransferAcceptRequest.m in Sources */,
-				CEC37F6A1BE7F54A00700DAF /* YMAMoneySourcesView.m in Sources */,
 				CEC37F501BE7F54A00700DAF /* YMABaseProcessResponse.m in Sources */,
 				36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */,
 				36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */,
-				CEC37F611BE7F54A00700DAF /* YMABaseCpsViewController.m in Sources */,
 				CEC37F341BE7F54A00700DAF /* YMACardsSourceGroupModel.m in Sources */,
 				CEC37F571BE7F54A00700DAF /* YMAHostsProvider.m in Sources */,
 				CEC37F451BE7F54A00700DAF /* YMAPaymentRequest.m in Sources */,
-				CEC37F6C1BE7F54A00700DAF /* YMASecureStorage.m in Sources */,
-				CEC37F6B1BE7F54A00700DAF /* YMAResultView.m in Sources */,
 				CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */,
 				36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */,
-				CEC37F731BE7F54A00700DAF /* main.m in Sources */,
 				CEC37F391BE7F54A00700DAF /* YMADigitalGoodsModel.m in Sources */,
 				CEC37F2E1BE7F54A00700DAF /* YMAAccountInfoModel.m in Sources */,
-				CEC37F631BE7F54A00700DAF /* YMABaseMoneySourcesView.m in Sources */,
-				CEC37F681BE7F54A00700DAF /* YMACscView.m in Sources */,
-				CEC37F641BE7F54A00700DAF /* YMABaseResultView.m in Sources */,
 				CEC37F4D1BE7F54A00700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,
 				CEC37F561BE7F54A00700DAF /* YMAConstants.m in Sources */,
 				CEC37F531BE7F54A00700DAF /* YMABaseSession.m in Sources */,
 				CEC37F3F1BE7F54A00700DAF /* YMAHistoryOperationsRequest.m in Sources */,
 				36EBC0E5AFC696A4CD9BB7CB /* YANCashOperation.m in Sources */,
-				CEC37F671BE7F54A00700DAF /* YMACpsViewController.m in Sources */,
 				CEC37F4F1BE7F54A00700DAF /* YMAProcessPaymentResponse.m in Sources */,
 				CEC37F3B1BE7F54A00700DAF /* YMAPaymentInfoModel.m in Sources */,
 				CEC37F441BE7F54A00700DAF /* YMAIncomingTransferRejectRequest.m in Sources */,
-				CEC37F6D1BE7F54A00700DAF /* YMAUIConstants.m in Sources */,
 				CEC37F7B1BE7F54A00700DAF /* README.md in Sources */,
 				CEC37F541BE7F54A00700DAF /* YMAExternalPaymentSession.m in Sources */,
-				CEC37F661BE7F54A00700DAF /* YMACpsManager.m in Sources */,
-				CEC37F581BE7F54A00700DAF /* AppDelegate.m in Sources */,
 				CEC37F4A1BE7F54A00700DAF /* YMAOperationDetailsResponse.m in Sources */,
 				CEC37F3A1BE7F54A00700DAF /* YMAGoodsModel.m in Sources */,
 				CEC37F2F1BE7F54A00700DAF /* YMAAvatarModel.m in Sources */,
 				CEC37F3D1BE7F54A00700DAF /* YMAAccountInfoRequest.m in Sources */,
-				CEC37F5E1BE7F54A00700DAF /* ViewController.m in Sources */,
 				CEC37F331BE7F54A00700DAF /* YMAExternalPaymentInfoModel.m in Sources */,
 				CEC37F321BE7F54A00700DAF /* YMAOperationDetailsModel.m in Sources */,
-				CEC37F691BE7F54A00700DAF /* YMALocalization.m in Sources */,
 				CEC37F3C1BE7F54A00700DAF /* YMAPaymentResultModel.m in Sources */,
 				36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */,
 				CEC37F511BE7F54A00700DAF /* YMABaseResponse.m in Sources */,
@@ -1298,22 +1024,6 @@
 			);
 			name = Main.storyboard;
 			path = HomeWork1;
-			sourceTree = "<group>";
-		};
-		CEC37EE41BE7F54A00700DAF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEC37EE51BE7F54A00700DAF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CEC37F151BE7F54A00700DAF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEC37F161BE7F54A00700DAF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
