@@ -31,8 +31,13 @@ NSString *_redirectUri = @"http://ya.ru";
 //A list of requested permissions.
 NSString *_permissions = @"account-info operation-history";
 
+//Auth session
+YMAAPISession *_session = nil;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _authorizationWebView.delegate = self;
 
     NSDictionary * additionalParameters = @{
             YMAParameterResponseType : YMAValueParameterResponseType, //Constant parameter
@@ -40,12 +45,73 @@ NSString *_permissions = @"account-info operation-history";
             YMAParameterScope : _permissions,
     };
 
-    YMAAPISession *session = [[YMAAPISession alloc] init];
-    NSURLRequest *authorizationRequest = [session authorizationRequestWithClientId:_clientId
+    _session = [[YMAAPISession alloc] init];
+    NSURLRequest *authorizationRequest = [_session authorizationRequestWithClientId:_clientId
                                                               additionalParameters:additionalParameters];
     [_authorizationWebView loadRequest:authorizationRequest];
 
 }
+
+
+// MARK: UIWebViewDelegate protocol
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    BOOL shouldStartLoad = YES;
+    NSMutableDictionary *authInfo = nil;
+    NSError *error = nil;
+    // session - instance of YMAAPISession class
+    if ([_session isRequest:request
+                  toRedirectUrl:_redirectUri
+              authorizationInfo:&authInfo
+                          error:&error]) {
+        shouldStartLoad = NO;
+        if (error == nil) {
+            NSString *authCode = authInfo[@"code"];
+            //Process temporary authorization code
+            //NSLog(authCode);
+            
+            NSDictionary *additionalParameters = @{
+                                                   @"grant_type"           : @"authorization_code", // Constant parameter
+                                                   YMAParameterRedirectUri : _redirectUri
+                                                   };
+            
+            // session  - instance of YMAAPISession class
+            // authCode - temporary authorization code
+            [_session receiveTokenWithCode:authCode
+                                 clientId: _clientId
+                     additionalParameters:additionalParameters
+                               completion:^(NSString *instanceId, NSError *error) {
+                                   if (error == nil && instanceId != nil && instanceId.length > 0) {
+                                       NSString *accessToken = instanceId; // Do NOT request access_token every time, when you need to call API method.
+                                       // Obtain it once and reuse it.
+                                       // Process access_token
+                                       //NSLog(accessToken);
+                                       
+                                   }
+                                   else {
+                                       // Process error
+                                   }
+                               }];
+            
+        }
+    }
+    return shouldStartLoad;
+    
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+// MARK: UIWebViewDelegate protocol
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

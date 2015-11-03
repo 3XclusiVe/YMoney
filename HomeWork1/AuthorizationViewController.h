@@ -10,7 +10,7 @@
 
 @protocol ChildViewControllerDelegate;
 
-@interface AuthorizationViewController : UIViewController
+@interface AuthorizationViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, weak) id<ChildViewControllerDelegate> delegate;
 

@@ -208,11 +208,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZX-2p-oB6">
-                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-JQ-ih4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-JQ-ih4">
                                 <rect key="frame" x="225" y="285" width="150" height="30"/>
                                 <animations/>
                                 <state key="normal" title="authorization success"/>
@@ -221,13 +221,9 @@
                                     <segue destination="cxq-yR-zJp" kind="presentation" id="d3j-cl-Eew"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-xm-3Y6">
-                                <rect key="frame" x="234" y="325" width="132" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-xm-3Y6">
+                                <rect key="frame" x="234" y="285" width="132" height="30"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8Mk-JO-mI9"/>
-                                    <constraint firstAttribute="width" constant="150" id="dlV-Rj-W6N"/>
-                                </constraints>
                                 <state key="normal" title="authorization failed"/>
                                 <connections>
                                     <action selector="authorizationFailed:" destination="mbu-1n-TQv" eventType="touchUpInside" id="QFs-lx-ehH"/>
@@ -238,14 +234,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="kZX-2p-oB6" secondAttribute="trailing" id="0nq-r5-EXN"/>
-                            <constraint firstItem="ufL-JQ-ih4" firstAttribute="centerY" secondItem="HYd-sO-qie" secondAttribute="centerY" id="3VA-4D-4cG"/>
-                            <constraint firstItem="BHQ-17-l3N" firstAttribute="top" secondItem="kZX-2p-oB6" secondAttribute="bottom" id="CCr-CN-Gzi"/>
-                            <constraint firstItem="9gU-xm-3Y6" firstAttribute="top" secondItem="ufL-JQ-ih4" secondAttribute="bottom" constant="10" id="HL2-R8-OEs"/>
-                            <constraint firstItem="kZX-2p-oB6" firstAttribute="top" secondItem="PZD-gy-omz" secondAttribute="bottom" id="IlJ-Rm-Ezm"/>
-                            <constraint firstItem="9gU-xm-3Y6" firstAttribute="centerX" secondItem="HYd-sO-qie" secondAttribute="centerX" id="ML8-vD-aMW"/>
-                            <constraint firstItem="kZX-2p-oB6" firstAttribute="leading" secondItem="HYd-sO-qie" secondAttribute="leadingMargin" id="Pic-qY-ItA"/>
-                            <constraint firstItem="ufL-JQ-ih4" firstAttribute="centerX" secondItem="HYd-sO-qie" secondAttribute="centerX" id="mMq-cv-GXn"/>
+                            <constraint firstItem="kZX-2p-oB6" firstAttribute="top" secondItem="HYd-sO-qie" secondAttribute="topMargin" id="JpM-45-eKX"/>
+                            <constraint firstItem="BHQ-17-l3N" firstAttribute="top" secondItem="kZX-2p-oB6" secondAttribute="bottom" id="NeY-hn-fg8"/>
+                            <constraint firstItem="kZX-2p-oB6" firstAttribute="trailing" secondItem="HYd-sO-qie" secondAttribute="trailingMargin" id="OU2-W8-Ebi"/>
+                            <constraint firstItem="kZX-2p-oB6" firstAttribute="leading" secondItem="HYd-sO-qie" secondAttribute="leadingMargin" id="mm4-pp-XK6"/>
                         </constraints>
                     </view>
                     <connections>
