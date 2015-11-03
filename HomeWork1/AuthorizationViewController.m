@@ -10,6 +10,8 @@
 #import "YMAConstants.h"
 #import "YMAExternalPaymentSession.h"
 #import "YMAAPISession.h"
+#import "YMAAccountInfoResponse.h"
+#import "YMAAccountInfoRequest.h"
 
 @interface AuthorizationViewController ()
 
@@ -86,6 +88,30 @@ YMAAPISession *_session = nil;
                                        // Obtain it once and reuse it.
                                        // Process access_token
                                        //NSLog(accessToken);
+                                       
+                                       
+                                       //NSDictionary *paymentParameters = ... // depends on your implementation
+                                      // NSString *patternId = ... // depends on your implementation
+                                       //YMAPaymentRequest *request = [YMAPaymentRequest paymentWithPatternId:patternId paymentParameters:paymentParameters];
+                                       
+                                       YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
+                                       
+                                       // session  - instance of YMAAPISession class
+                                       // token    - access token
+                                       [_session performRequest:request token:accessToken completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                                           
+                                           //YMAPaymentResponse *paymentResponse = (YMAPaymentResponse *)response;
+                                           YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *)response;
+                                           
+                                           YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
+                                           
+                                           NSLog(info.balance);
+                                       }];
+                                       
+                                       
+                                       
+                                       
+                                       
                                        
                                    }
                                    else {
