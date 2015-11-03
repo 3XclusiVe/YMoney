@@ -71,6 +71,7 @@
 		CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* AuthorizationViewController.m */; };
 		CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* WalletViewController.m */; };
 		CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */; };
+		CEF700651BE9695D00980D2D /* KeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* KeyStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +234,8 @@
 		CED80BA31BDD05D600159505 /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationHistoryViewController.h; sourceTree = "<group>"; };
 		CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationHistoryViewController.m; sourceTree = "<group>"; };
+		CEF700631BE9695D00980D2D /* KeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyStorage.h; sourceTree = "<group>"; };
+		CEF700641BE9695D00980D2D /* KeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -681,6 +684,8 @@
 		CEE7F4E91BE5665800683229 /* Ifrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				CEF700631BE9695D00980D2D /* KeyStorage.h */,
+				CEF700641BE9695D00980D2D /* KeyStorage.m */,
 			);
 			name = Ifrastructure;
 			sourceTree = "<group>";
@@ -911,6 +916,7 @@
 				CEC381F91BE80B0200700DAF /* YMAPaymentRequest.m in Sources */,
 				CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */,
 				36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */,
+				CEF700651BE9695D00980D2D /* KeyStorage.m in Sources */,
 				CEC381ED1BE80B0200700DAF /* YMADigitalGoodsModel.m in Sources */,
 				CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */,
 				CEC382011BE80B0200700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,

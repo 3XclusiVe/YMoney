@@ -33,12 +33,15 @@ NSString *_redirectUri = @"http://ya.ru";
 //A list of requested permissions.
 NSString *_permissions = @"account-info operation-history";
 
+//Token
+NSString *_accessToken = nil;
+
 //Auth session
 YMAAPISession *_session = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _authorizationWebView.delegate = self;
 
     NSDictionary * additionalParameters = @{
@@ -49,80 +52,58 @@ YMAAPISession *_session = nil;
 
     _session = [[YMAAPISession alloc] init];
     NSURLRequest *authorizationRequest = [_session authorizationRequestWithClientId:_clientId
-                                                              additionalParameters:additionalParameters];
+                                                               additionalParameters:additionalParameters];
     [_authorizationWebView loadRequest:authorizationRequest];
+
+    NSLog(@"Loaded");
 
 }
 
 
 // MARK: UIWebViewDelegate protocol
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    
-    BOOL shouldStartLoad = YES;
+
+    BOOL shouldLoadPage = YES;
     NSMutableDictionary *authInfo = nil;
-    NSError *error = nil;
-    // session - instance of YMAAPISession class
+    NSError * error = nil;
+
     if ([_session isRequest:request
-                  toRedirectUrl:_redirectUri
-              authorizationInfo:&authInfo
-                          error:&error]) {
-        shouldStartLoad = NO;
+              toRedirectUrl:_redirectUri
+          authorizationInfo:&authInfo
+                      error:&error]) {
+        shouldLoadPage = NO;
+
         if (error == nil) {
-            NSString *authCode = authInfo[@"code"];
-            //Process temporary authorization code
-            //NSLog(authCode);
-            
-            NSDictionary *additionalParameters = @{
-                                                   @"grant_type"           : @"authorization_code", // Constant parameter
-                                                   YMAParameterRedirectUri : _redirectUri
-                                                   };
-            
-            // session  - instance of YMAAPISession class
-            // authCode - temporary authorization code
-            [_session receiveTokenWithCode:authCode
-                                 clientId: _clientId
-                     additionalParameters:additionalParameters
-                               completion:^(NSString *instanceId, NSError *error) {
-                                   if (error == nil && instanceId != nil && instanceId.length > 0) {
-                                       NSString *accessToken = instanceId; // Do NOT request access_token every time, when you need to call API method.
-                                       // Obtain it once and reuse it.
-                                       // Process access_token
-                                       //NSLog(accessToken);
-                                       
-                                       
-                                       //NSDictionary *paymentParameters = ... // depends on your implementation
-                                      // NSString *patternId = ... // depends on your implementation
-                                       //YMAPaymentRequest *request = [YMAPaymentRequest paymentWithPatternId:patternId paymentParameters:paymentParameters];
-                                       
-                                       YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
-                                       
-                                       // session  - instance of YMAAPISession class
-                                       // token    - access token
-                                       [_session performRequest:request token:accessToken completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
-                                           
-                                           //YMAPaymentResponse *paymentResponse = (YMAPaymentResponse *)response;
-                                           YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *)response;
-                                           
-                                           YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
-                                           
-                                           NSLog(info.balance);
-                                       }];
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                   }
-                                   else {
-                                       // Process error
-                                   }
-                               }];
-            
+            NSString * authCode = authInfo[@"code"];
+            [self getAccessTokenFor:authCode];
+        } else {
+            [self authorizationFailed:error];
         }
     }
-    return shouldStartLoad;
+    return shouldLoadPage;
+
+}
+
+- (void)getAccessTokenFor:(NSString *)authCode {
     
+    NSDictionary * additionalParameters = @{
+                                            @"grant_type" : @"authorization_code", // Constant parameter
+                                            YMAParameterRedirectUri : _redirectUri
+                                            };
+    
+    [_session receiveTokenWithCode:authCode
+                          clientId:_clientId
+              additionalParameters:additionalParameters
+                        completion:^(NSString *instanceId, NSError *error) {
+                            if (error == nil && instanceId != nil && instanceId.length > 0) {
+                                _accessToken = instanceId;
+                                [self performSegueWithIdentifier:@"LoginSuccess" sender:instanceId];
+                            } else {
+                                [self authorizationFailed:error];
+                                NSLog(@"error");
+                            }
+                        }];
+
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
@@ -147,6 +128,30 @@ YMAAPISession *_session = nil;
 - (IBAction)autorizationSuccess:(id)sender {
     NSLog(@"authorization success");
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"LoginSuccess"])
+    {
+        NSLog(_accessToken);
+        
+        YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
+        
+        [_session performRequest:request
+                           token:_accessToken
+                      completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                          
+                          YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *) response;
+                          
+                          YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
+                          
+                          NSLog(info.balance);
+                      }];
+    } else {
+
+    }
+}
+
 
 // Тестовое использование делегата.
 - (IBAction)authorizationFailed:(id)sender {

@@ -218,7 +218,7 @@
                                 <state key="normal" title="authorization success"/>
                                 <connections>
                                     <action selector="autorizationSuccess:" destination="mbu-1n-TQv" eventType="touchUpInside" id="Dms-LG-Su9"/>
-                                    <segue destination="cxq-yR-zJp" kind="presentation" id="d3j-cl-Eew"/>
+                                    <segue destination="cxq-yR-zJp" kind="presentation" identifier="LoginSuccess" id="d3j-cl-Eew"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-xm-3Y6">
