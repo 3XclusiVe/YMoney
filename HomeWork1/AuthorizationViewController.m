@@ -27,7 +27,7 @@
 @implementation AuthorizationViewController
 
 //My client id.
-NSString *_clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
+static const NSString *_clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
 //URI that the OAuth server sends the authorization result to.
 NSString *_redirectUri = @"http://ya.ru";
 //A list of requested permissions.
@@ -155,10 +155,9 @@ YMAAPISession *_session = nil;
 
 // Тестовое использование делегата.
 - (IBAction)authorizationFailed:(id)sender {
-    id <ChildViewControllerDelegate> strongDelegate = self.delegate;
-
-    if ([strongDelegate respondsToSelector:@selector(childViewController:didChooseValue:)]) {
-        [strongDelegate childViewController:self didChooseValue:5];
-    }
+    id <AuthorizationViewControllerDelegate> strongDelegate = self.delegate;
+    
+    [strongDelegate authorizationViewController:self
+                                 didChooseValue:5];
 }
 @end

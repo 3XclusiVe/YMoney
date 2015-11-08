@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol ChildViewControllerDelegate;
+@protocol AuthorizationViewControllerDelegate;
 
 @interface AuthorizationViewController : UIViewController <UIWebViewDelegate>
 
-@property (nonatomic, weak) id<ChildViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<AuthorizationViewControllerDelegate> delegate;
 
 @end
 
-@protocol ChildViewControllerDelegate <NSObject>
+@protocol AuthorizationViewControllerDelegate <NSObject>
 
-- (void)childViewController:(AuthorizationViewController*)viewController
-             didChooseValue:(CGFloat)value;
+- (void)authorizationViewController:(AuthorizationViewController*)viewController
+                     didChooseValue:(CGFloat)value;
 
 @end

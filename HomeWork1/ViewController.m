@@ -10,7 +10,9 @@
 #import "ViewController.h"
 #import "AuthorizationViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()  <AuthorizationViewControllerDelegate>
+
+- (void)authorizationViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value;
 
 @property (weak, nonatomic) IBOutlet UIButton *enterButton;
 
@@ -55,8 +57,8 @@
     //}
 }
 
-// Implement the delegate methods for ChildViewControllerDelegate
-- (void)childViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value {
+// Implement the delegate methods for AuthorizationViewControllerDelegate
+- (void)authorizationViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value {
     
     [self.enterButton setTitle:@"Попробовать войти еще раз" forState:UIControlStateNormal];
     
