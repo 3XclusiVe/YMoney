@@ -18,5 +18,5 @@
 /// @param длина currency должна быть больше нуля.
 /// @param count должно быть больше нуля.
 - (nonnull instancetype)initWithCashCount:(float)count
-                                 Currency:(nonnull NSString *)currency;
+                                 currency:(nonnull NSString *)currency;
 @end

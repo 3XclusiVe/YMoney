@@ -17,11 +17,11 @@
     return self;
 }
 
-- (void)addOperation:(YANCashOperation *)Operation {
+- (void)addOperation:(YANCashOperation *)operation {
 
-    POSRX_CHECK_EX(Operation != nil, @"отсутствует платежная операция");
-    
-    [_operations addObject:Operation];
+    POSRX_CHECK_EX(operation != nil, @"отсутствует платежная операция");
+
+    [_operations addObject:operation];
 }
 
 @end

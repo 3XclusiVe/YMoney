@@ -13,9 +13,9 @@
 }
 
 - (instancetype)initOperationWithDate:(nonnull NSDate *)operationDate
-                          Description:(nonnull NSString *)operationDescription
-                                 Cash:(nonnull YANCash *)operationSum
-                            Direction:(OperationDirection)operationDirection {
+                          description:(nonnull NSString *)operationDescription
+                                 cash:(nonnull YANCash *)operationSum
+                            direction:(OperationDirection)operationDirection {
     
     POSRX_CHECK_EX(operationDate != nil, @"отсутствует дата операции");
     

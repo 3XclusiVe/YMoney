@@ -47,10 +47,10 @@
 
 
     float badValue = -1;
-    XCTAssertThrows([[YANCash alloc] initWithCashCount:badValue Currency:@"Р"]);
+    XCTAssertThrows([[YANCash alloc] initWithCashCount:badValue currency:@"Р"]);
 
     NSString * badName = nil;
-    XCTAssertThrows([[YANCash alloc] initWithCashCount:5 Currency:badName]);
+    XCTAssertThrows([[YANCash alloc] initWithCashCount:5 currency:badName]);
 }
 
 - (void)testImpossibleToCreateNullBalance {
@@ -61,7 +61,7 @@
 
 - (void)testImpossibleToCreateNullCashOperation {
 
-    XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:nil Description:nil Cash:nil Direction:nil]);
+    XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:nil description:nil cash:nil direction:nil]);
     XCTAssertThrows([YANCashOperation new]);
 }
 
@@ -77,7 +77,7 @@
 - (void)testImpossibleToChangeCurrencyAfterInitialization {
 
     NSMutableString *evilName = [NSMutableString stringWithString:@"Р"];
-    YANCash *cash = [[YANCash alloc] initWithCashCount:100 Currency:evilName];
+    YANCash *cash = [[YANCash alloc] initWithCashCount:100 currency:evilName];
     [evilName setString:@"$"];
     XCTAssertEqualObjects(cash.currency, @"Р");
 

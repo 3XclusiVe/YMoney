@@ -11,7 +11,7 @@
 
 }
 - (instancetype)initWithCashCount:(float)count
-                         Currency:(NSString *)currency {
+                         currency:(nonnull NSString *)currency {
 
     POSRX_CHECK_EX(currency.length > 0, @"отсутствует название валюты");
 

@@ -12,5 +12,5 @@
 
 - (instancetype)init;
 
-- (void)addOperation:(YANCashOperation *)Operation;
+- (void)addOperation:(YANCashOperation *)operation;
 @end

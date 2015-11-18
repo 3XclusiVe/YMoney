@@ -29,7 +29,7 @@ typedef enum Direction {
 /// @brief Первичный инициализатор. Инициализатор "init" не поддерживатеся.
 /// @param аргументы не должны быть нулевыми.
 - (nonnull instancetype)initOperationWithDate:(nonnull NSDate *)operationDate
-                                  Description:(nonnull NSString *)operationDescription
-                                         Cash:(nonnull YANCash *)operationSum
-                                    Direction:(OperationDirection )operationDirection;
+                                  description:(nonnull NSString *)operationDescription
+                                         cash:(nonnull YANCash *)operationSum
+                                    direction:(OperationDirection )operationDirection;
 @end
