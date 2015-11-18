@@ -114,7 +114,7 @@
 
 /* Begin PBXFileReference section */
 		36EBC00AAA552839EF148BDD /* YMoney.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoney.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36EBC183AA92723E5DD7A881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HomeWork1/Info.plist; sourceTree = "<group>"; };
+		36EBC183AA92723E5DD7A881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36EBC21597D331BA35AC3424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36EBC24066A6F348A557D302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		36EBC46EB9D54C9037E90B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		36EBC7AB21378EEFB10EDA1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36EBC7C44C90513F55016D16 /* YMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EBC896DD3DB61BB53F1D76 /* YANBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANBalance.m; sourceTree = "<group>"; };
-		36EBC94E75F1C9321B0A11AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HomeWork1/Assets.xcassets; sourceTree = "<group>"; };
+		36EBC94E75F1C9321B0A11AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyUITests.m; sourceTree = "<group>"; };
 		36EBCA0F94697E72E920E80A /* YANCashOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANCashOperation.h; sourceTree = "<group>"; };
 		36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationHistory.h; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 			children = (
 				36EBC46EB9D54C9037E90B9F /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		36EBC7787EEB4DF81878A825 /* YMoneyUITests */ = {
@@ -295,19 +295,18 @@
 				36EBC24066A6F348A557D302 /* Info.plist */,
 				36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */,
 			);
-			name = YMoneyUITests;
-			path = HomeWork1UITests;
+			path = YMoneyUITests;
 			sourceTree = "<group>";
 		};
 		36EBCC89866B793A0110D134 = {
 			isa = PBXGroup;
 			children = (
 				CEE7F4DF1BE5631A00683229 /* InfoPlist */,
+				36EBC1C1A9A48AAAB8031E8E /* Products */,
 				CEE7F4E01BE5636500683229 /* Resources */,
 				36EBCDB4BD2F202B4AD3BF37 /* Sources */,
-				36EBC7787EEB4DF81878A825 /* YMoneyUITests */,
 				CE011B1C1BE56BE100D820A3 /* YMoneyTest */,
-				36EBC1C1A9A48AAAB8031E8E /* Products */,
+				36EBC7787EEB4DF81878A825 /* YMoneyUITests */,
 				CEC3812B1BE80B0200700DAF /* YandexMoneySdk */,
 			);
 			sourceTree = "<group>";
@@ -322,15 +321,14 @@
 				36EBCC836E1C6A99AB0643A2 /* AppDelegate.h */,
 				36EBCC604A86151F2B78B580 /* AppDelegate.m */,
 			);
-			name = Sources;
-			path = HomeWork1;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		36EBCF64167FF1DDB598E750 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				CEE7F4E81BE5661B00683229 /* Services */,
 				CEE7F4E71BE565DB00683229 /* Entities */,
+				CEE7F4E81BE5661B00683229 /* Services */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -338,8 +336,8 @@
 		CE011B1C1BE56BE100D820A3 /* YMoneyTest */ = {
 			isa = PBXGroup;
 			children = (
-				CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */,
 				CE011B1F1BE56BE100D820A3 /* Info.plist */,
+				CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */,
 			);
 			path = YMoneyTest;
 			sourceTree = "<group>";
@@ -348,10 +346,10 @@
 			isa = PBXGroup;
 			children = (
 				CEC3812C1BE80B0200700DAF /* Classes */,
-				CEC381D81BE80B0200700DAF /* LICENSE */,
 				CEC381DA1BE80B0200700DAF /* SupportingFiles */,
-				CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */,
+				CEC381D81BE80B0200700DAF /* LICENSE */,
 				CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */,
+				CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */,
 			);
 			path = YandexMoneySdk;
 			sourceTree = "<group>";
@@ -583,7 +581,7 @@
 			children = (
 				CEE7F4E11BE5642000683229 /* Presentation */,
 			);
-			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		CEE7F4DF1BE5631A00683229 /* InfoPlist */ = {
@@ -591,36 +589,36 @@
 			children = (
 				36EBC183AA92723E5DD7A881 /* Info.plist */,
 			);
-			name = InfoPlist;
+			path = InfoPlist;
 			sourceTree = "<group>";
 		};
 		CEE7F4E01BE5636500683229 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
-				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
 				36EBC94E75F1C9321B0A11AA /* Assets.xcassets */,
+				36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */,
+				36EBC657364FF8A1D94BACDD /* Main.storyboard */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CEE7F4E11BE5642000683229 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				CEE7F4E21BE5642900683229 /* LaunchPage */,
-				CEE7F4E41BE564AC00683229 /* StartPage */,
 				CEE7F4E31BE5646800683229 /* AuthorizationPage */,
+				CEE7F4E21BE5642900683229 /* LaunchPage */,
 				CEE7F4E61BE564CE00683229 /* OperationHistoryPage */,
+				CEE7F4E41BE564AC00683229 /* StartPage */,
 				CEE7F4E51BE564C200683229 /* WalletPage */,
 			);
-			name = Presentation;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		CEE7F4E21BE5642900683229 /* LaunchPage */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = LaunchPage;
+			path = LaunchPage;
 			sourceTree = "<group>";
 		};
 		CEE7F4E31BE5646800683229 /* AuthorizationPage */ = {
@@ -629,7 +627,7 @@
 				CED80B9F1BDD032500159505 /* AuthorizationViewController.h */,
 				CED80BA01BDD032500159505 /* AuthorizationViewController.m */,
 			);
-			name = AuthorizationPage;
+			path = AuthorizationPage;
 			sourceTree = "<group>";
 		};
 		CEE7F4E41BE564AC00683229 /* StartPage */ = {
@@ -638,7 +636,7 @@
 				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
 				36EBC21597D331BA35AC3424 /* ViewController.m */,
 			);
-			name = StartPage;
+			path = StartPage;
 			sourceTree = "<group>";
 		};
 		CEE7F4E51BE564C200683229 /* WalletPage */ = {
@@ -647,7 +645,7 @@
 				CED80BA21BDD05D600159505 /* WalletViewController.h */,
 				CED80BA31BDD05D600159505 /* WalletViewController.m */,
 			);
-			name = WalletPage;
+			path = WalletPage;
 			sourceTree = "<group>";
 		};
 		CEE7F4E61BE564CE00683229 /* OperationHistoryPage */ = {
@@ -656,29 +654,29 @@
 				CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */,
 				CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */,
 			);
-			name = OperationHistoryPage;
+			path = OperationHistoryPage;
 			sourceTree = "<group>";
 		};
 		CEE7F4E71BE565DB00683229 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				36EBCCC518EADF7505E3B087 /* YANCash.m */,
-				36EBCE60636C7417B7747425 /* YANCash.h */,
-				36EBC896DD3DB61BB53F1D76 /* YANBalance.m */,
 				36EBCE7ADB7F9D26CCE27571 /* YANBalance.h */,
-				36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */,
+				36EBC896DD3DB61BB53F1D76 /* YANBalance.m */,
+				36EBCE60636C7417B7747425 /* YANCash.h */,
+				36EBCCC518EADF7505E3B087 /* YANCash.m */,
 				36EBCA0F94697E72E920E80A /* YANCashOperation.h */,
+				36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */,
 			);
-			name = Entities;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		CEE7F4E81BE5661B00683229 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */,
 				36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */,
+				36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CEE7F4E91BE5665800683229 /* Ifrastructure */ = {
@@ -687,7 +685,7 @@
 				CEF700631BE9695D00980D2D /* KeyStorage.h */,
 				CEF700641BE9695D00980D2D /* KeyStorage.m */,
 			);
-			name = Ifrastructure;
+			path = Ifrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -773,6 +771,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DMA;
 				TargetAttributes = {
+					36EBCDB9B3A5AD0AA8AD9F1F = {
+						DevelopmentTeam = HHL7MPZ557;
+					};
 					CE011B1A1BE56BE100D820A3 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = HHL7MPZ557;
@@ -975,7 +976,7 @@
 				36EBC62C8ECD757606340326 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = HomeWork1;
+			path = .;
 			sourceTree = "<group>";
 		};
 		36EBC657364FF8A1D94BACDD /* Main.storyboard */ = {
@@ -984,7 +985,7 @@
 				36EBCC8E13ED1129E3BBBA13 /* Base */,
 			);
 			name = Main.storyboard;
-			path = HomeWork1;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -994,7 +995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HomeWork1.app/HomeWork1";
-				INFOPLIST_FILE = HomeWork1UITests/Info.plist;
+				INFOPLIST_FILE = YMoneyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1UITests;
 				PRODUCT_NAME = YMoney;
@@ -1006,10 +1007,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HomeWork1/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = InfoPlist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1;
 				PRODUCT_NAME = YMoney;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1017,10 +1022,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HomeWork1/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = InfoPlist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1;
 				PRODUCT_NAME = YMoney;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1120,7 +1129,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HomeWork1.app/HomeWork1";
-				INFOPLIST_FILE = HomeWork1UITests/Info.plist;
+				INFOPLIST_FILE = YMoneyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1UITests;
 				PRODUCT_NAME = YMoney;
