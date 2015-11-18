@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		36EBC0E5AFC696A4CD9BB7CB /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
 		36EBC2C9CD84E5A2FB92E97B /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
-		36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC21597D331BA35AC3424 /* ViewController.m */; };
+		36EBC2E520AE7E540AAD0202 /* YANStartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC21597D331BA35AC3424 /* YANStartPageViewController.m */; };
 		36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC657364FF8A1D94BACDD /* Main.storyboard */; };
-		36EBC5067916594F6FB51B84 /* YMoneyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */; };
+		36EBC5067916594F6FB51B84 /* YANYMoneyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC9F59BCAED305DC2C7C6 /* YANYMoneyUITests.m */; };
 		36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCCC518EADF7505E3B087 /* YANCash.m */; };
 		36EBC619A519F9AE23BEA870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC46EB9D54C9037E90B9F /* main.m */; };
 		36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */; };
-		36EBCCFC2EB1AEDB91E4B3BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCC604A86151F2B78B580 /* AppDelegate.m */; };
+		36EBCCFC2EB1AEDB91E4B3BB /* YANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCC604A86151F2B78B580 /* YANAppDelegate.m */; };
 		36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC94E75F1C9321B0A11AA /* Assets.xcassets */; };
 		36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36EBC0EBECF875FF0EC98DFB /* LaunchScreen.storyboard */; };
 		36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
@@ -74,10 +74,10 @@
 		CEC3822E1BE80B0200700DAF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CEC381D81BE80B0200700DAF /* LICENSE */; };
 		CEC382301BE80B0200700DAF /* ymcpssdk-os-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC381DC1BE80B0200700DAF /* ymcpssdk-os-Info.plist */; };
 		CEC382311BE80B0200700DAF /* YandexMoneySDKObjc.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */; };
-		CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* AuthorizationViewController.m */; };
-		CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* WalletViewController.m */; };
-		CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */; };
-		CEF700651BE9695D00980D2D /* KeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* KeyStorage.m */; };
+		CED80BA11BDD032500159505 /* YANAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* YANAuthorizationViewController.m */; };
+		CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* YANWalletViewController.m */; };
+		CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */; };
+		CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* YANKeyStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,20 +121,20 @@
 /* Begin PBXFileReference section */
 		36EBC00AAA552839EF148BDD /* YMoney.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoney.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EBC183AA92723E5DD7A881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36EBC21597D331BA35AC3424 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36EBC21597D331BA35AC3424 /* YANStartPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YANStartPageViewController.m; sourceTree = "<group>"; };
 		36EBC24066A6F348A557D302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		36EBC46EB9D54C9037E90B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36EBC62C8ECD757606340326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		36EBC7AB21378EEFB10EDA1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36EBC7AB21378EEFB10EDA1A /* YANStartPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YANStartPageViewController.h; sourceTree = "<group>"; };
 		36EBC7C44C90513F55016D16 /* YMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EBC896DD3DB61BB53F1D76 /* YANBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANBalance.m; sourceTree = "<group>"; };
 		36EBC94E75F1C9321B0A11AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyUITests.m; sourceTree = "<group>"; };
+		36EBC9F59BCAED305DC2C7C6 /* YANYMoneyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YANYMoneyUITests.m; sourceTree = "<group>"; };
 		36EBCA0F94697E72E920E80A /* YANCashOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANCashOperation.h; sourceTree = "<group>"; };
 		36EBCA9B8150B91B57AEEE23 /* YANOperationHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationHistory.h; sourceTree = "<group>"; };
 		36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANCashOperation.m; sourceTree = "<group>"; };
-		36EBCC604A86151F2B78B580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		36EBCC836E1C6A99AB0643A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36EBCC604A86151F2B78B580 /* YANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YANAppDelegate.m; sourceTree = "<group>"; };
+		36EBCC836E1C6A99AB0643A2 /* YANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YANAppDelegate.h; sourceTree = "<group>"; };
 		36EBCC8E13ED1129E3BBBA13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36EBCCC518EADF7505E3B087 /* YANCash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANCash.m; sourceTree = "<group>"; };
 		36EBCD4B3D6330D233FDA25B /* YANOperationHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationHistory.m; sourceTree = "<group>"; };
@@ -241,14 +241,14 @@
 		CEC381DD1BE80B0200700DAF /* ymcpssdk-os-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ymcpssdk-os-Prefix.pch"; sourceTree = "<group>"; };
 		CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "yandex-money-sdk-objc.xcodeproj"; sourceTree = "<group>"; };
 		CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YandexMoneySDKObjc.podspec; sourceTree = "<group>"; };
-		CED80B9F1BDD032500159505 /* AuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
-		CED80BA01BDD032500159505 /* AuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
-		CED80BA21BDD05D600159505 /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
-		CED80BA31BDD05D600159505 /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
-		CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationHistoryViewController.h; sourceTree = "<group>"; };
-		CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationHistoryViewController.m; sourceTree = "<group>"; };
-		CEF700631BE9695D00980D2D /* KeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyStorage.h; sourceTree = "<group>"; };
-		CEF700641BE9695D00980D2D /* KeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyStorage.m; sourceTree = "<group>"; };
+		CED80B9F1BDD032500159505 /* YANAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAuthorizationViewController.h; sourceTree = "<group>"; };
+		CED80BA01BDD032500159505 /* YANAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANAuthorizationViewController.m; sourceTree = "<group>"; };
+		CED80BA21BDD05D600159505 /* YANWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANWalletViewController.h; sourceTree = "<group>"; };
+		CED80BA31BDD05D600159505 /* YANWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANWalletViewController.m; sourceTree = "<group>"; };
+		CED80BA51BDD07AF00159505 /* YANOperationHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationHistoryViewController.h; sourceTree = "<group>"; };
+		CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationHistoryViewController.m; sourceTree = "<group>"; };
+		CEF700631BE9695D00980D2D /* YANKeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANKeyStorage.h; sourceTree = "<group>"; };
+		CEF700641BE9695D00980D2D /* YANKeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANKeyStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,7 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				36EBC24066A6F348A557D302 /* Info.plist */,
-				36EBC9F59BCAED305DC2C7C6 /* YMoneyUITests.m */,
+				36EBC9F59BCAED305DC2C7C6 /* YANYMoneyUITests.m */,
 			);
 			path = YMoneyUITests;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 				36EBCF64167FF1DDB598E750 /* Domain */,
 				CEE7F4E91BE5665800683229 /* Ifrastructure */,
 				36EBC267E661B0905C9A3749 /* Supporting Files */,
-				36EBCC836E1C6A99AB0643A2 /* AppDelegate.h */,
-				36EBCC604A86151F2B78B580 /* AppDelegate.m */,
+				36EBCC836E1C6A99AB0643A2 /* YANAppDelegate.h */,
+				36EBCC604A86151F2B78B580 /* YANAppDelegate.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -668,8 +668,8 @@
 		CEE7F4E31BE5646800683229 /* AuthorizationPage */ = {
 			isa = PBXGroup;
 			children = (
-				CED80B9F1BDD032500159505 /* AuthorizationViewController.h */,
-				CED80BA01BDD032500159505 /* AuthorizationViewController.m */,
+				CED80B9F1BDD032500159505 /* YANAuthorizationViewController.h */,
+				CED80BA01BDD032500159505 /* YANAuthorizationViewController.m */,
 			);
 			path = AuthorizationPage;
 			sourceTree = "<group>";
@@ -677,8 +677,8 @@
 		CEE7F4E41BE564AC00683229 /* StartPage */ = {
 			isa = PBXGroup;
 			children = (
-				36EBC7AB21378EEFB10EDA1A /* ViewController.h */,
-				36EBC21597D331BA35AC3424 /* ViewController.m */,
+				36EBC7AB21378EEFB10EDA1A /* YANStartPageViewController.h */,
+				36EBC21597D331BA35AC3424 /* YANStartPageViewController.m */,
 			);
 			path = StartPage;
 			sourceTree = "<group>";
@@ -686,8 +686,8 @@
 		CEE7F4E51BE564C200683229 /* WalletPage */ = {
 			isa = PBXGroup;
 			children = (
-				CED80BA21BDD05D600159505 /* WalletViewController.h */,
-				CED80BA31BDD05D600159505 /* WalletViewController.m */,
+				CED80BA21BDD05D600159505 /* YANWalletViewController.h */,
+				CED80BA31BDD05D600159505 /* YANWalletViewController.m */,
 			);
 			path = WalletPage;
 			sourceTree = "<group>";
@@ -695,8 +695,8 @@
 		CEE7F4E61BE564CE00683229 /* OperationHistoryPage */ = {
 			isa = PBXGroup;
 			children = (
-				CED80BA51BDD07AF00159505 /* OperationHistoryViewController.h */,
-				CED80BA61BDD07AF00159505 /* OperationHistoryViewController.m */,
+				CED80BA51BDD07AF00159505 /* YANOperationHistoryViewController.h */,
+				CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */,
 			);
 			path = OperationHistoryPage;
 			sourceTree = "<group>";
@@ -726,8 +726,8 @@
 		CEE7F4E91BE5665800683229 /* Ifrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				CEF700631BE9695D00980D2D /* KeyStorage.h */,
-				CEF700641BE9695D00980D2D /* KeyStorage.m */,
+				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
+				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
 			);
 			path = Ifrastructure;
 			sourceTree = "<group>";
@@ -914,7 +914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EBC5067916594F6FB51B84 /* YMoneyUITests.m in Sources */,
+				36EBC5067916594F6FB51B84 /* YANYMoneyUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +937,7 @@
 				CEC381F41BE80B0200700DAF /* YMAOperationDetailsRequest.m in Sources */,
 				CEC381F61BE80B0200700DAF /* YMAProcessExternalPaymentRequest.m in Sources */,
 				CEC381E51BE80B0200700DAF /* YMAHistoryOperationModel.m in Sources */,
-				CED80BA11BDD032500159505 /* AuthorizationViewController.m in Sources */,
+				CED80BA11BDD032500159505 /* YANAuthorizationViewController.m in Sources */,
 				36EBC619A519F9AE23BEA870 /* main.m in Sources */,
 				CEC381FF1BE80B0200700DAF /* YMAExternalPaymentResponse.m in Sources */,
 				CEC381F21BE80B0200700DAF /* YMAChangeAvatarRequest.m in Sources */,
@@ -949,9 +949,9 @@
 				CEC382061BE80B0200700DAF /* YMAAPISession.m in Sources */,
 				CEC381E41BE80B0200700DAF /* YMABalanceDetailsModel.m in Sources */,
 				CEC381EB1BE80B0200700DAF /* YMAWalletSourceGroupModel.m in Sources */,
-				36EBCCFC2EB1AEDB91E4B3BB /* AppDelegate.m in Sources */,
+				36EBCCFC2EB1AEDB91E4B3BB /* YANAppDelegate.m in Sources */,
 				CEC382021BE80B0200700DAF /* YMAPaymentResponse.m in Sources */,
-				CED80BA41BDD05D600159505 /* WalletViewController.m in Sources */,
+				CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */,
 				CEA4746E1BFCE22B0073960E /* NSException+POSRx.m in Sources */,
 				CEC382091BE80B0200700DAF /* YMAConnection.m in Sources */,
 				CEC382001BE80B0200700DAF /* YMAProcessExternalPaymentResponse.m in Sources */,
@@ -959,14 +959,14 @@
 				CEC381EA1BE80B0200700DAF /* YMAMoneySourcesModel.m in Sources */,
 				CEC381F71BE80B0200700DAF /* YMAIncomingTransferAcceptRequest.m in Sources */,
 				CEC382041BE80B0200700DAF /* YMABaseProcessResponse.m in Sources */,
-				36EBC2E520AE7E540AAD0202 /* ViewController.m in Sources */,
+				36EBC2E520AE7E540AAD0202 /* YANStartPageViewController.m in Sources */,
 				36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */,
 				CEC381E81BE80B0200700DAF /* YMACardsSourceGroupModel.m in Sources */,
 				CEC3820B1BE80B0200700DAF /* YMAHostsProvider.m in Sources */,
 				CEC381F91BE80B0200700DAF /* YMAPaymentRequest.m in Sources */,
-				CED80BA71BDD07AF00159505 /* OperationHistoryViewController.m in Sources */,
+				CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */,
 				36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */,
-				CEF700651BE9695D00980D2D /* KeyStorage.m in Sources */,
+				CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */,
 				CEC381ED1BE80B0200700DAF /* YMADigitalGoodsModel.m in Sources */,
 				CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */,
 				CEC382011BE80B0200700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,

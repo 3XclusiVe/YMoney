@@ -11,12 +11,13 @@
 #import "YANBalance.h"
 #import "YANCashOperation.h"
 #import "YANOperationHistory.h"
+#import "YANKeyStorage.h"
 
-@interface YMoneyTests : XCTestCase
+@interface YANYMoneyTests : XCTestCase
 
 @end
 
-@implementation YMoneyTests
+@implementation YANYMoneyTests
 
 - (void)setUp {
     [super setUp];
@@ -41,43 +42,61 @@
 }
 
 - (void)testImpossibleToCreateNUllCash {
-    
+
     XCTAssertThrows([YANCash init]);
-    
-    
+
+
     float badValue = -1;
     XCTAssertThrows([[YANCash alloc] initWithCashCount:badValue Currency:@"Р"]);
-    
+
     NSString * badName = nil;
     XCTAssertThrows([[YANCash alloc] initWithCashCount:5 Currency:badName]);
 }
 
--(void) testImpossibleToCreateNullBalance {
+- (void)testImpossibleToCreateNullBalance {
     YANCash *badCash = nil;
     XCTAssertThrows([[YANBalance alloc] initWithCash:badCash]);
     XCTAssertThrows([[YANBalance alloc] init]);
 }
 
--(void) testImpossibleToCreateNullCashOperation {
-    
+- (void)testImpossibleToCreateNullCashOperation {
+
     XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:nil Description:nil Cash:nil Direction:nil]);
     XCTAssertThrows([YANCashOperation new]);
 }
 
--(void) testImpossibleToAddNUllOperation {
-    
+- (void)testImpossibleToAddNUllOperation {
+
     YANOperationHistory *history = [YANOperationHistory new];
     YANCashOperation *badoperation = nil;
-    
+
     XCTAssertThrows([history addOperation:badoperation]);
-    
+
 }
--(void) testImpossibleToChangeCurrencyAfterInitialization {
-    
+
+- (void)testImpossibleToChangeCurrencyAfterInitialization {
+
     NSMutableString *evilName = [NSMutableString stringWithString:@"Р"];
     YANCash *cash = [[YANCash alloc] initWithCashCount:100 Currency:evilName];
     [evilName setString:@"$"];
     XCTAssertEqualObjects(cash.currency, @"Р");
-    
+
+}
+
+/**
+ * KEY Storage Test
+ */
+
+- (void)unnableToCreateNullKeyStorage {
+
+    NSMutableString *evilName = [NSMutableString stringWithString:@"Р"];
+
+    XCTAssertThrows([[YANKeyStorage alloc] init]);
+    XCTAssertThrows([[YANKeyStorage alloc] initWithAccessToken:nil]);
+    YANKeyStorage *yanKeyStorage = [[YANKeyStorage alloc]
+            initWithAccessToken:evilName];
+    [evilName setString:@"$"];
+    XCTAssertEqualObjects(yanKeyStorage.accessToken, @"Р");
+
 }
 @end

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  YANAppDelegate.m
 //  HomeWork1
 //
 //  Created by Дмитрий on 12.10.15.
@@ -7,14 +7,14 @@
 //
 
 
-#import "AppDelegate.h"
+#import "YANAppDelegate.h"
 
 
-@interface AppDelegate ()
+@interface YANAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation YANAppDelegate
 
 
 

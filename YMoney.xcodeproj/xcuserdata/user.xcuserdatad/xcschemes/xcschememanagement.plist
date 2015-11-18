@@ -9,7 +9,7 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>-[YMoneyTests testImpossibleToCreateNullBalance].xcscheme</key>
+		<key>-[YANYMoneyTests testImpossibleToCreateNullBalance].xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>

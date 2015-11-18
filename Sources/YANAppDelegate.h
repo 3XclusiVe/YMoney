@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YANAppDelegate.h
 //  HomeWork1
 //
 //  Created by Дмитрий on 12.10.15.
@@ -9,9 +9,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class AuthorizationViewController;
 
-@interface ViewController : UIViewController
+@interface YANAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end

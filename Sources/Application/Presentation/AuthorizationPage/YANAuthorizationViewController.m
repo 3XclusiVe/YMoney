@@ -1,19 +1,19 @@
 //
-//  AuthorizationViewController.m
+//  YANAuthorizationViewController.m
 //  YMoney
 //
 //  Created by Дмитрий on 25.10.15.
 //  Copyright © 2015 DMA. All rights reserved.
 //
 
-#import "AuthorizationViewController.h"
+#import "YANAuthorizationViewController.h"
 #import "YMAConstants.h"
 #import "YMAExternalPaymentSession.h"
 #import "YMAAPISession.h"
 #import "YMAAccountInfoResponse.h"
 #import "YMAAccountInfoRequest.h"
 
-@interface AuthorizationViewController ()
+@interface YANAuthorizationViewController ()
 
 - (IBAction)autorizationSuccess:(id)sender;
 
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation AuthorizationViewController
+@implementation YANAuthorizationViewController
 
 //My client id.
 static const NSString *_clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";

@@ -26,7 +26,7 @@
         <!--View Controller-->
         <scene sceneID="Qag-p8-TaJ">
             <objects>
-                <viewController id="BWk-aG-4OO" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BWk-aG-4OO" customClass="YANStartPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dHR-hv-Dmg"/>
                         <viewControllerLayoutGuide type="bottom" id="e9I-E3-FQy"/>
@@ -84,7 +84,7 @@
         <!--История платежей-->
         <scene sceneID="aAT-6q-xwc">
             <objects>
-                <viewController id="QEb-c0-M8l" customClass="OperationHistoryViewController" sceneMemberID="viewController">
+                <viewController id="QEb-c0-M8l" customClass="YANOperationHistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="44m-Sy-79a"/>
                         <viewControllerLayoutGuide type="bottom" id="sVB-y4-NWz"/>
@@ -133,7 +133,7 @@
         <!--Кошелек-->
         <scene sceneID="Crk-In-Gjx">
             <objects>
-                <viewController id="any-eg-bTC" customClass="WalletViewController" sceneMemberID="viewController">
+                <viewController id="any-eg-bTC" customClass="YANWalletViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OiP-15-b55"/>
                         <viewControllerLayoutGuide type="bottom" id="uah-aS-jbB"/>
@@ -199,7 +199,7 @@
         <!--Authorization View Controller-->
         <scene sceneID="zwj-7u-Kyt">
             <objects>
-                <viewController id="mbu-1n-TQv" customClass="AuthorizationViewController" sceneMemberID="viewController">
+                <viewController id="mbu-1n-TQv" customClass="YANAuthorizationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZD-gy-omz"/>
                         <viewControllerLayoutGuide type="bottom" id="BHQ-17-l3N"/>

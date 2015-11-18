@@ -1,5 +1,5 @@
 //
-//  WalletViewController.h
+//  YANOperationHistoryViewController.h
 //  YMoney
 //
 //  Created by Дмитрий on 25.10.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WalletViewController : UIViewController
-
-
+@interface YANOperationHistoryViewController : UIViewController
 
 @end

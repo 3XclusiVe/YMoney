@@ -1,5 +1,5 @@
 //
-//  KeyStorage.h
+//  YANKeyStorage.h
 //  YMoney
 //
 //  Created by Дмитрий on 04.11.15.
@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KeyStorage : NSObject
+@interface YANKeyStorage : NSObject
 
 @property(nonatomic, nonnull, readonly) NSString *accessToken;
+
+- (instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
 
 @end
 

@@ -13,16 +13,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Resources/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/AppDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/AppDelegate.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/AuthorizationViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/AuthorizationViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/OperationHistoryViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/OperationHistoryViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/ViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/ViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/WalletViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/WalletViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCash.h" isTestSource="false" />
@@ -31,13 +31,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCashOperation.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStorage.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStorage.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Supporting Files/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyTest/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyTest/YMoneyTest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/YMoneyUITests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/YANYMoneyUITests.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAvatarModel.h" isTestSource="false" />

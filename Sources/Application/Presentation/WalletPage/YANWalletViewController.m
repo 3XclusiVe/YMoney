@@ -1,21 +1,24 @@
 //
-//  OperationHistoryViewController.m
+//  YANWalletViewController.m
 //  YMoney
 //
 //  Created by Дмитрий on 25.10.15.
 //  Copyright © 2015 DMA. All rights reserved.
 //
 
-#import "OperationHistoryViewController.h"
+#import "YANWalletViewController.h"
 
-@interface OperationHistoryViewController ()
+@interface YANWalletViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *operationHistory;
-@property (weak, nonatomic) IBOutlet UITabBarItem *operationHistoryButton;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
+
+@property (weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
 @end
 
-@implementation OperationHistoryViewController
+@implementation YANWalletViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

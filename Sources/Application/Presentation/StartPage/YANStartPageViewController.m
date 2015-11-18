@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  YANStartPageViewController.m
 //  HomeWork1
 //
 //  Created by Дмитрий on 12.10.15.
@@ -7,12 +7,12 @@
 //
 
 
-#import "ViewController.h"
-#import "AuthorizationViewController.h"
+#import "YANStartPageViewController.h"
+#import "YANAuthorizationViewController.h"
 
-@interface ViewController ()  <AuthorizationViewControllerDelegate>
+@interface YANStartPageViewController ()  <AuthorizationViewControllerDelegate>
 
-- (void)authorizationViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value;
+- (void)authorizationViewController:(YANAuthorizationViewController *)viewController didChooseValue:(CGFloat)value;
 
 @property (weak, nonatomic) IBOutlet UIButton *enterButton;
 
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation ViewController
+@implementation YANStartPageViewController
 
 
 - (void)viewDidLoad {
@@ -50,7 +50,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //if([segue.identifier isEqualToString:@"shwAuthorizationView"]){
     
-        AuthorizationViewController *controller = segue.destinationViewController;
+        YANAuthorizationViewController *controller = segue.destinationViewController;
         
         controller.delegate = self;
 
@@ -58,7 +58,7 @@
 }
 
 // Implement the delegate methods for AuthorizationViewControllerDelegate
-- (void)authorizationViewController:(AuthorizationViewController *)viewController didChooseValue:(CGFloat)value {
+- (void)authorizationViewController:(YANAuthorizationViewController *)viewController didChooseValue:(CGFloat)value {
     
     [self.enterButton setTitle:@"Попробовать войти еще раз" forState:UIControlStateNormal];
     

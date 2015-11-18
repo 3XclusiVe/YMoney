@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface YMoneyUITests : XCTestCase
+@interface YANYMoneyUITests : XCTestCase
 
 @end
 
-@implementation YMoneyUITests
+@implementation YANYMoneyUITests
 
 - (void)setUp {
     [super setUp];

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  YANStartPageViewController.h
 //  HomeWork1
 //
 //  Created by Дмитрий on 12.10.15.
@@ -9,10 +9,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class YANAuthorizationViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface YANStartPageViewController : UIViewController
 
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AuthorizationViewController.h
+//  YANAuthorizationViewController.h
 //  YMoney
 //
 //  Created by Дмитрий on 25.10.15.
@@ -10,7 +10,7 @@
 
 @protocol AuthorizationViewControllerDelegate;
 
-@interface AuthorizationViewController : UIViewController <UIWebViewDelegate>
+@interface YANAuthorizationViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, weak) id<AuthorizationViewControllerDelegate> delegate;
 
@@ -18,7 +18,7 @@
 
 @protocol AuthorizationViewControllerDelegate <NSObject>
 
-- (void)authorizationViewController:(AuthorizationViewController*)viewController
+- (void)authorizationViewController:(YANAuthorizationViewController *)viewController
                      didChooseValue:(CGFloat)value;
 
 @end

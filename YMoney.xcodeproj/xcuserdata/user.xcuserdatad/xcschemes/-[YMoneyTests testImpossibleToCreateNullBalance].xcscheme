@@ -10,7 +10,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36EBCF25253588D21457D3BE"
                BuildableName = "YMoney.xctest"
-               BlueprintName = "YMoneyTests"
+               BlueprintName = "YANYMoneyTests"
                ReferencedContainer = "container:YMoney.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -24,27 +24,27 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36EBCF25253588D21457D3BE"
                BuildableName = "YMoney.xctest"
-               BlueprintName = "YMoneyTests"
+               BlueprintName = "YANYMoneyTests"
                ReferencedContainer = "container:YMoney.xcodeproj">
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "YMoneyTests/testExample">
+                  Identifier = "YANYMoneyTests/testExample">
                </Test>
                <Test
-                  Identifier = "YMoneyTests/testImpossibleToAddNUllOperation">
+                  Identifier = "YANYMoneyTests/testImpossibleToAddNUllOperation">
                </Test>
                <Test
-                  Identifier = "YMoneyTests/testImpossibleToChangeCurrencyAfterInitialization">
+                  Identifier = "YANYMoneyTests/testImpossibleToChangeCurrencyAfterInitialization">
                </Test>
                <Test
-                  Identifier = "YMoneyTests/testImpossibleToCreateNUllCash">
+                  Identifier = "YANYMoneyTests/testImpossibleToCreateNUllCash">
                </Test>
                <Test
-                  Identifier = "YMoneyTests/testImpossibleToCreateNullCashOperation">
+                  Identifier = "YANYMoneyTests/testImpossibleToCreateNullCashOperation">
                </Test>
                <Test
-                  Identifier = "YMoneyTests/testPerformanceExample">
+                  Identifier = "YANYMoneyTests/testPerformanceExample">
                </Test>
             </SkippedTests>
          </TestableReference>

@@ -8,7 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import "YANAppDelegate.h"
 #import "YANCash.h"
 #import "YANBalance.h"
 #import "YANCashOperation.h"
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass
-                ([AppDelegate class]));
+                ([YANAppDelegate class]));
     }
     /*YANBalance *balance = [[YANBalance alloc] init];
 
