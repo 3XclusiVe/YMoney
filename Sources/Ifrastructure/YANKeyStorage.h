@@ -12,7 +12,7 @@
 
 @property(nonatomic, nonnull, readonly) NSString *accessToken;
 
-- (instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
+- (nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
 
 @end
 

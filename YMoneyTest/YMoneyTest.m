@@ -61,7 +61,11 @@
 
 - (void)testImpossibleToCreateNullCashOperation {
 
-    XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:nil description:nil cash:nil direction:nil]);
+    NSDate *badDate = nil;
+    NSString *badDescription = nil;
+    YANCash *cash = nil;
+    
+    XCTAssertThrows([[YANCashOperation alloc] initOperationWithDate:badDate description:badDescription cash:cash direction:1]);
     XCTAssertThrows([YANCashOperation new]);
 }
 
@@ -90,9 +94,10 @@
 - (void)unnableToCreateNullKeyStorage {
 
     NSMutableString *evilName = [NSMutableString stringWithString:@"Р"];
+    NSString *badtocken = nil;
 
     XCTAssertThrows([[YANKeyStorage alloc] init]);
-    XCTAssertThrows([[YANKeyStorage alloc] initWithAccessToken:nil]);
+    XCTAssertThrows([[YANKeyStorage alloc] initWithAccessToken:badtocken]);
     YANKeyStorage *yanKeyStorage = [[YANKeyStorage alloc]
             initWithAccessToken:evilName];
     [evilName setString:@"$"];

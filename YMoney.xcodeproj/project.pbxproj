@@ -23,12 +23,7 @@
 		CE011B151BE56B8C00D820A3 /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
 		CE011B161BE56B9000D820A3 /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
 		CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */; };
-		CEA474551BFCE22B0073960E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEA474021BFCE22B0073960E /* .gitignore */; };
-		CEA474561BFCE22B0073960E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CEA474031BFCE22B0073960E /* LICENSE */; };
-		CEA474571BFCE22B0073960E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CEA474041BFCE22B0073960E /* Podfile */; };
 		CEA4746E1BFCE22B0073960E /* NSException+POSRx.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA474411BFCE22B0073960E /* NSException+POSRx.m */; };
-		CEA4746F1BFCE22B0073960E /* POSRx.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CEA474431BFCE22B0073960E /* POSRx.podspec */; };
-		CEA474791BFCE22B0073960E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEA474541BFCE22B0073960E /* README.md */; };
 		CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC381301BE80B0200700DAF /* YMAAccountInfoModel.m */; };
 		CEC381E31BE80B0200700DAF /* YMAAvatarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC381321BE80B0200700DAF /* YMAAvatarModel.m */; };
 		CEC381E41BE80B0200700DAF /* YMABalanceDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC381341BE80B0200700DAF /* YMABalanceDetailsModel.m */; };
@@ -71,9 +66,6 @@
 		CEC382091BE80B0200700DAF /* YMAConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3818A1BE80B0200700DAF /* YMAConnection.m */; };
 		CEC3820A1BE80B0200700DAF /* YMAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3818C1BE80B0200700DAF /* YMAConstants.m */; };
 		CEC3820B1BE80B0200700DAF /* YMAHostsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3818E1BE80B0200700DAF /* YMAHostsProvider.m */; };
-		CEC3822E1BE80B0200700DAF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CEC381D81BE80B0200700DAF /* LICENSE */; };
-		CEC382301BE80B0200700DAF /* ymcpssdk-os-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC381DC1BE80B0200700DAF /* ymcpssdk-os-Info.plist */; };
-		CEC382311BE80B0200700DAF /* YandexMoneySDKObjc.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */; };
 		CED80BA11BDD032500159505 /* YANAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA01BDD032500159505 /* YANAuthorizationViewController.m */; };
 		CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* YANWalletViewController.m */; };
 		CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */; };
@@ -150,7 +142,6 @@
 		CEA474401BFCE22B0073960E /* NSException+POSRx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+POSRx.h"; sourceTree = "<group>"; };
 		CEA474411BFCE22B0073960E /* NSException+POSRx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+POSRx.m"; sourceTree = "<group>"; };
 		CEA474431BFCE22B0073960E /* POSRx.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = POSRx.podspec; sourceTree = "<group>"; };
-		CEA474541BFCE22B0073960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEC3812F1BE80B0200700DAF /* YMAAccountInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAAccountInfoModel.h; sourceTree = "<group>"; };
 		CEC381301BE80B0200700DAF /* YMAAccountInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAAccountInfoModel.m; sourceTree = "<group>"; };
 		CEC381311BE80B0200700DAF /* YMAAvatarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAAvatarModel.h; sourceTree = "<group>"; };
@@ -364,7 +355,6 @@
 				CEA474041BFCE22B0073960E /* Podfile */,
 				CEA474051BFCE22B0073960E /* POSRx */,
 				CEA474431BFCE22B0073960E /* POSRx.podspec */,
-				CEA474541BFCE22B0073960E /* README.md */,
 			);
 			path = "POSRx-master";
 			sourceTree = SOURCE_ROOT;
@@ -887,14 +877,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC382301BE80B0200700DAF /* ymcpssdk-os-Info.plist in Resources */,
-				CEA4746F1BFCE22B0073960E /* POSRx.podspec in Resources */,
-				CEA474551BFCE22B0073960E /* .gitignore in Resources */,
-				CEA474561BFCE22B0073960E /* LICENSE in Resources */,
-				CEC382311BE80B0200700DAF /* YandexMoneySDKObjc.podspec in Resources */,
-				CEC3822E1BE80B0200700DAF /* LICENSE in Resources */,
 				36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */,
-				CEA474571BFCE22B0073960E /* Podfile in Resources */,
 				36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */,
 				36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */,
 			);
@@ -970,7 +953,6 @@
 				CEC381ED1BE80B0200700DAF /* YMADigitalGoodsModel.m in Sources */,
 				CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */,
 				CEC382011BE80B0200700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,
-				CEA474791BFCE22B0073960E /* README.md in Sources */,
 				CEC3820A1BE80B0200700DAF /* YMAConstants.m in Sources */,
 				CEC382071BE80B0200700DAF /* YMABaseSession.m in Sources */,
 				CEC381F31BE80B0200700DAF /* YMAHistoryOperationsRequest.m in Sources */,

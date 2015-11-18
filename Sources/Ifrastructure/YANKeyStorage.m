@@ -11,7 +11,7 @@
 
 @implementation YANKeyStorage
 
-- (instancetype)initWithAccessToken:(nonnull NSString *)accessToken {
+- (nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken {
 
     POSRX_CHECK_EX(accessToken.length > 0, @"отсутствует  токен");
 

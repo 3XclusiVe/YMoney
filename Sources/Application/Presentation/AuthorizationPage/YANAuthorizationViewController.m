@@ -27,11 +27,11 @@
 @implementation YANAuthorizationViewController
 
 //My client id.
-static const NSString *_clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
+static NSString *const _clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
 //URI that the OAuth server sends the authorization result to.
-NSString *_redirectUri = @"http://ya.ru";
+static NSString *const _redirectUri = @"http://ya.ru";
 //A list of requested permissions.
-NSString *_permissions = @"account-info operation-history";
+static NSString *const _permissions = @"account-info operation-history";
 
 //Token
 NSString *_accessToken = nil;
