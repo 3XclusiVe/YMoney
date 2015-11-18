@@ -4,6 +4,7 @@
 //
 
 #import "YANOperationHistory.h"
+#import "NSException+POSRx.h"
 
 
 @implementation YANOperationHistory {
@@ -18,12 +19,8 @@
 
 - (void)addOperation:(YANCashOperation *)Operation {
 
-    if (Operation == nil) {
-        @throw [NSException
-                exceptionWithName:NSInternalInconsistencyException
-                           reason:@"precondition failed"
-                         userInfo:nil];
-    }
+    POSRX_CHECK_EX(Operation != nil, @"отсутствует платежная операция");
+    
     [_operations addObject:Operation];
 }
 

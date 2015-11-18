@@ -5,6 +5,7 @@
 
 #import "YANCashOperation.h"
 #import "YANCash.h"
+#import "NSException+POSRx.h"
 
 
 @implementation YANCashOperation {
@@ -15,14 +16,13 @@
                           Description:(nonnull NSString *)operationDescription
                                  Cash:(nonnull YANCash *)operationSum
                             Direction:(OperationDirection)operationDirection {
-
-    if ((operationDate == nil) || (operationDescription == nil) ||
-            (operationSum == nil)) {
-        @throw [NSException
-                exceptionWithName:NSInternalInconsistencyException
-                           reason:@"precondition failed"
-                         userInfo:nil];
-    }
+    
+    POSRX_CHECK_EX(operationDate != nil, @"отсутствует дата операции");
+    
+    POSRX_CHECK_EX(operationDescription != nil, @"отсутствует описание операции");
+    
+    POSRX_CHECK_EX(operationSum != nil, @"отсутствует сумма операции");
+    
     if (self = [super init]) {
         _operationDate = [operationDate copy];
         _operationDescription = [operationDescription copy];
@@ -33,12 +33,6 @@
     return self;
 }
 
-- (instancetype)init {
-    @throw [NSException
-            exceptionWithName:NSInternalInconsistencyException
-                       reason:@"deadly init"
-                     userInfo:nil];
-    return nil;
-}
+POSRX_DEADLY_INITIALIZER(init);
 
 @end

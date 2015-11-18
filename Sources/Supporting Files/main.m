@@ -16,8 +16,10 @@
 
 
 int main(int argc, char *argv[]) {
+
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass
+                ([AppDelegate class]));
     }
     /*YANBalance *balance = [[YANBalance alloc] init];
 
@@ -40,4 +42,8 @@ int main(int argc, char *argv[]) {
                         Direction:nil];
 
     NSLog(@"%i", operationDirection == NULL);   */
+
+
+
+
 }

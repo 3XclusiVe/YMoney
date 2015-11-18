@@ -4,6 +4,7 @@
 //
 
 #import "YANCash.h"
+#import "NSException+POSRx.h"
 
 
 @implementation YANCash {
@@ -12,21 +13,10 @@
 - (instancetype)initWithCashCount:(float)count
                          Currency:(NSString *)currency {
 
-    /// Обязательно должно присутствовать название валюты.
-    if (!(currency.length > 0)) {
-        @throw [NSException
-                exceptionWithName:NSInternalInconsistencyException
-                           reason:@"precondition failed"
-                         userInfo:nil];
-    }
+    POSRX_CHECK_EX(currency.length > 0, @"отсутствует название валюты");
 
-    /// Количесвто валюты не может быть отрицательным.
-    if (count < 0) {
-        @throw [NSException
-                exceptionWithName:NSInternalInconsistencyException
-                           reason:@"precondition failed"
-                         userInfo:nil];
-    }
+    POSRX_CHECK(count >= 0);
+    
     if (self = [super init]) {
         _count = count;
         _currency = [currency copy];
@@ -34,12 +24,6 @@
     return self;
 }
 
-- (instancetype)init {
-    @throw [NSException
-            exceptionWithName:NSInternalInconsistencyException
-                       reason:@"deadly init"
-                     userInfo:nil];
-    return nil;
-}
+POSRX_DEADLY_INITIALIZER(init);
 
 @end

@@ -42,7 +42,7 @@
 
 - (void)testImpossibleToCreateNUllCash {
     
-    XCTAssertThrows([YANCash new]);
+    XCTAssertThrows([YANCash init]);
     
     
     float badValue = -1;

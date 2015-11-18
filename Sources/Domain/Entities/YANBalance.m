@@ -5,30 +5,22 @@
 
 #import "YANBalance.h"
 #import "YANCash.h"
+#import "NSException+POSRx.h"
 
 
 @implementation YANBalance {
 
 }
 - (instancetype)initWithCash:(YANCash *)startCash {
-    if (startCash == nil) {
-        @throw [NSException
-                exceptionWithName:NSInternalInconsistencyException
-                           reason:@"precondition failed"
-                         userInfo:nil];
-    }
+    
+    POSRX_CHECK_EX(startCash != nil, @"отсутствует значение баланса");
+    
     if (self = [super init]) {
         _currentBalance = startCash;
     }
     return self;
 }
 
-- (instancetype)init {
-    @throw [NSException
-            exceptionWithName:NSInternalInconsistencyException
-            reason:@"deadly init"
-            userInfo:nil];
-    return nil;
-}
+POSRX_DEADLY_INITIALIZER(init);
 
 @end
