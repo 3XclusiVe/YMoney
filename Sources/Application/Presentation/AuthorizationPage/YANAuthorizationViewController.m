@@ -24,11 +24,11 @@
 @implementation YANAuthorizationViewController
 
 //My client id.
-static NSString *const _clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
+NSString *const _clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
 //URI that the OAuth server sends the authorization result to.
-static NSString *const _redirectUri = @"http://ya.ru";
+NSString *const _redirectUri = @"http://ya.ru";
 //A list of requested permissions.
-static NSString *const _permissions = @"account-info operation-history";
+NSString *const _permissions = @"account-info operation-history";
 
 //Token
 NSString *_accessToken = nil;
@@ -82,12 +82,12 @@ YMAAPISession *_session = nil;
 }
 
 - (void)getAccessTokenFor:(NSString *)authCode {
-    
+
     NSDictionary * additionalParameters = @{
-                                            @"grant_type" : @"authorization_code", // Constant parameter
-                                            YMAParameterRedirectUri : _redirectUri
-                                            };
-    
+            @"grant_type" : @"authorization_code", // Constant parameter
+            YMAParameterRedirectUri : _redirectUri
+    };
+
     [_session receiveTokenWithCode:authCode
                           clientId:_clientId
               additionalParameters:additionalParameters
@@ -126,20 +126,18 @@ YMAAPISession *_session = nil;
     NSLog(@"authorization success");
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"LoginSuccess"])
-    {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"LoginSuccess"]) {
         NSLog(_accessToken);
-        
+
         // Get reference to the destination view controller
         UITabBarController *vc = [segue destinationViewController];
-        YANWalletViewController* wo = vc.childViewControllers[0];
+        YANWalletViewController *wo = vc.childViewControllers[0];
         wo.keyStorage = [[YANKeyStorage alloc] initWithAccessToken:_accessToken];
         //wo.yanApiSession = _session;
         // Pass any objects to the view controller here, like...
-        
-        
+
+
     }
 }
 
@@ -147,16 +145,15 @@ YMAAPISession *_session = nil;
 // Тестовое использование делегата.
 - (IBAction)authorizationFailed:(id)sender {
     id <AuthorizationViewControllerDelegate> strongDelegate = self.delegate;
-    
+
     [strongDelegate authorizationViewController:self
                                  didChooseValue:5];
 }
 
-- (void)didMoveToParentViewController:(UIViewController *)parent
-{
+- (void)didMoveToParentViewController:(UIViewController *)parent {
     if (![parent isEqual:self.parentViewController]) {
         id <AuthorizationViewControllerDelegate> strongDelegate = self.delegate;
-        
+
         [strongDelegate authorizationViewController:self
                                      didChooseValue:5];
     }

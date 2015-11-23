@@ -45,6 +45,8 @@
                                  token:self.keyStorage.accessToken
                             completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
                                 
+                                NSLog(error.description);
+                                
                                 YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *) response;
                                 
                                 YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
@@ -56,24 +58,8 @@
                             }];
     
     
-    YMAHistoryOperationsRequest *opHistRequest = [YMAHistoryOperationsRequest operationHistoryWithFilter:YMAHistoryOperationFilterUnknown label:nil from:nil till:nil startRecord:nil records:@"2"];
-    
-    [session performRequest:opHistRequest token:self.keyStorage.accessToken completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
-        
-        YMAHistoryOperationsResponse *accauntInfoResponse = (YMAHistoryOperationsResponse *) response;
-        
-        NSString *title;
-        
-        for(YMAHistoryOperationModel *operation in accauntInfoResponse.operations) {
-            NSLog(operation.title);
-            title = operation.title;
-        }
-        
-        self.userNameLabel.text = title;
-        
-        //NSLog(opHist);
-        
-    }];
+    self.userNameLabel.text = [self getTitle];
+    NSLog(@"BBBBB");
 
 
 }
@@ -92,5 +78,29 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSString*) getTitle {
+    
+    YMAAPISession* session =  [[YMAAPISession alloc] init];
+    __block NSString *title;
+    
+    YMAHistoryOperationsRequest *opHistRequest = [YMAHistoryOperationsRequest operationHistoryWithFilter:YMAHistoryOperationFilterUnknown label:nil from:nil till:nil startRecord:nil records:@"2"];
+    
+    [session performRequest:opHistRequest token:self.keyStorage.accessToken completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+        
+        YMAHistoryOperationsResponse *accauntInfoResponse = (YMAHistoryOperationsResponse *) response;
+        
+        
+        for(YMAHistoryOperationModel *operation in accauntInfoResponse.operations) {
+            NSLog(@"AAAAAA");
+            title = operation.title;
+        }
+        
+    }];
+    
+    
+    
+    return title;
+}
 
 @end

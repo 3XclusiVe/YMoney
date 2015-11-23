@@ -10,6 +10,9 @@
 #import "YANStartPageViewController.h"
 #import "YANAuthorizationViewController.h"
 
+#import "YANYandexMoneyServer.h"
+
+
 @interface YANStartPageViewController ()  <AuthorizationViewControllerDelegate>
 
 - (void)authorizationViewController:(YANAuthorizationViewController *)viewController didChooseValue:(CGFloat)value;
@@ -29,6 +32,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [YANYandexMoneyServer checkAccessToken:@"11"];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
