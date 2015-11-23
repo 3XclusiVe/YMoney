@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36EBCF25253588D21457D3BE"
                BuildableName = "YMoney.xctest"
-               BlueprintName = "YANYMoneyTests"
+               BlueprintName = "YMoneyTests"
                ReferencedContainer = "container:YMoney.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36EBCF25253588D21457D3BE"
                BuildableName = "YMoney.xctest"
-               BlueprintName = "YANYMoneyTests"
+               BlueprintName = "YMoneyTests"
                ReferencedContainer = "container:YMoney.xcodeproj">
             </BuildableReference>
             <SkippedTests>
@@ -52,7 +52,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36EBCF25253588D21457D3BE"
             BuildableName = "YMoney.xctest"
-            BlueprintName = "YANYMoneyTests"
+            BlueprintName = "YMoneyTests"
             ReferencedContainer = "container:YMoney.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -74,7 +74,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36EBCF25253588D21457D3BE"
             BuildableName = "YMoney.xctest"
-            BlueprintName = "YANYMoneyTests"
+            BlueprintName = "YMoneyTests"
             ReferencedContainer = "container:YMoney.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -92,7 +92,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36EBCF25253588D21457D3BE"
             BuildableName = "YMoney.xctest"
-            BlueprintName = "YANYMoneyTests"
+            BlueprintName = "YMoneyTests"
             ReferencedContainer = "container:YMoney.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

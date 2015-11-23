@@ -9,12 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/POSRx-master/POSRx/Utils/NSException+POSRx.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POSRx-master/POSRx/Utils/NSException+POSRx.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POSRx-master/Podfile" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/README.md" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.h" isTestSource="false" />
@@ -34,6 +31,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Supporting Files/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/YANAppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyTest/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyTest/YMoneyTest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/Info.plist" isTestSource="false" />
@@ -127,8 +126,6 @@
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/SupportingFiles/ymcpssdk-os-Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/SupportingFiles/ymcpssdk-os-Prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/YandexMoneySDKObjc.podspec" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.m" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

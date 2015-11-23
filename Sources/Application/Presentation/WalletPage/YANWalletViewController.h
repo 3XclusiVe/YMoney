@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class YANKeyStorage;
+@class YMAAPISession;
+
 @interface YANWalletViewController : UIViewController
 
+@property (strong, nonatomic) YANKeyStorage* keyStorage;
 
+@property (strong, nonatomic) YMAAPISession* yanApiSession;
 
 @end

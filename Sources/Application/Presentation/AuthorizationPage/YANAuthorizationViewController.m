@@ -12,15 +12,12 @@
 #import "YMAAPISession.h"
 #import "YMAAccountInfoResponse.h"
 #import "YMAAccountInfoRequest.h"
+#import "YANWalletViewController.h"
+#import "YANKeyStorage.h"
 
 @interface YANAuthorizationViewController ()
 
-- (IBAction)autorizationSuccess:(id)sender;
-
 @property(weak, nonatomic) IBOutlet UIWebView *authorizationWebView;
-
-
-- (IBAction)authorizationFailed:(id)sender;
 
 @end
 
@@ -135,20 +132,14 @@ YMAAPISession *_session = nil;
     {
         NSLog(_accessToken);
         
-        YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
+        // Get reference to the destination view controller
+        UITabBarController *vc = [segue destinationViewController];
+        YANWalletViewController* wo = vc.childViewControllers[0];
+        wo.keyStorage = [[YANKeyStorage alloc] initWithAccessToken:_accessToken];
+        //wo.yanApiSession = _session;
+        // Pass any objects to the view controller here, like...
         
-        [_session performRequest:request
-                           token:_accessToken
-                      completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
-                          
-                          YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *) response;
-                          
-                          YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
-                          
-                          NSLog(info.balance);
-                      }];
-    } else {
-
+        
     }
 }
 
@@ -160,4 +151,15 @@ YMAAPISession *_session = nil;
     [strongDelegate authorizationViewController:self
                                  didChooseValue:5];
 }
+
+- (void)didMoveToParentViewController:(UIViewController *)parent
+{
+    if (![parent isEqual:self.parentViewController]) {
+        id <AuthorizationViewControllerDelegate> strongDelegate = self.delegate;
+        
+        [strongDelegate authorizationViewController:self
+                                     didChooseValue:5];
+    }
+}
+
 @end

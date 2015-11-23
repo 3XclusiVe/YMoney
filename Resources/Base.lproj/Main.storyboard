@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KLG-2n-bdm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KLG-2n-bdm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-1187" y="364"/>
         </scene>
-        <!--View Controller-->
+        <!--Авторизация-->
         <scene sceneID="Qag-p8-TaJ">
             <objects>
                 <viewController id="BWk-aG-4OO" customClass="YANStartPageViewController" sceneMemberID="viewController">
@@ -35,19 +35,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-mT-SSV">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-mT-SSV">
                                 <rect key="frame" x="218" y="335" width="165" height="30"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Регистрация кошелька"/>
                                 <connections>
                                     <action selector="createWalletButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="C0X-9n-tDg"/>
                                     <segue destination="mbu-1n-TQv" kind="show" id="rdY-PE-sgP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eON-Mt-NHy">
-                                <rect key="frame" x="283" y="285" width="35" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eON-Mt-NHy">
+                                <rect key="frame" x="277" y="282" width="47" height="36"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Вход"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                </variation>
                                 <connections>
                                     <action selector="enterButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="qau-Gu-la4"/>
                                     <segue destination="mbu-1n-TQv" kind="show" identifier="showAuthorizationView" id="fBT-hO-Y89"/>
@@ -71,7 +79,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="4m8-QX-KUg"/>
+                    <navigationItem key="navigationItem" title="Авторизация" id="Iaq-TJ-Rus"/>
                     <connections>
                         <outlet property="createWalletButton" destination="tb1-mT-SSV" id="9v6-jn-oKH"/>
                         <outlet property="enterButton" destination="eON-Mt-NHy" id="Kd2-h8-SAa"/>
@@ -168,6 +176,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Кошелек" id="udj-zc-zCE"/>
                     <connections>
+                        <outlet property="balance" destination="yoI-8T-QgF" id="w5v-8x-Ydq"/>
                         <outlet property="balanceLabel" destination="Thf-aY-opI" id="DAG-8c-Afq"/>
                         <outlet property="userNameLabel" destination="W0m-M4-6XE" id="DQf-JR-MAZ"/>
                         <outlet property="walletButton" destination="udj-zc-zCE" id="qNo-19-wYS"/>
@@ -196,7 +205,7 @@
             </objects>
             <point key="canvasLocation" x="287" y="364"/>
         </scene>
-        <!--Authorization View Controller-->
+        <!--Авторизация-->
         <scene sceneID="zwj-7u-Kyt">
             <objects>
                 <viewController id="mbu-1n-TQv" customClass="YANAuthorizationViewController" sceneMemberID="viewController">
@@ -208,12 +217,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZX-2p-oB6">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZX-2p-oB6">
                                 <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-JQ-ih4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-JQ-ih4">
                                 <rect key="frame" x="225" y="285" width="150" height="30"/>
                                 <animations/>
                                 <state key="normal" title="authorization success"/>
@@ -222,7 +231,7 @@
                                     <segue destination="cxq-yR-zJp" kind="presentation" identifier="LoginSuccess" id="d3j-cl-Eew"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-xm-3Y6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gU-xm-3Y6">
                                 <rect key="frame" x="234" y="285" width="132" height="30"/>
                                 <animations/>
                                 <state key="normal" title="authorization failed"/>
@@ -240,7 +249,14 @@
                             <constraint firstItem="kZX-2p-oB6" firstAttribute="trailing" secondItem="HYd-sO-qie" secondAttribute="trailingMargin" id="OU2-W8-Ebi"/>
                             <constraint firstItem="kZX-2p-oB6" firstAttribute="leading" secondItem="HYd-sO-qie" secondAttribute="leadingMargin" id="mm4-pp-XK6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ufL-JQ-ih4"/>
+                                <exclude reference="9gU-xm-3Y6"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Авторизация" id="N6i-q6-7Ga"/>
                     <connections>
                         <outlet property="authorizationWebView" destination="kZX-2p-oB6" id="d6f-y5-bFo"/>
                     </connections>
