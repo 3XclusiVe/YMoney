@@ -15,20 +15,26 @@
 
 @interface YANWalletViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property(weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
-@property(weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
 @property(weak, nonatomic) IBOutlet UILabel *balance;
 
 @property(weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
 @end
 
-@implementation YANWalletViewController
+@implementation YANWalletViewController {
+    UIRefreshControl *_refreshControl;
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _refreshControl = [[UIRefreshControl alloc] init];
+    [_refreshControl addTarget:self action:@selector(responceAccountInfo) forControlEvents:UIControlEventValueChanged];
+    [self.scrollView addSubview:_refreshControl];
 }
 
 - (void)viewDidAppear:(BOOL)clause {
@@ -61,6 +67,7 @@
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
     [self updateAccountInfoPresentation:accountInfo];
+    [_refreshControl endRefreshing];
 }
 
 - (void)responceAccountInfo {
@@ -70,6 +77,7 @@
 - (void)onInternetConnectionLost {
     YMAAccountInfoModel *accountInfo = [self loadDataFromStorage];
     [self updateAccountInfoPresentation:accountInfo];
+    [_refreshControl endRefreshing];
 }
 
 - (YMAAccountInfoModel *)loadDataFromStorage {
