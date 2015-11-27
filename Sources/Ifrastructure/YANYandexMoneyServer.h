@@ -8,14 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol YANYandexServerObserver;
+
 @interface YANYandexMoneyServer : NSObject
 
-+ (void)checkAccessToken:(nonnull NSString *)accessToken;
+-(void) subscribeOnEvents:(_Nonnull id<YANYandexServerObserver>) observer;
+
+-(void) unSubscribeOnEvents:(_Nonnull id<YANYandexServerObserver>) observer;
 
 - (nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
 
 - (void)performAccountInfoRequest;
 
 - (void)performOperationHistoryRequest;
+
++ (void)checkAccessToken:(nonnull NSString *)accessToken forObserver:(_Nonnull id<YANYandexServerObserver>) observer;
 
 @end

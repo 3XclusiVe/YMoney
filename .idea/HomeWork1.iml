@@ -14,6 +14,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/AuthorizationPage/YANAuthorizationViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Base/YANBaseUIViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Base/YANBaseUIViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.h" isTestSource="false" />
@@ -32,6 +34,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANKeyStorage.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANServerProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANServerProtocol.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Supporting Files/main.m" isTestSource="false" />

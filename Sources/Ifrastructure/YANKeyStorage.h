@@ -10,9 +10,16 @@
 
 @interface YANKeyStorage : NSObject
 
-@property(nonatomic, nonnull, readonly) NSString *accessToken;
+-(instancetype) initForTest;
 
-- (nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
+-(id)loadData:(NSString*)key;
+
+-(BOOL)saveData:(id*)data
+        withKey:(NSString*)key;
+
+-(BOOL)deleteDataWithKey:(NSString*)key;
+
+-(BOOL)cleanKeyStorage;
 
 @end
 

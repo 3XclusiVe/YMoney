@@ -23,6 +23,8 @@
 		CE011B151BE56B8C00D820A3 /* YANBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC896DD3DB61BB53F1D76 /* YANBalance.m */; };
 		CE011B161BE56B9000D820A3 /* YANCashOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */; };
 		CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */; };
+		CE34B4DA1C079C5C00FABC44 /* YANServerProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4D91C079C5C00FABC44 /* YANServerProtocol.m */; };
+		CE34B4DE1C07A38F00FABC44 /* YANBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */; };
 		CE4C92E51C034F18002137E3 /* YANTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C92E41C034F18002137E3 /* YANTabBarController.m */; };
 		CE97936D1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
 		CE97936E1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
@@ -139,6 +141,10 @@
 		CE011B1B1BE56BE100D820A3 /* YMoneyTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMoneyTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMoneyTest.m; sourceTree = "<group>"; };
 		CE011B1F1BE56BE100D820A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE34B4D81C079C5C00FABC44 /* YANServerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANServerProtocol.h; sourceTree = "<group>"; };
+		CE34B4D91C079C5C00FABC44 /* YANServerProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANServerProtocol.m; sourceTree = "<group>"; };
+		CE34B4DC1C07A38F00FABC44 /* YANBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YANBaseUIViewController.h; path = Base/YANBaseUIViewController.h; sourceTree = "<group>"; };
+		CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YANBaseUIViewController.m; path = Base/YANBaseUIViewController.m; sourceTree = "<group>"; };
 		CE4C92E31C034F18002137E3 /* YANTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANTabBarController.h; sourceTree = "<group>"; };
 		CE4C92E41C034F18002137E3 /* YANTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANTabBarController.m; sourceTree = "<group>"; };
 		CE97936B1C03CEAF00DAC14B /* YANYandexMoneyServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANYandexMoneyServer.h; sourceTree = "<group>"; };
@@ -352,6 +358,35 @@
 				CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */,
 			);
 			path = YMoneyTest;
+			sourceTree = "<group>";
+		};
+		CE34B4D61C07891F00FABC44 /* Internet */ = {
+			isa = PBXGroup;
+			children = (
+				CE97936B1C03CEAF00DAC14B /* YANYandexMoneyServer.h */,
+				CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */,
+				CE34B4D81C079C5C00FABC44 /* YANServerProtocol.h */,
+				CE34B4D91C079C5C00FABC44 /* YANServerProtocol.m */,
+			);
+			name = Internet;
+			sourceTree = "<group>";
+		};
+		CE34B4D71C07894900FABC44 /* KeyStores */ = {
+			isa = PBXGroup;
+			children = (
+				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
+				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
+			);
+			name = KeyStores;
+			sourceTree = "<group>";
+		};
+		CE34B4DB1C07A33D00FABC44 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE34B4DC1C07A38F00FABC44 /* YANBaseUIViewController.h */,
+				CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		CE4C92E21C034EAB002137E3 /* TabBar */ = {
@@ -655,6 +690,7 @@
 		CEE7F4E11BE5642000683229 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CE34B4DB1C07A33D00FABC44 /* Base */,
 				CEE7F4E31BE5646800683229 /* AuthorizationPage */,
 				CEE7F4E21BE5642900683229 /* LaunchPage */,
 				CEE7F4E61BE564CE00683229 /* OperationHistoryPage */,
@@ -733,10 +769,8 @@
 		CEE7F4E91BE5665800683229 /* Ifrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
-				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
-				CE97936B1C03CEAF00DAC14B /* YANYandexMoneyServer.h */,
-				CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */,
+				CE34B4D71C07894900FABC44 /* KeyStores */,
+				CE34B4D61C07891F00FABC44 /* Internet */,
 			);
 			path = Ifrastructure;
 			sourceTree = "<group>";
@@ -951,6 +985,7 @@
 				CEC381FA1BE80B0200700DAF /* YMAProcessPaymentRequest.m in Sources */,
 				CEC381EC1BE80B0200700DAF /* YMAAscModel.m in Sources */,
 				CEC382061BE80B0200700DAF /* YMAAPISession.m in Sources */,
+				CE34B4DA1C079C5C00FABC44 /* YANServerProtocol.m in Sources */,
 				CEC381E41BE80B0200700DAF /* YMABalanceDetailsModel.m in Sources */,
 				CEC381EB1BE80B0200700DAF /* YMAWalletSourceGroupModel.m in Sources */,
 				36EBCCFC2EB1AEDB91E4B3BB /* YANAppDelegate.m in Sources */,
@@ -983,6 +1018,7 @@
 				CEC381F81BE80B0200700DAF /* YMAIncomingTransferRejectRequest.m in Sources */,
 				CEC382081BE80B0200700DAF /* YMAExternalPaymentSession.m in Sources */,
 				CE4C92E51C034F18002137E3 /* YANTabBarController.m in Sources */,
+				CE34B4DE1C07A38F00FABC44 /* YANBaseUIViewController.m in Sources */,
 				CEC381FE1BE80B0200700DAF /* YMAOperationDetailsResponse.m in Sources */,
 				CEC381EE1BE80B0200700DAF /* YMAGoodsModel.m in Sources */,
 				CEC381E31BE80B0200700DAF /* YMAAvatarModel.m in Sources */,

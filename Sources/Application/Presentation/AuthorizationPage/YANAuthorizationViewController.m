@@ -10,10 +10,6 @@
 #import "YMAConstants.h"
 #import "YMAExternalPaymentSession.h"
 #import "YMAAPISession.h"
-#import "YMAAccountInfoResponse.h"
-#import "YMAAccountInfoRequest.h"
-#import "YANWalletViewController.h"
-#import "YANKeyStorage.h"
 
 @interface YANAuthorizationViewController ()
 
@@ -128,14 +124,6 @@ YMAAPISession *_session = nil;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"LoginSuccess"]) {
-        NSLog(_accessToken);
-
-        // Get reference to the destination view controller
-        UITabBarController *vc = [segue destinationViewController];
-        YANWalletViewController *wo = vc.childViewControllers[0];
-        wo.keyStorage = [[YANKeyStorage alloc] initWithAccessToken:_accessToken];
-        //wo.yanApiSession = _session;
-        // Pass any objects to the view controller here, like...
 
 
     }

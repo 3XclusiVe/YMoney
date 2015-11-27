@@ -42,7 +42,7 @@
                                 <state key="normal" title="Регистрация кошелька"/>
                                 <connections>
                                     <action selector="createWalletButtonTouch:" destination="BWk-aG-4OO" eventType="touchUpInside" id="C0X-9n-tDg"/>
-                                    <segue destination="mbu-1n-TQv" kind="show" id="rdY-PE-sgP"/>
+                                    <segue destination="cxq-yR-zJp" kind="presentation" identifier="goToWalletPage" id="o1d-d2-i3O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eON-Mt-NHy">
@@ -157,9 +157,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Р" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-8T-QgF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-8T-QgF">
                                 <rect key="frame" x="287" y="289" width="26" height="21"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="0 P"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -186,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="1107" y="34"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar-->
         <scene sceneID="0y5-gA-Dtu">
             <objects>
-                <tabBarController id="cxq-yR-zJp" sceneMemberID="viewController">
+                <tabBarController id="cxq-yR-zJp" customClass="BaseTabBar" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Lxo-ta-roA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -267,6 +268,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fBT-hO-Y89"/>
+        <segue reference="o1d-d2-i3O"/>
     </inferredMetricsTieBreakers>
 </document>

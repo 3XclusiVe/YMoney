@@ -8,10 +8,11 @@
 
 
 #import <UIKit/UIKit.h>
+#import "YANBaseUIViewController.h"
 
 @class YANAuthorizationViewController;
 
-@interface YANStartPageViewController : UIViewController
+@interface YANStartPageViewController : UIViewController <YANYandexServerObserver>
 
 
 @end

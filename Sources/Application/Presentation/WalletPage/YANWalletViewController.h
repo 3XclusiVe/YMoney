@@ -7,14 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YANBaseUIViewController.h"
 
-@class YANKeyStorage;
-@class YMAAPISession;
+@interface YANWalletViewController : YANBaseUIViewController
 
-@interface YANWalletViewController : UIViewController
-
-@property (strong, nonatomic) YANKeyStorage* keyStorage;
-
-@property (strong, nonatomic) YMAAPISession* yanApiSession;
 
 @end

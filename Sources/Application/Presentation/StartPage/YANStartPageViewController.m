@@ -11,6 +11,7 @@
 #import "YANAuthorizationViewController.h"
 
 #import "YANYandexMoneyServer.h"
+#import "YANKeyStorage.h"
 
 
 @interface YANStartPageViewController ()  <AuthorizationViewControllerDelegate>
@@ -32,11 +33,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString* accessToken = [self loadTokenFromStorage];
+    [YANYandexMoneyServer checkAccessToken:accessToken forObserver:self];
     
-    [YANYandexMoneyServer checkAccessToken:@"11"];
-    
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,14 +53,35 @@
     NSLog(@"create wallet button touched");
 }
 
+- (void)onInternetConnectionLost {
+    [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
+}
+
+- (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
+
+}
+
+- (void)onNeedToRefreshToken {
+
+}
+
+- (void)onReceiveToken:(NSString *)accessToken {
+
+}
+
+-(void) onTokenAccepted {
+    [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    //if([segue.identifier isEqualToString:@"shwAuthorizationView"]){
+    if([segue.identifier isEqualToString:@"shwAuthorizationView"]){
     
         YANAuthorizationViewController *controller = segue.destinationViewController;
         
         controller.delegate = self;
 
-    //}
+    }
+    
 }
 
 // Implement the delegate methods for AuthorizationViewControllerDelegate
@@ -71,6 +91,12 @@
     
     // ...then dismiss the child view controller
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(NSString *)loadTokenFromStorage {
+    YANKeyStorage* keyStorage = [[YANKeyStorage alloc] initForTest];
+    NSString* token = [keyStorage loadData:@"Token"];
+    return token;
 }
 
 @end

@@ -7,66 +7,37 @@
 //
 
 #import "YANWalletViewController.h"
-#import "YANKeyStorage.h"
-#import "YMAAPISession.h"
-#import "YMAAccountInfoResponse.h"
-#import "YMAAccountInfoRequest.h"
 
-#import "YMAHistoryOperationsResponse.h"
-#import "YMAHistoryOperationsRequest.h"
+#import "YANKeyStorage.h"
+#import "YMAAccountInfoModel.h"
+#import "YANYandexMoneyServer.h"
+
 
 @interface YANWalletViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property(weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *balance;
+@property(weak, nonatomic) IBOutlet NSLayoutConstraint *balanceLabel;
+@property(weak, nonatomic) IBOutlet UILabel *balance;
 
-@property (weak, nonatomic) IBOutlet UITabBarItem *walletButton;
+@property(weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
 @end
 
 @implementation YANWalletViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    // Do any additional setup after loading the view.
 }
 
-- (void) viewWillAppear: (BOOL) clause {
-    [super viewWillAppear:clause];
-    YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
-    YMAAPISession* session =  [[YMAAPISession alloc] init];
-    
-    [session performRequest:request
-                                 token:self.keyStorage.accessToken
-                            completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
-                                
-                                NSLog(error.description);
-                                
-                                YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *) response;
-                                
-                                YMAAccountInfoModel *info = accauntInfoResponse.accountInfo;
-                                
-                                self.balance.text = info.balance;
-                                
-                                NSLog(info.account);
-                                
-                            }];
-    
-    
-    self.userNameLabel.text = [self getTitle];
-    NSLog(@"BBBBB");
-
-
+- (void)viewDidAppear:(BOOL)clause {
+    [super viewDidAppear:clause];
+    [self responceAccountInfo];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -79,28 +50,34 @@
 }
 */
 
-- (NSString*) getTitle {
-    
-    YMAAPISession* session =  [[YMAAPISession alloc] init];
-    __block NSString *title;
-    
-    YMAHistoryOperationsRequest *opHistRequest = [YMAHistoryOperationsRequest operationHistoryWithFilter:YMAHistoryOperationFilterUnknown label:nil from:nil till:nil startRecord:nil records:@"2"];
-    
-    [session performRequest:opHistRequest token:self.keyStorage.accessToken completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
-        
-        YMAHistoryOperationsResponse *accauntInfoResponse = (YMAHistoryOperationsResponse *) response;
-        
-        
-        for(YMAHistoryOperationModel *operation in accauntInfoResponse.operations) {
-            NSLog(@"AAAAAA");
-            title = operation.title;
-        }
-        
-    }];
-    
-    
-    
-    return title;
+#pragma mark - Private methods
+
+- (void)updateAccountInfoPresentation:(YMAAccountInfoModel *)accountInfo {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.userNameLabel.text = accountInfo.account;
+        self.balance.text = accountInfo.balance;
+    });
 }
+
+- (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
+    [self updateAccountInfoPresentation:accountInfo];
+}
+
+- (void)responceAccountInfo {
+    [self.yandexMoneyServer performAccountInfoRequest];
+}
+
+- (void)onInternetConnectionLost {
+    YMAAccountInfoModel *accountInfo = [self loadDataFromStorage];
+    [self updateAccountInfoPresentation:accountInfo];
+}
+
+- (YMAAccountInfoModel *)loadDataFromStorage {
+    YANKeyStorage *keyStorage = [[YANKeyStorage alloc] initForTest];
+    YMAAccountInfoModel *accountInfo = [keyStorage loadData:@"Account"];
+
+    return accountInfo;
+}
+
 
 @end
