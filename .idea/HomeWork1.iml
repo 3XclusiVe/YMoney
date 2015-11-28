@@ -18,12 +18,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Base/YANBaseUIViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/CustomSpinner.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/CustomSpinner.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/SwiftSpinner.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/TabBar/YANTabBarController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/TabBar/YANTabBarController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YMoney-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCash.h" isTestSource="false" />

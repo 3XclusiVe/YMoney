@@ -16,12 +16,14 @@
 
 -(void) unSubscribeOnEvents:(_Nonnull id<YANYandexServerObserver>) observer;
 
-- (nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
+-(nonnull instancetype)initWithAccessToken:(nonnull NSString *)accessToken;
 
-- (void)performAccountInfoRequest;
+-(void)performAccountInfoRequest;
 
-- (void)performOperationHistoryRequest;
+-(void)performOperationHistoryRequest;
 
-+ (void)checkAccessToken:(nonnull NSString *)accessToken forObserver:(_Nonnull id<YANYandexServerObserver>) observer;
+-(void)checkAccessToken;
+
++(void)checkAccessToken:(nonnull NSString *)accessToken forObserver:(_Nonnull id<YANYandexServerObserver>) observer;
 
 @end

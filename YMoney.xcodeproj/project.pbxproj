@@ -25,6 +25,8 @@
 		CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */; };
 		CE34B4DA1C079C5C00FABC44 /* YANServerProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4D91C079C5C00FABC44 /* YANServerProtocol.m */; };
 		CE34B4DE1C07A38F00FABC44 /* YANBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */; };
+		CE34B4E71C09010B00FABC44 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4E61C09010B00FABC44 /* SwiftSpinner.swift */; };
+		CE34B4EA1C0901A700FABC44 /* CustomSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4E91C0901A700FABC44 /* CustomSpinner.m */; };
 		CE4C92E51C034F18002137E3 /* YANTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C92E41C034F18002137E3 /* YANTabBarController.m */; };
 		CE97936D1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
 		CE97936E1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
@@ -145,6 +147,10 @@
 		CE34B4D91C079C5C00FABC44 /* YANServerProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANServerProtocol.m; sourceTree = "<group>"; };
 		CE34B4DC1C07A38F00FABC44 /* YANBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YANBaseUIViewController.h; path = Base/YANBaseUIViewController.h; sourceTree = "<group>"; };
 		CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YANBaseUIViewController.m; path = Base/YANBaseUIViewController.m; sourceTree = "<group>"; };
+		CE34B4E51C09010B00FABC44 /* YMoney-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMoney-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE34B4E61C09010B00FABC44 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		CE34B4E81C0901A700FABC44 /* CustomSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSpinner.h; path = Spinner/CustomSpinner.h; sourceTree = "<group>"; };
+		CE34B4E91C0901A700FABC44 /* CustomSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSpinner.m; path = Spinner/CustomSpinner.m; sourceTree = "<group>"; };
 		CE4C92E31C034F18002137E3 /* YANTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANTabBarController.h; sourceTree = "<group>"; };
 		CE4C92E41C034F18002137E3 /* YANTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANTabBarController.m; sourceTree = "<group>"; };
 		CE97936B1C03CEAF00DAC14B /* YANYandexMoneyServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANYandexMoneyServer.h; sourceTree = "<group>"; };
@@ -387,6 +393,17 @@
 				CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		CE34B4E41C0900E800FABC44 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				CE34B4E61C09010B00FABC44 /* SwiftSpinner.swift */,
+				CE34B4E51C09010B00FABC44 /* YMoney-Bridging-Header.h */,
+				CE34B4E81C0901A700FABC44 /* CustomSpinner.h */,
+				CE34B4E91C0901A700FABC44 /* CustomSpinner.m */,
+			);
+			name = Spinner;
 			sourceTree = "<group>";
 		};
 		CE4C92E21C034EAB002137E3 /* TabBar */ = {
@@ -690,6 +707,7 @@
 		CEE7F4E11BE5642000683229 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CE34B4E41C0900E800FABC44 /* Spinner */,
 				CE34B4DB1C07A33D00FABC44 /* Base */,
 				CEE7F4E31BE5646800683229 /* AuthorizationPage */,
 				CEE7F4E21BE5642900683229 /* LaunchPage */,
@@ -855,6 +873,7 @@
 		36EBC73C5D66AF6B00CAE276 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DMA;
 				TargetAttributes = {
@@ -982,6 +1001,7 @@
 				CE97936D1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */,
 				CEC381E91BE80B0200700DAF /* YMAMoneySourceModel.m in Sources */,
 				CEC381FD1BE80B0200700DAF /* YMAHistoryOperationsResponse.m in Sources */,
+				CE34B4EA1C0901A700FABC44 /* CustomSpinner.m in Sources */,
 				CEC381FA1BE80B0200700DAF /* YMAProcessPaymentRequest.m in Sources */,
 				CEC381EC1BE80B0200700DAF /* YMAAscModel.m in Sources */,
 				CEC382061BE80B0200700DAF /* YMAAPISession.m in Sources */,
@@ -1026,6 +1046,7 @@
 				CEC381E71BE80B0200700DAF /* YMAExternalPaymentInfoModel.m in Sources */,
 				CEC381E61BE80B0200700DAF /* YMAOperationDetailsModel.m in Sources */,
 				CEC381F01BE80B0200700DAF /* YMAPaymentResultModel.m in Sources */,
+				CE34B4E71C09010B00FABC44 /* SwiftSpinner.swift in Sources */,
 				36EBC9C230023E55BFBFB14E /* YANOperationHistory.m in Sources */,
 				CEC382051BE80B0200700DAF /* YMABaseResponse.m in Sources */,
 			);
@@ -1097,6 +1118,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InfoPlist/Info.plist;
@@ -1105,6 +1127,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1;
 				PRODUCT_NAME = YMoney;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Application/Presentation/YMoney-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -1112,6 +1135,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InfoPlist/Info.plist;
@@ -1120,6 +1144,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = DmitriyMalykh.HomeWork1;
 				PRODUCT_NAME = YMoney;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Application/Presentation/YMoney-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};

@@ -22,7 +22,12 @@
     YMAAPISession *_session;
     
     NSMutableArray *_observers;
+    
 }
+
+NSThread* _connectionTimeoutThread;
+
+const NSTimeInterval kConnectionTimeout = 5.0f;
 
 //My client id.
 static NSString *const _clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
@@ -33,7 +38,6 @@ static NSString *const _permissions = @"account-info operation-history";
 
 
 +(void)checkAccessToken:(nonnull NSString *)accessToken forObserver:(id<YANYandexServerObserver>)observer {
-    //POSRX_CHECK_EX(accessToken != nil, @"missing access token");
 
     YMAAPISession *session = [[YMAAPISession alloc] init];
     YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
@@ -73,24 +77,41 @@ static NSString *const _permissions = @"account-info operation-history";
     [_observers removeObject:observer];
 }
 
+-(void)checkAccessToken {
+    
+    [self startTimeout];
+    
+    YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
+    
+    [_session performRequest:request
+                      token:_accessToken
+                 completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                     
+                     [self stopTimeout];
+                     
+                     if (error == nil) {
+                         [self onTokenAccepted];
+                     } else {
+                         [self handleError:error.code];
+                     }
+                     
+                 }];
+}
+
 
 - (void)performAccountInfoRequest {
+    
+    [self startTimeout];
     
     YMAAccountInfoRequest *request = [YMAAccountInfoRequest accountInfoRequest];
     
     NSLog(@"perfoming account info request");
     
-    if(_session == nil) {
-        NSLog(@"session is nill");
-    }
-    
-    if(_accessToken == nil) {
-        NSLog(@"access token is nill");
-    }
-    
     [_session performRequest:request
                        token:_accessToken
                   completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                      
+                      [self stopTimeout];
                       
                       if (error == nil) {
                           YMAAccountInfoResponse *accauntInfoResponse = (YMAAccountInfoResponse *) response;
@@ -117,9 +138,11 @@ POSRX_DEADLY_INITIALIZER(init);
 #pragma mark - Private methods
 
 -(void) updateAccountInfoData:(YMAAccountInfoModel *) accountInfo {
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onReceiveAccountInfo:accountInfo];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onReceiveAccountInfo:accountInfo];
+        }
+    });
 }
 
 -(void) handleError:(int) error {
@@ -135,44 +158,82 @@ POSRX_DEADLY_INITIALIZER(init);
 }
 
 -(void) onConnectionTimeout {
-    NSLog(@"Connection timeout");
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onInternetConnectionLost];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Connection timeout");
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onInternetConnectionLost];
+        }
+    });
 }
 
 -(void) onConnectionLost {
+    dispatch_async(dispatch_get_main_queue(), ^{
     NSLog(@"Connection lost");
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onInternetConnectionLost];
-    }
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onInternetConnectionLost];
+        }
+    });
 }
 
 -(void) onConfirmToken:(NSString*) accessToken {
+    dispatch_async(dispatch_get_main_queue(), ^{
     NSLog(@"Access token is confirmed");
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onReceiveToken:accessToken];
-    }
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onReceiveToken:accessToken];
+        }
+    });
 }
 
 -(void) onTokenAccepted {
-    NSLog(@"Access token is accepted");
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onTokenAccepted];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Access token is accepted");
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onTokenAccepted];
+        }
+    });
 }
 
 -(void) onBadToken {
-    NSLog(@"Need to refresh token");
-    for(id<YANYandexServerObserver> observer in _observers) {
-        [observer onNeedToRefreshToken];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Need to refresh token");
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onNeedToRefreshToken];
+        }
+    });
 }
 
 -(void) onUnexpectedError {
-    NSLog(@"Unexpected error");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Unexpected error");
+    });
 }
 
+#pragma mark - TimeOut
+
+-(void) startTimeout {
+    [_connectionTimeoutThread cancel];
+    _connectionTimeoutThread = [[NSThread alloc] initWithTarget:self selector:@selector(timeoutThread) object:nil];
+    [_connectionTimeoutThread start];
+}
+
+-(void) timeoutThread {
+    NSTimeInterval timeStamp = 0.1f;
+    NSTimeInterval currentTime = 0.0f;
+    while(currentTime < kConnectionTimeout) {
+        if([NSThread currentThread].isCancelled) {
+            break;
+        }
+        [NSThread sleepForTimeInterval:timeStamp];
+        currentTime += timeStamp;
+        NSLog(@"%f",currentTime);
+    }
+    
+    [self onConnectionTimeout];
+}
+
+-(void) stopTimeout {
+    [_connectionTimeoutThread cancel];
+}
 
 
 @end

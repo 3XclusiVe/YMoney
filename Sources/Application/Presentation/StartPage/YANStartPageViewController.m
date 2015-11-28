@@ -12,6 +12,7 @@
 
 #import "YANYandexMoneyServer.h"
 #import "YANKeyStorage.h"
+#import "CustomSpinner.h"
 
 
 @interface YANStartPageViewController ()  <AuthorizationViewControllerDelegate>
@@ -33,8 +34,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString* accessToken = [self loadTokenFromStorage];
-    [YANYandexMoneyServer checkAccessToken:accessToken forObserver:self];
+    [self.yandexMoneyServer checkAccessToken];
+    [CustomSpinner showWithLabel:@"loading"
+                         timeout:5.0f
+               labelAfterTimeout:@"долго"
+                        animated:YES];
     
 }
 
@@ -54,6 +58,7 @@
 }
 
 - (void)onInternetConnectionLost {
+    [CustomSpinner hide:@"Отсутвует интернет"];
     [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
 }
 
@@ -70,6 +75,7 @@
 }
 
 -(void) onTokenAccepted {
+    [CustomSpinner hide:@"подключение выполнено"];
     [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
 }
 
@@ -93,10 +99,5 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(NSString *)loadTokenFromStorage {
-    YANKeyStorage* keyStorage = [[YANKeyStorage alloc] initForTest];
-    NSString* token = [keyStorage loadData:@"Token"];
-    return token;
-}
 
 @end

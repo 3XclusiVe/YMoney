@@ -23,6 +23,8 @@
 
 @property(weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatar;
+
 @end
 
 @implementation YANWalletViewController {
@@ -32,14 +34,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _refreshControl = [[UIRefreshControl alloc] init];
-    [_refreshControl addTarget:self action:@selector(responceAccountInfo) forControlEvents:UIControlEventValueChanged];
-    [self.scrollView addSubview:_refreshControl];
+    [self addRefreshController:@selector(responceAccountInfo)];
 }
 
 - (void)viewDidAppear:(BOOL)clause {
     [super viewDidAppear:clause];
     [self responceAccountInfo];
+    [self makeAvatarRounded];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,16 +59,16 @@
 
 #pragma mark - Private methods
 
+#pragma mark - Logic methods
+
 - (void)updateAccountInfoPresentation:(YMAAccountInfoModel *)accountInfo {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.userNameLabel.text = accountInfo.account;
-        self.balance.text = accountInfo.balance;
-    });
+    self.userNameLabel.text = accountInfo.account;
+    self.balance.text = accountInfo.balance;
 }
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
-    [self updateAccountInfoPresentation:accountInfo];
     [_refreshControl endRefreshing];
+    [self updateAccountInfoPresentation:accountInfo];
 }
 
 - (void)responceAccountInfo {
@@ -87,5 +88,17 @@
     return accountInfo;
 }
 
+#pragma mark - Presentation methods
+
+-(void) makeAvatarRounded {
+    _avatar.layer.cornerRadius = _avatar.frame.size.width / 2;
+    _avatar.layer.masksToBounds = YES;
+}
+
+-(void) addRefreshController:(SEL)selector {
+    _refreshControl = [[UIRefreshControl alloc] init];
+    [_refreshControl addTarget:self action:selector forControlEvents:UIControlEventValueChanged];
+    [self.scrollView addSubview:_refreshControl];
+}
 
 @end
