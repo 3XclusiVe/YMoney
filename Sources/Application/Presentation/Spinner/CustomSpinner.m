@@ -29,7 +29,7 @@ static volatile BOOL isShowing;
             if(isShowing) {
                 [[SwiftSpinner show:label animated:YES] addTapHandler:^{
                     [SwiftSpinner hide: ^ {
-                    
+                        isShowing = NO;
                     }];
                 }subtitle:labelAfterTimeout];
             }

@@ -35,9 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.yandexMoneyServer checkAccessToken];
-    [CustomSpinner showWithLabel:@"loading"
-                         timeout:5.0f
-               labelAfterTimeout:@"долго"
+    [CustomSpinner showWithLabel:@"Идет подключение к серверу"
+                         timeout:1.0f
+               labelAfterTimeout:@"Подключение выполняется слишком долго"
                         animated:YES];
     
 }
@@ -58,7 +58,7 @@
 }
 
 - (void)onInternetConnectionLost {
-    [CustomSpinner hide:@"Отсутвует интернет"];
+    [CustomSpinner hide:@"Отсутвует подключение к интернету"];
     [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
 }
 
@@ -75,7 +75,7 @@
 }
 
 -(void) onTokenAccepted {
-    [CustomSpinner hide:@"подключение выполнено"];
+    [CustomSpinner hide:@"подключение к серверу выполнено"];
     [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
 }
 

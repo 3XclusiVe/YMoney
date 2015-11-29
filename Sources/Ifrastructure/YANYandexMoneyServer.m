@@ -225,7 +225,6 @@ POSRX_DEADLY_INITIALIZER(init);
         }
         [NSThread sleepForTimeInterval:timeStamp];
         currentTime += timeStamp;
-        NSLog(@"%f",currentTime);
     }
     
     [self onConnectionTimeout];

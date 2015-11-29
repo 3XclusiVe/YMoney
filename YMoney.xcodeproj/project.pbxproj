@@ -77,6 +77,12 @@
 		CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* YANWalletViewController.m */; };
 		CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */; };
 		CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* YANKeyStorage.m */; };
+		CEF7C3431C0A83BE0067EDD8 /* YANOperationDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3411C0A83BE0067EDD8 /* YANOperationDateView.m */; };
+		CEF7C3441C0A83BE0067EDD8 /* YANOperationDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3421C0A83BE0067EDD8 /* YANOperationDateView.xib */; };
+		CEF7C3471C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3461C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.m */; };
+		CEF7C34D1C0A96C90067EDD8 /* YANOperationDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C34B1C0A96C90067EDD8 /* YANOperationDetailsView.m */; };
+		CEF7C34E1C0A96C90067EDD8 /* YANOperationDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C34C1C0A96C90067EDD8 /* YANOperationDetailsView.xib */; };
+		CEF7C3541C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3531C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,6 +265,16 @@
 		CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationHistoryViewController.m; sourceTree = "<group>"; };
 		CEF700631BE9695D00980D2D /* YANKeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANKeyStorage.h; sourceTree = "<group>"; };
 		CEF700641BE9695D00980D2D /* YANKeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANKeyStorage.m; sourceTree = "<group>"; };
+		CEF7C3401C0A83BE0067EDD8 /* YANOperationDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationDateView.h; sourceTree = "<group>"; };
+		CEF7C3411C0A83BE0067EDD8 /* YANOperationDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationDateView.m; sourceTree = "<group>"; };
+		CEF7C3421C0A83BE0067EDD8 /* YANOperationDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YANOperationDateView.xib; sourceTree = "<group>"; };
+		CEF7C3451C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YANOperationDateView+YMAHistoryOperationModel.h"; sourceTree = "<group>"; };
+		CEF7C3461C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YANOperationDateView+YMAHistoryOperationModel.m"; sourceTree = "<group>"; };
+		CEF7C34A1C0A96C90067EDD8 /* YANOperationDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationDetailsView.h; sourceTree = "<group>"; };
+		CEF7C34B1C0A96C90067EDD8 /* YANOperationDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationDetailsView.m; sourceTree = "<group>"; };
+		CEF7C34C1C0A96C90067EDD8 /* YANOperationDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YANOperationDetailsView.xib; sourceTree = "<group>"; };
+		CEF7C3531C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YANOperationDetailsView+YMAHistoryOperationModel.m"; sourceTree = "<group>"; };
+		CEF7C3551C0AFD2A0067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YANOperationDetailsView+YMAHistoryOperationModel.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -756,6 +772,7 @@
 		CEE7F4E61BE564CE00683229 /* OperationHistoryPage */ = {
 			isa = PBXGroup;
 			children = (
+				CEF7C33F1C0A831D0067EDD8 /* OperationTableCell */,
 				CED80BA51BDD07AF00159505 /* YANOperationHistoryViewController.h */,
 				CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */,
 			);
@@ -791,6 +808,40 @@
 				CE34B4D61C07891F00FABC44 /* Internet */,
 			);
 			path = Ifrastructure;
+			sourceTree = "<group>";
+		};
+		CEF7C33F1C0A831D0067EDD8 /* OperationTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7C3571C0AFE200067EDD8 /* OperationDetailsCell */,
+				CEF7C3561C0AFE070067EDD8 /* OperationDateCell */,
+			);
+			name = OperationTableCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CEF7C3561C0AFE070067EDD8 /* OperationDateCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7C3401C0A83BE0067EDD8 /* YANOperationDateView.h */,
+				CEF7C3411C0A83BE0067EDD8 /* YANOperationDateView.m */,
+				CEF7C3421C0A83BE0067EDD8 /* YANOperationDateView.xib */,
+				CEF7C3451C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.h */,
+				CEF7C3461C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.m */,
+			);
+			name = OperationDateCell;
+			sourceTree = "<group>";
+		};
+		CEF7C3571C0AFE200067EDD8 /* OperationDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7C34A1C0A96C90067EDD8 /* YANOperationDetailsView.h */,
+				CEF7C3551C0AFD2A0067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.h */,
+				CEF7C3531C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m */,
+				CEF7C34B1C0A96C90067EDD8 /* YANOperationDetailsView.m */,
+				CEF7C34C1C0A96C90067EDD8 /* YANOperationDetailsView.xib */,
+			);
+			name = OperationDetailsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -952,6 +1003,8 @@
 				36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */,
 				36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */,
 				36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */,
+				CEF7C34E1C0A96C90067EDD8 /* YANOperationDetailsView.xib in Resources */,
+				CEF7C3441C0A83BE0067EDD8 /* YANOperationDateView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,6 +1043,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC381FC1BE80B0200700DAF /* YMAAccountInfoResponse.m in Sources */,
+				CEF7C3471C0A880B0067EDD8 /* YANOperationDateView+YMAHistoryOperationModel.m in Sources */,
 				CEC381F41BE80B0200700DAF /* YMAOperationDetailsRequest.m in Sources */,
 				CEC381F61BE80B0200700DAF /* YMAProcessExternalPaymentRequest.m in Sources */,
 				CEC381E51BE80B0200700DAF /* YMAHistoryOperationModel.m in Sources */,
@@ -1009,6 +1063,7 @@
 				CEC381E41BE80B0200700DAF /* YMABalanceDetailsModel.m in Sources */,
 				CEC381EB1BE80B0200700DAF /* YMAWalletSourceGroupModel.m in Sources */,
 				36EBCCFC2EB1AEDB91E4B3BB /* YANAppDelegate.m in Sources */,
+				CEF7C3541C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m in Sources */,
 				CEC382021BE80B0200700DAF /* YMAPaymentResponse.m in Sources */,
 				CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */,
 				CEA4746E1BFCE22B0073960E /* NSException+POSRx.m in Sources */,
@@ -1027,7 +1082,9 @@
 				36EBCFFCBCEFCB36B6305DBE /* YANBalance.m in Sources */,
 				CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */,
 				CEC381ED1BE80B0200700DAF /* YMADigitalGoodsModel.m in Sources */,
+				CEF7C34D1C0A96C90067EDD8 /* YANOperationDetailsView.m in Sources */,
 				CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */,
+				CEF7C3431C0A83BE0067EDD8 /* YANOperationDateView.m in Sources */,
 				CEC382011BE80B0200700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,
 				CEC3820A1BE80B0200700DAF /* YMAConstants.m in Sources */,
 				CEC382071BE80B0200700DAF /* YMABaseSession.m in Sources */,

@@ -27,6 +27,18 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/TabBar/YANTabBarController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateTableCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateTableCell.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDetailsView+YMAHistoryOperationModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDetailsView+YMAHistoryOperationModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDetailsView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDetailsView.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDetailsView.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YMoney-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANBalance.m" isTestSource="false" />

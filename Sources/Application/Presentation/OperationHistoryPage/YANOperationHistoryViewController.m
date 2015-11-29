@@ -7,8 +7,10 @@
 //
 
 #import "YANOperationHistoryViewController.h"
+#import "YANOperationDetailsView.h"
+#import "YANOperationDateView.h"
 
-@interface YANOperationHistoryViewController ()
+@interface YANOperationHistoryViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *operationHistory;
 @property (weak, nonatomic) IBOutlet UITabBarItem *operationHistoryButton;
@@ -19,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self registerCell:[YANOperationDateView class]];
+    [self registerCell:[YANOperationDetailsView class]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,14 +30,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDataSource
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 30;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YANOperationDetailsView class]) forIndexPath:indexPath];
+
+    return cell;
+}
+
+
+#pragma mark - Private methods
+
+-(void) registerCell:(Class) class {
+     [_operationHistory registerNib:[UINib nibWithNibName:NSStringFromClass(class) bundle:nil] forCellReuseIdentifier:NSStringFromClass(class)];
+}
+
 
 @end

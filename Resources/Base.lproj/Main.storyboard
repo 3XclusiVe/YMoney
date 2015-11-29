@@ -114,7 +114,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OperationHistory" id="jDm-Yp-gdK" customClass="Oper">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" id="jDm-Yp-gdK" userLabel="OperationDate" customClass="YANOperationDateView">
                                         <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jDm-Yp-gdK" id="anF-kM-xYI">
@@ -124,15 +124,29 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="FC0-8Q-2Rk" customClass="YANOperationDetailsView">
+                                        <rect key="frame" x="0.0" y="72" width="560" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FC0-8Q-2Rk" id="jlg-ie-6dv">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QEb-c0-M8l" id="SUE-4Q-tbY"/>
+                                    <outlet property="delegate" destination="QEb-c0-M8l" id="5R2-RG-0ro"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qEC-NF-ibG" firstAttribute="leading" secondItem="EcT-DT-j3A" secondAttribute="leadingMargin" id="8h8-FR-Tth"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qEC-NF-ibG" secondAttribute="trailing" id="YWt-mt-nH4"/>
                             <constraint firstItem="qEC-NF-ibG" firstAttribute="top" secondItem="44m-Sy-79a" secondAttribute="bottom" id="hBq-cF-sZ0"/>
+                            <constraint firstItem="qEC-NF-ibG" firstAttribute="trailing" secondItem="EcT-DT-j3A" secondAttribute="trailingMargin" id="sJm-Ms-U6B"/>
                             <constraint firstItem="sVB-y4-NWz" firstAttribute="top" secondItem="qEC-NF-ibG" secondAttribute="bottom" id="w0P-F6-ZEI"/>
                         </constraints>
                     </view>
