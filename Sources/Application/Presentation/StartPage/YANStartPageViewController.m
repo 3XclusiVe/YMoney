@@ -36,7 +36,7 @@
     [super viewDidLoad];
     [self.yandexMoneyServer checkAccessToken];
     [CustomSpinner showWithLabel:@"Идет подключение к серверу"
-                         timeout:1.0f
+                         timeout:5.0f
                labelAfterTimeout:@"Подключение выполняется слишком долго"
                         animated:YES];
     

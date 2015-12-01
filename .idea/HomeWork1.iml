@@ -2,6 +2,146 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.cocoadocs.yml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.gitignore" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.travis.yml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking.podspec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking.xcworkspace" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPSessionManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPSessionManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFSecurityPolicy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFSecurityPolicy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLConnectionOperation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLConnectionOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLRequestSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLRequestSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLResponseSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLResponseSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLSessionManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLSessionManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/CHANGELOG.md" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/CONTRIBUTING.md" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking Example.entitlements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking OS X Example.xcodeproj" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking iOS Example.xcodeproj" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/ExtensionDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/ExtensionDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/InterfaceController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS Extension/InterfaceController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS/Base.lproj/Interface.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AFNetworking watchOS/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/AppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/AFAppDotNetAPIClient.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/AFAppDotNetAPIClient.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Controllers/GlobalTimelineViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Controllers/GlobalTimelineViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Models/Post.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Models/Post.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Models/User.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Models/User.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Views/PostTableViewCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Classes/Views/PostTableViewCell.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Default-568h@2x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Default.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Default@2x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Icon.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Icon@2x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Images/profile-image-placeholder.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Images/profile-image-placeholder@2x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Mac-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/MainMenu.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Today Extension/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Today Extension/MainInterface.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Today Extension/TodayViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/Today Extension/TodayViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/adn.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/digicert_ca_3.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/en.lproj/MainMenu.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/iOS-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Example/root_ca.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/LICENSE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/README.md" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/AFNetworking Tests.xcodeproj" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/AFNetworking-Prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/AFNetworkingTests-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/OS X Tests/OS X Tests-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/OS X Tests/OS X Tests-Prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/OS X Tests/en.lproj/InfoPlist.strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/ADN.net/ADNNetServerTrustChain/adn_0.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/ADN.net/ADNNetServerTrustChain/adn_1.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/ADN.net/ADNNetServerTrustChain/adn_2.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/AddTrust_External_CA_Root.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/COMODO_RSA_Certification_Authority.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/COMODO_RSA_Domain_Validation_Secure_Server_CA.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/HTTPBinOrgServerTrustChain/httpbin_0.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/HTTPBinOrgServerTrustChain/httpbin_1.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/HTTPBinOrgServerTrustChain/httpbin_2.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/HTTPBinOrgServerTrustChain/httpbin_3.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/HTTPBin.org/httpbinorg_01162016.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/SelfSigned/AltName.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/SelfSigned/NoDomains.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Resources/SelfSigned/foobar.com.cer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Schemes/OS X Tests.xcscheme" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Schemes/iOS Tests.xcscheme" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFHTTPClientTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFHTTPRequestOperationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFImageRequestOperationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFJSONRequestOperationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFMockURLProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFMockURLProtocol.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFNetworkingTests.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFNetworkingTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/1.0 Tests/AFURLConnectionOperationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFHTTPRequestOperationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFHTTPRequestSerializationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFHTTPResponseSerializationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFHTTPSessionManagerTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFJSONSerializationTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFNetworkActivityManagerTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFNetworkReachabilityManagerTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFPropertyListResponseSerializerTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFSecurityPolicyTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFTestCase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFTestCase.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFUIActivityIndicatorViewTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFUIImageViewTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFUIRefreshControlTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/Tests/AFURLSessionManagerTests.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/iOS Tests/en.lproj/InfoPlist.strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/iOS Tests/iOS Tests-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/Tests/iOS Tests/iOS Tests-Prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImage+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIKit+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/InfoPlist/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POSRx-master/.gitignore" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POSRx-master/LICENSE" isTestSource="false" />
@@ -27,8 +167,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/TabBar/YANTabBarController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/WalletPage/YANWalletViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateTableCell.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateTableCell.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/YANOperationDateView.h" isTestSource="false" />

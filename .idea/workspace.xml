@@ -110,16 +110,16 @@
         <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
               <folding>
-                <marker date="1448633108000" expanded="true" signature="132:212" placeholder="..." />
-                <marker date="1448633108000" expanded="true" signature="243:2339" placeholder="..." />
-                <marker date="1448633108000" expanded="true" signature="244:279" placeholder="{...}" />
-                <marker date="1448633108000" expanded="true" signature="657:1783" placeholder="{...}" />
-                <marker date="1448633108000" expanded="true" signature="1816:1974" placeholder="{...}" />
-                <marker date="1448633108000" expanded="true" signature="2028:2135" placeholder="{...}" />
-                <marker date="1448633108000" expanded="true" signature="2179:2259" placeholder="{...}" />
-                <marker date="1448633108000" expanded="true" signature="2285:2336" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
+                <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
+                <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
+                <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -141,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.29925188">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -780,14 +780,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1448633108000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="243:2339" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2285:2336" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -882,14 +882,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1448633108000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="243:2339" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2285:2336" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1178,16 +1178,16 @@
     <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding>
-            <marker date="1448633108000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="243:2339" placeholder="..." />
-            <marker date="1448633108000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448633108000" expanded="true" signature="2285:2336" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
+            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
+            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1205,7 +1205,7 @@
     <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29925188">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>

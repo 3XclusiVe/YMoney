@@ -364,6 +364,7 @@
                     <connections>
                         <outlet property="avatar" destination="WxP-gz-rqh" id="PNh-ie-aOm"/>
                         <outlet property="balance" destination="yoI-8T-QgF" id="w5v-8x-Ydq"/>
+                        <outlet property="currency" destination="FzA-fO-gv2" id="zQ9-co-Cld"/>
                         <outlet property="scrollView" destination="xnI-oW-iG9" id="IBx-8K-qkD"/>
                         <outlet property="userNameLabel" destination="W0m-M4-6XE" id="DQf-JR-MAZ"/>
                         <outlet property="walletButton" destination="udj-zc-zCE" id="qNo-19-wYS"/>

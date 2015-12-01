@@ -221,7 +221,7 @@ POSRX_DEADLY_INITIALIZER(init);
     NSTimeInterval currentTime = 0.0f;
     while(currentTime < kConnectionTimeout) {
         if([NSThread currentThread].isCancelled) {
-            break;
+            return;
         }
         [NSThread sleepForTimeInterval:timeStamp];
         currentTime += timeStamp;

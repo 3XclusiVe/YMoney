@@ -11,7 +11,7 @@
 #import "YANKeyStorage.h"
 #import "YMAAccountInfoModel.h"
 #import "YANYandexMoneyServer.h"
-
+#import "UIKit+AFNetworking.h"
 
 @interface YANWalletViewController ()
 
@@ -24,6 +24,8 @@
 @property(weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
+
+@property (weak, nonatomic) IBOutlet UILabel *currency;
 
 @end
 
@@ -64,6 +66,9 @@
 - (void)updateAccountInfoPresentation:(YMAAccountInfoModel *)accountInfo {
     self.userNameLabel.text = accountInfo.account;
     self.balance.text = accountInfo.balance;
+    self.currency.text = [self convertCurrencyCodeToSymbol:accountInfo.currency];
+    NSURL *url = [[NSURL alloc] initWithString:@"http://i.stack.imgur.com/yFaJp.png"];
+    [self.avatar setImageWithURL:url];
 }
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
@@ -99,6 +104,24 @@
     _refreshControl = [[UIRefreshControl alloc] init];
     [_refreshControl addTarget:self action:selector forControlEvents:UIControlEventValueChanged];
     [self.scrollView addSubview:_refreshControl];
+}
+
+-(NSString*) convertCurrencyCodeToSymbol:(NSString *)currencyCode {
+    
+    NSLocale *locale = [NSLocale currentLocale];
+    for (NSString *code in [NSLocale ISOCurrencyCodes]) {
+        NSLog(@"%@ : %@", code, [locale displayNameForKey:NSLocaleCurrencyCode value:code]);
+    }
+    
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [formatter setLocale:locale];
+    
+    NSString *currencySymbol = [NSString stringWithFormat:@"%@",[locale displayNameForKey:NSLocaleCurrencySymbol value:currencyCode]];
+    NSLog(@"Currency Symbol : %@", currencySymbol);
+    
+    return currencySymbol;
 }
 
 @end
