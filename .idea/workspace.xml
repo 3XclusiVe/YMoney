@@ -140,7 +140,7 @@
       <file leaf-file-name="YANOperationHistoryViewController.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29925188">
+            <state vertical-scroll-proportion="0.33898306">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
@@ -204,8 +204,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -612,7 +614,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="YMoney" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.YMoney">
     <configuration default="false" name="HomeWork1" type="AppleRunConfiguration" factoryName="Application" temporary="true" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="YMoney" TARGET_NAME="YMoney" CONFIG_NAME="Debug" SCHEME_NAME="HomeWork1" RUN_TARGET_PROJECT_NAME="YMoney" RUN_TARGET_NAME="YMoney" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -709,8 +711,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="-2" y="23" width="1440" height="828" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1206,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29925188">
+        <state vertical-scroll-proportion="0.33898306">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
