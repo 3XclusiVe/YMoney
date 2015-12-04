@@ -50,6 +50,7 @@ static NSString *const _permissions = @"account-info operation-history";
                          [observer onTokenAccepted];
                      } else {
                          [observer onNeedToRefreshToken];
+                         NSLog(error.description);
                      }
 
                  }];
@@ -93,11 +94,36 @@ static NSString *const _permissions = @"account-info operation-history";
                          [self onTokenAccepted];
                      } else {
                          [self handleError:error.code];
+                         
+                         NSLog(error.description);
                      }
                      
                  }];
 }
 
+- (void)getAccessTokenFrom:(NSURLRequest *)request {
+    
+    POSRX_CHECK_EX(request != nil, @"missing url request");
+    
+    NSMutableDictionary *authInfo = nil;
+    NSError * error = nil;
+    
+    if ([_session isRequest:request
+              toRedirectUrl:_redirectUri
+          authorizationInfo:&authInfo
+                      error:&error]) {
+        
+        if(error == nil) {
+            NSString * authCode = authInfo[@"code"];
+        
+        } else {
+            [self handleError:error.code];
+        }
+        
+    }
+
+    
+}
 
 - (void)performAccountInfoRequest {
     
@@ -122,6 +148,7 @@ static NSString *const _permissions = @"account-info operation-history";
                           
                       } else {
                           [self handleError:error.code];
+                          NSLog(error.description);
                       }
                       
                   }];
@@ -137,6 +164,29 @@ POSRX_DEADLY_INITIALIZER(init);
 
 #pragma mark - Private methods
 
+- (void)getAccessTokenFor:(NSString *)authCode {
+    
+    NSDictionary * additionalParameters = @{
+                                            @"grant_type" : @"authorization_code", // Constant parameter
+                                            YMAParameterRedirectUri : _redirectUri
+                                            };
+    [self startTimeout];
+    
+    [_session receiveTokenWithCode:authCode
+                          clientId:_clientId
+              additionalParameters:additionalParameters
+                        completion:^(NSString *instanceId, NSError *error) {
+                            if (error == nil && instanceId != nil && instanceId.length > 0) {
+                                _accessToken = instanceId;
+                                [self onConfirmToken:_accessToken];
+                                [self stopTimeout];
+                            } else {
+                                [self handleError:error.code];
+                            }
+                        }];
+    
+}
+
 -(void) updateAccountInfoData:(YMAAccountInfoModel *) accountInfo {
     dispatch_async(dispatch_get_main_queue(), ^{
         for(id<YANYandexServerObserver> observer in _observers) {
@@ -145,12 +195,10 @@ POSRX_DEADLY_INITIALIZER(init);
     });
 }
 
--(void) handleError:(int) error {
-    if(error == errors.INTERNET_CONNECTION_TIMEOUT) {
-        [self onConnectionTimeout];
-    } else if (error == errors.NO_INTERNET_CONNECTION) {
+-(void) handleError:(long) error {
+    if(error < 0) {
         [self onConnectionLost];
-    } else if (error == errors.INVALID_TOKEN) {
+    } else if (error == INVALID_TOKEN) {
         [self onBadToken];
     } else {
         [self onUnexpectedError];
@@ -225,6 +273,7 @@ POSRX_DEADLY_INITIALIZER(init);
         }
         [NSThread sleepForTimeInterval:timeStamp];
         currentTime += timeStamp;
+        NSLog(@"%f", currentTime);
     }
     
     [self onConnectionTimeout];

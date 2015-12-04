@@ -49,6 +49,10 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [self makeAvatarRounded];
+}
+
 /*
 #pragma mark - Navigation
 

@@ -9,6 +9,8 @@
 #import "CustomSpinner.h"
 #import "YMoney-Swift.h"
 
+typedef void (^Block)(void);
+
 static volatile BOOL isShowing;
 
 @implementation CustomSpinner
@@ -22,7 +24,18 @@ static volatile BOOL isShowing;
     
     [SwiftSpinner show:label animated:animated];
     
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    [self delay:timeout :^{
+        if(isShowing) {
+            [[SwiftSpinner show:label animated:YES] addTapHandler:^{
+                [SwiftSpinner hide: ^ {
+                    isShowing = NO;
+                }];
+            }subtitle:labelAfterTimeout];
+        }
+    }];
+    
+    
+    /**dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^ {
         [NSThread sleepForTimeInterval:timeout];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -34,7 +47,8 @@ static volatile BOOL isShowing;
                 }subtitle:labelAfterTimeout];
             }
         });
-    });
+    });**/
+    
 }
 
 +(void) hide:(NSString *) completionLabel {
@@ -51,6 +65,15 @@ static volatile BOOL isShowing;
         isShowing = NO;
     }
     
+}
+
++(void) delay:(double)delay :(Block)block {
+    dispatch_after(
+                   dispatch_time(
+                                 DISPATCH_TIME_NOW,
+                                 (long)(delay * (double)NSEC_PER_SEC)
+                                 ),
+                   dispatch_get_main_queue(), block);
 }
 
 @end

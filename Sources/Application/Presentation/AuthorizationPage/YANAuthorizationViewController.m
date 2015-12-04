@@ -124,8 +124,7 @@ YMAAPISession *_session = nil;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"LoginSuccess"]) {
-
-
+        
     }
 }
 
@@ -136,15 +135,6 @@ YMAAPISession *_session = nil;
 
     [strongDelegate authorizationViewController:self
                                  didChooseValue:5];
-}
-
-- (void)didMoveToParentViewController:(UIViewController *)parent {
-    if (![parent isEqual:self.parentViewController]) {
-        id <AuthorizationViewControllerDelegate> strongDelegate = self.delegate;
-
-        [strongDelegate authorizationViewController:self
-                                     didChooseValue:5];
-    }
 }
 
 @end
