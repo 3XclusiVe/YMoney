@@ -12,6 +12,8 @@
 #import "YMAAccountInfoRequest.h"
 #import "YANServerProtocol.h"
 #import "YANBaseUIViewController.h"
+#import "YMAHistoryOperationsResponse.h"
+#import "YMAHistoryOperationsRequest.h"
 
 @implementation YANYandexMoneyServer {
 
@@ -23,11 +25,15 @@
     
     NSMutableArray *_observers;
     
+    NSString *nextRecord;
+    
 }
 
 NSThread* _connectionTimeoutThread;
 
 const NSTimeInterval kConnectionTimeout = 5.0f;
+
+NSString *const _numberOfOperations = @"10";
 
 //My client id.
 static NSString *const _clientId = @"CBE42B5C0151CE4F2AC277F5A037A45DF265B83F21EB4FF9D61A559D2A73DBF6";
@@ -157,7 +163,67 @@ static NSString *const _permissions = @"account-info operation-history";
 }
 
 - (void)performOperationHistoryRequest {
+    
+    [self startTimeout];
+    
+    YMAHistoryOperationsRequest *operationHistoryRequest = [YMAHistoryOperationsRequest operationHistoryWithFilter:YMAHistoryOperationFilterUnknown label:nil from:nil till:nil startRecord:nil records:_numberOfOperations];
+    
+    [_session performRequest:operationHistoryRequest
+                       token:_accessToken
+                  completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                      
+                      if(error == nil) {
+                          YMAHistoryOperationsResponse *historyOperation = ((YMAHistoryOperationsResponse *) response);
+                          [self updateLastOperationsDetails:historyOperation.operations];
+                          nextRecord = [historyOperation.nextRecord copy];
+                          
+                      } else {
+                          [self handleError:error.code];
+                          NSLog(error.description);
+                      }
+                      
+                      [self stopTimeout];
+        /**
+        YMAHistoryOperationsResponse *accauntInfoResponse = (YMAHistoryOperationsResponse *) response;
+        
+        NSString *title;
+        
+        for(YMAHistoryOperationModel *operation in accauntInfoResponse.operations) {
+            NSLog(operation.title);
+            title = operation.title;
+        }
+        
+        self.userNameLabel.text = title;
+        **/
+        
+                  }];
 
+}
+
+-(void) requestNextOperations {
+    
+    [self startTimeout];
+    
+    YMAHistoryOperationsRequest *operationHistoryRequest = [YMAHistoryOperationsRequest operationHistoryWithFilter:YMAHistoryOperationFilterUnknown label:nil from:nil till:nil startRecord:nextRecord records:_numberOfOperations];
+    
+    [_session performRequest:operationHistoryRequest
+                       token:_accessToken
+                  completion:^(YMABaseRequest *request, YMABaseResponse *response, NSError *error) {
+                      
+                      if(error == nil) {
+                          YMAHistoryOperationsResponse *historyOperation = ((YMAHistoryOperationsResponse *) response);
+                          [self onAddOperationsToEnd:historyOperation.operations];
+                          nextRecord = [historyOperation.nextRecord copy];
+                          
+                      } else {
+                          [self handleError:error.code];
+                          NSLog(error.description);
+                      }
+                      
+                      [self stopTimeout];
+                  }];
+
+    
 }
 
 POSRX_DEADLY_INITIALIZER(init);
@@ -191,6 +257,22 @@ POSRX_DEADLY_INITIALIZER(init);
     dispatch_async(dispatch_get_main_queue(), ^{
         for(id<YANYandexServerObserver> observer in _observers) {
             [observer onReceiveAccountInfo:accountInfo];
+        }
+    });
+}
+
+-(void) updateLastOperationsDetails:(NSArray*) operations {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onReceiveLastOperations:operations];
+        }
+    });
+}
+
+-(void) onAddOperationsToEnd:(NSArray*) operations {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        for(id<YANYandexServerObserver> observer in _observers) {
+            [observer onReceiveNextOperations:operations];
         }
     });
 }

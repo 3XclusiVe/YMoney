@@ -58,6 +58,14 @@
     
 }
 
+-(void) onReceiveLastOperations:(NSArray *)operations {
+    
+}
+
+-(void) onReceiveNextOperations:(NSArray *)operations {
+    
+}
+
 # pragma mark - private methods
 
 -(NSString *)loadTokenFromStorage {

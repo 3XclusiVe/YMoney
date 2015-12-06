@@ -17,6 +17,10 @@
 
 -(void) onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo;
 
+-(void) onReceiveLastOperations:(NSArray *)operations;
+
+-(void) onReceiveNextOperations:(NSArray *)operations;
+
 -(void) onNeedToRefreshToken;
 
 -(void) onReceiveToken:(NSString *)accessToken;

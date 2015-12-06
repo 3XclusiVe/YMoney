@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YANBaseUIViewController.h"
 
-@interface YANOperationHistoryViewController : UIViewController
+@interface YANOperationHistoryViewController : YANBaseUIViewController
 
 @end

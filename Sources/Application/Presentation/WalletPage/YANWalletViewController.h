@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "YANBaseUIViewController.h"
 
-
 @interface YANWalletViewController : YANBaseUIViewController
 
 

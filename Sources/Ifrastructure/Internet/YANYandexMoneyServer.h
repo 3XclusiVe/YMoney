@@ -22,6 +22,8 @@
 
 -(void)performOperationHistoryRequest;
 
+-(void)requestNextOperations;
+
 -(void)checkAccessToken;
 
 +(void)checkAccessToken:(nonnull NSString *)accessToken forObserver:(_Nonnull id<YANYandexServerObserver>) observer;

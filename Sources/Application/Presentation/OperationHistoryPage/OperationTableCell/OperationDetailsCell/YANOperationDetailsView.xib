@@ -16,13 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="585" height="67"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrN-tr-jZS">
-                        <rect key="frame" x="471" y="351" width="35" height="21"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="DVM-iQ-ay3">
                         <rect key="frame" x="13" y="12" width="44" height="44"/>
                         <animations/>
@@ -37,14 +30,48 @@
                             </mask>
                         </variation>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-b4-XRr">
+                        <rect key="frame" x="540" y="23" width="32" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oco-cY-lNA">
+                        <rect key="frame" x="495" y="23" width="35" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-dR-cbe">
+                        <rect key="frame" x="72" y="0.0" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-Ey-uDJ">
+                        <rect key="frame" x="72" y="40" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="qrN-tr-jZS" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="Meh-uh-txI"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="qrN-tr-jZS" secondAttribute="trailing" constant="71" id="NCE-8v-fkn"/>
+                    <constraint firstItem="vZE-b4-XRr" firstAttribute="leading" secondItem="Oco-cY-lNA" secondAttribute="trailing" constant="10" id="35F-pb-Opn"/>
+                    <constraint firstItem="CcX-Ey-uDJ" firstAttribute="baseline" secondItem="DVM-iQ-ay3" secondAttribute="baseline" id="7aH-0p-Iob"/>
+                    <constraint firstItem="Xth-dR-cbe" firstAttribute="leading" secondItem="CcX-Ey-uDJ" secondAttribute="leading" id="7ni-Qq-URD"/>
+                    <constraint firstItem="Oco-cY-lNA" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="Itc-Bw-cVx"/>
+                    <constraint firstItem="vZE-b4-XRr" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="PWa-Nh-fd2"/>
+                    <constraint firstItem="Xth-dR-cbe" firstAttribute="leading" secondItem="DVM-iQ-ay3" secondAttribute="trailing" constant="15" id="SYm-Rv-NZc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vZE-b4-XRr" secondAttribute="trailing" constant="5" id="Zpy-Dt-4Pn"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="bZ8-tA-gfz"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="leading" secondItem="Tfo-39-gh1" secondAttribute="leadingMargin" constant="5" id="jEl-oi-BqW"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="top" secondItem="Tfo-39-gh1" secondAttribute="topMargin" constant="5" id="qX4-9E-z2x"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Oco-cY-lNA" secondAttribute="trailing" constant="5" id="uvV-ja-dge"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -53,6 +80,13 @@
                 </variation>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="operationAmount" destination="Oco-cY-lNA" id="jmo-XE-3Uh"/>
+                <outlet property="operationLabel" destination="CcX-Ey-uDJ" id="I5I-Ol-jkr"/>
+                <outlet property="operationStatus" destination="vZE-b4-XRr" id="qOz-uZ-1th"/>
+                <outlet property="operationTitle" destination="Xth-dR-cbe" id="pRC-bM-SnH"/>
+                <outlet property="operationTypeImage" destination="DVM-iQ-ay3" id="XjH-4i-3v5"/>
+            </connections>
             <point key="canvasLocation" x="313.5" y="188"/>
         </tableViewCell>
     </objects>
