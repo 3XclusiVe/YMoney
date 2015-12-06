@@ -17,7 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *operationHistory;
 @property (weak, nonatomic) IBOutlet UITabBarItem *operationHistoryButton;
-@property (strong, nonatomic) NSMutableArray<id> *operations;
+@property (strong, nonatomic) NSMutableArray<YMAHistoryOperationModel*> *operations;
 
 @end
 
@@ -62,6 +62,11 @@
 
 #pragma mark - Private methods
 
+-(void) updateRepresentation {
+    [self.operationHistory reloadData];
+    [_refreshControl endRefreshing];
+}
+
 -(void) responceLastOperations {
     [self.yandexMoneyServer performOperationHistoryRequest];
 }
@@ -70,25 +75,18 @@
     [self.yandexMoneyServer requestNextOperations];
 }
 
-
 -(void) onReceiveLastOperations:(NSArray *)operations {
-    [self reloadData:operations];
-    [_refreshControl endRefreshing];
+    self.operations = [operations mutableCopy];
+    [self updateRepresentation];
 }
 
 -(void) onReceiveNextOperations:(NSArray *)operations {
     [self.operations addObjectsFromArray:operations];
-    [self.operationHistory reloadData];
-    [_refreshControl endRefreshing];
+    [self updateRepresentation];
 }
 
 -(void) onInternetConnectionLost {
-    [_refreshControl endRefreshing];
-}
-
-- (void)reloadData:(NSArray *)operations {
-    self.operations = [operations mutableCopy];
-    [self.operationHistory reloadData];
+    [self updateRepresentation];
 }
 
 -(void) registerCell:(Class) class {

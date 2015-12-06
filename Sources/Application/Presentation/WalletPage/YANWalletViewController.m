@@ -73,10 +73,10 @@
     self.currency.text = [self convertCurrencyCodeToSymbol:accountInfo.currency];
     NSURL *url = [[NSURL alloc] initWithString:@"http://i.stack.imgur.com/yFaJp.png"];
     [self.avatar setImageWithURL:url];
+    [_refreshControl endRefreshing];
 }
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
-    [_refreshControl endRefreshing];
     [self updateAccountInfoPresentation:accountInfo];
 }
 
@@ -87,7 +87,7 @@
 - (void)onInternetConnectionLost {
     YMAAccountInfoModel *accountInfo = [self loadDataFromStorage];
     [self updateAccountInfoPresentation:accountInfo];
-    [_refreshControl endRefreshing];
+    
 }
 
 - (YMAAccountInfoModel *)loadDataFromStorage {

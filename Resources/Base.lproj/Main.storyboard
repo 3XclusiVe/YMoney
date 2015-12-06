@@ -37,13 +37,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hhA-OE-mEH" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hhA-OE-mEH" userLabel="Background">
                                 <rect key="frame" x="20" y="0.0" width="560" height="469"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-mT-SSV">
                                 <rect key="frame" x="191" y="338" width="218" height="36"/>
                                 <animations/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Регистрация кошелька"/>
                                 <connections>
@@ -70,6 +71,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hhA-OE-mEH" secondAttribute="trailing" id="3zr-lC-6re"/>
                             <constraint firstItem="tb1-mT-SSV" firstAttribute="top" secondItem="eON-Mt-NHy" secondAttribute="bottom" constant="20" id="7Ju-dJ-aXA"/>
@@ -77,11 +79,15 @@
                             <constraint firstItem="eON-Mt-NHy" firstAttribute="centerY" secondItem="Sqv-ab-JMe" secondAttribute="centerY" id="ASJ-iF-Qc6"/>
                             <constraint firstItem="hhA-OE-mEH" firstAttribute="leading" secondItem="Sqv-ab-JMe" secondAttribute="leadingMargin" constant="160" id="ChR-Vf-Ywc"/>
                             <constraint firstItem="eON-Mt-NHy" firstAttribute="centerY" secondItem="Sqv-ab-JMe" secondAttribute="centerY" id="IVs-Py-TMl"/>
+                            <constraint firstItem="hhA-OE-mEH" firstAttribute="trailing" secondItem="Sqv-ab-JMe" secondAttribute="trailingMargin" id="NQb-dL-Qn5"/>
+                            <constraint firstItem="hhA-OE-mEH" firstAttribute="top" secondItem="Sqv-ab-JMe" secondAttribute="topMargin" id="R2D-cG-aB4"/>
                             <constraint firstItem="tb1-mT-SSV" firstAttribute="centerX" secondItem="Sqv-ab-JMe" secondAttribute="centerX" id="Wow-06-PBy"/>
+                            <constraint firstItem="hhA-OE-mEH" firstAttribute="leading" secondItem="Sqv-ab-JMe" secondAttribute="leadingMargin" id="hFC-cv-d3U"/>
                             <constraint firstItem="eON-Mt-NHy" firstAttribute="centerX" secondItem="Sqv-ab-JMe" secondAttribute="centerX" id="qGp-ge-XAr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ChR-Vf-Ywc"/>
                                 <exclude reference="IVs-Py-TMl"/>
                                 <exclude reference="qGp-ge-XAr"/>
                             </mask>
@@ -210,8 +216,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYr-fp-pq0" userLabel="Balance View">
                                                 <rect key="frame" x="0.0" y="321" width="560" height="25"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Balancebkjk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-8T-QgF">
-                                                        <rect key="frame" x="227" y="1" width="88" height="25"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balancebkjk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-8T-QgF">
+                                                        <rect key="frame" x="227" y="0.0" width="88" height="25"/>
                                                         <animations/>
                                                         <accessibility key="accessibilityConfiguration" label="0 P"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -224,8 +230,8 @@
                                                             <rect key="frame" x="327" y="1" width="88" height="25"/>
                                                         </variation>
                                                     </label>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-3u-msT" userLabel="Left pin">
-                                                        <rect key="frame" x="0.0" y="1" width="227" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-3u-msT" userLabel="Left pin">
+                                                        <rect key="frame" x="0.0" y="0.0" width="227" height="25"/>
                                                         <animations/>
                                                         <color key="backgroundColor" red="0.98298429320000003" green="0.17824966240000001" blue="0.075736665940000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
@@ -235,8 +241,8 @@
                                                             <rect key="frame" x="0.0" y="1" width="327" height="25"/>
                                                         </variation>
                                                     </view>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1TN-gf-s1Z" userLabel="Right pin">
-                                                        <rect key="frame" x="334" y="1" width="226" height="25"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TN-gf-s1Z" userLabel="Right pin">
+                                                        <rect key="frame" x="334" y="0.0" width="226" height="25"/>
                                                         <animations/>
                                                         <color key="backgroundColor" red="0.98298429320000003" green="0.17824966240000001" blue="0.075736665940000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
@@ -246,8 +252,8 @@
                                                             <rect key="frame" x="434" y="1" width="326" height="25"/>
                                                         </variation>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-fO-gv2" userLabel="Currency">
-                                                        <rect key="frame" x="323" y="4" width="11" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-fO-gv2" userLabel="Currency">
+                                                        <rect key="frame" x="323" y="3" width="11" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -436,6 +442,6 @@
         <image name="Avatar" width="697" height="469"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d3j-cl-Eew"/>
+        <segue reference="o1d-d2-i3O"/>
     </inferredMetricsTieBreakers>
 </document>
