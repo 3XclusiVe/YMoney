@@ -42,6 +42,9 @@
 - (void)viewDidAppear:(BOOL)clause {
     [super viewDidAppear:clause];
     [self responceAccountInfo];
+}
+
+- (void) viewDidLayoutSubviews {
     [self makeAvatarRounded];
 }
 
@@ -49,9 +52,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [self makeAvatarRounded];
-}
 
 /*
 #pragma mark - Navigation
@@ -100,8 +100,24 @@
 #pragma mark - Presentation methods
 
 -(void) makeAvatarRounded {
-    _avatar.layer.cornerRadius = _avatar.frame.size.width / 2;
-    _avatar.layer.masksToBounds = YES;
+    CGFloat radius = _avatar.frame.size.width / 2;
+    
+    CGRect rect = _avatar.bounds;
+    
+    //Make round
+    // Create the path for to make circle
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                   byRoundingCorners:UIRectCornerAllCorners
+                                                         cornerRadii:CGSizeMake(radius, radius)];
+    // Create the shape layer and set its path
+    CAShapeLayer *circleMask = [CAShapeLayer layer];
+    
+    circleMask.frame = rect;
+    circleMask.path  = maskPath.CGPath;
+    
+    // Set the newly created shape layer as the mask for the view's layer
+    _avatar.layer.mask = circleMask;
+    
 }
 
 -(void) addRefreshController:(SEL)selector {
@@ -127,6 +143,7 @@
     
     return currencySymbol;
 }
+
 
 @end
 

@@ -20,14 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString* token = [self loadTokenFromStorage];
-    self.yandexMoneyServer = [[YANYandexMoneyServer alloc] initWithAccessToken:token];
-    [self.yandexMoneyServer subscribeOnEvents:self];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSString* token = [self loadTokenFromStorage];
+    self.yandexMoneyServer = [[YANYandexMoneyServer alloc] initWithAccessToken:token];
+    [self.yandexMoneyServer subscribeOnEvents:self];
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     [self.yandexMoneyServer unSubscribeOnEvents:self];
 }
 

@@ -34,12 +34,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.yandexMoneyServer checkAccessToken];
     [CustomSpinner showWithLabel:@"Идет подключение к серверу"
                          timeout:5.0f
                labelAfterTimeout:@"Подключение выполняется слишком долго"
                         animated:YES];
-    
 }
 
 - (void)didReceiveMemoryWarning {

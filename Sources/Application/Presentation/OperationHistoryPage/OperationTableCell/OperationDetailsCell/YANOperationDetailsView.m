@@ -18,8 +18,11 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.operationTypeImage.layer.cornerRadius = self.operationTypeImage.frame.size.width / 2;
+    [self customizeView];
 }
 
+-(void) customizeView {
+    self.operationTypeImage.layer.cornerRadius = self.operationTypeImage.frame.size.width / 2;
+}
 
 @end
