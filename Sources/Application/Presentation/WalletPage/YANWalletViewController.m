@@ -12,6 +12,7 @@
 #import "YMAAccountInfoModel.h"
 #import "YANYandexMoneyServer.h"
 #import "UIKit+AFNetworking.h"
+#import "YANUICircleImageView.h"
 
 @interface YANWalletViewController ()
 
@@ -23,7 +24,7 @@
 
 @property(weak, nonatomic) IBOutlet UITabBarItem *walletButton;
 
-@property (weak, nonatomic) IBOutlet UIImageView *avatar;
+@property (weak, nonatomic) IBOutlet YANUICircleImageView *avatar;
 
 @property (weak, nonatomic) IBOutlet UILabel *currency;
 
@@ -42,10 +43,6 @@
 - (void)viewDidAppear:(BOOL)clause {
     [super viewDidAppear:clause];
     [self responceAccountInfo];
-}
-
-- (void) viewDidLayoutSubviews {
-    [self makeAvatarRounded];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,27 +95,6 @@
 }
 
 #pragma mark - Presentation methods
-
--(void) makeAvatarRounded {
-    CGFloat radius = _avatar.frame.size.width / 2;
-    
-    CGRect rect = _avatar.bounds;
-    
-    //Make round
-    // Create the path for to make circle
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
-                                                   byRoundingCorners:UIRectCornerAllCorners
-                                                         cornerRadii:CGSizeMake(radius, radius)];
-    // Create the shape layer and set its path
-    CAShapeLayer *circleMask = [CAShapeLayer layer];
-    
-    circleMask.frame = rect;
-    circleMask.path  = maskPath.CGPath;
-    
-    // Set the newly created shape layer as the mask for the view's layer
-    _avatar.layer.mask = circleMask;
-    
-}
 
 -(void) addRefreshController:(SEL)selector {
     _refreshControl = [[UIRefreshControl alloc] init];

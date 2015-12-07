@@ -74,6 +74,7 @@
 		CED80BA41BDD05D600159505 /* YANWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA31BDD05D600159505 /* YANWalletViewController.m */; };
 		CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */; };
 		CEF4BFDF1C106D0100DCA458 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */; };
+		CEF4BFE81C14F13D00DCA458 /* YANUICircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4BFE71C14F13D00DCA458 /* YANUICircleImageView.m */; };
 		CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* YANKeyStorage.m */; };
 		CEF7C3431C0A83BE0067EDD8 /* YANOperationDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3411C0A83BE0067EDD8 /* YANOperationDateView.m */; };
 		CEF7C3441C0A83BE0067EDD8 /* YANOperationDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3421C0A83BE0067EDD8 /* YANOperationDateView.xib */; };
@@ -281,6 +282,8 @@
 		CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANOperationHistoryViewController.m; sourceTree = "<group>"; };
 		CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		CEF4BFE11C106E2E00DCA458 /* YMoney-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMoney-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEF4BFE61C14F13D00DCA458 /* YANUICircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANUICircleImageView.h; sourceTree = "<group>"; };
+		CEF4BFE71C14F13D00DCA458 /* YANUICircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANUICircleImageView.m; sourceTree = "<group>"; };
 		CEF700631BE9695D00980D2D /* YANKeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANKeyStorage.h; sourceTree = "<group>"; };
 		CEF700641BE9695D00980D2D /* YANKeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANKeyStorage.m; sourceTree = "<group>"; };
 		CEF7C3401C0A83BE0067EDD8 /* YANOperationDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationDateView.h; sourceTree = "<group>"; };
@@ -475,9 +478,9 @@
 		CE34B4E41C0900E800FABC44 /* Spinner */ = {
 			isa = PBXGroup;
 			children = (
-				CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */,
 				CE34B4E81C0901A700FABC44 /* CustomSpinner.h */,
 				CE34B4E91C0901A700FABC44 /* CustomSpinner.m */,
+				CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */,
 				CEF4BFE11C106E2E00DCA458 /* YMoney-Bridging-Header.h */,
 			);
 			path = Spinner;
@@ -777,6 +780,7 @@
 			children = (
 				CEE7F4E31BE5646800683229 /* AuthorizationPage */,
 				CE34B4DB1C07A33D00FABC44 /* Base */,
+				CEF4BFE51C14F0F900DCA458 /* CircleImage */,
 				CEE7F4E21BE5642900683229 /* LaunchPage */,
 				CEE7F4E61BE564CE00683229 /* OperationHistoryPage */,
 				CE34B4E41C0900E800FABC44 /* Spinner */,
@@ -859,6 +863,15 @@
 				CE34B4D71C07894900FABC44 /* KeyStores */,
 			);
 			path = Ifrastructure;
+			sourceTree = "<group>";
+		};
+		CEF4BFE51C14F0F900DCA458 /* CircleImage */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4BFE61C14F13D00DCA458 /* YANUICircleImageView.h */,
+				CEF4BFE71C14F13D00DCA458 /* YANUICircleImageView.m */,
+			);
+			path = CircleImage;
 			sourceTree = "<group>";
 		};
 		CEF7C33F1C0A831D0067EDD8 /* OperationTableCell */ = {
@@ -1226,6 +1239,7 @@
 				CEC3820A1BE80B0200700DAF /* YMAConstants.m in Sources */,
 				CEC382071BE80B0200700DAF /* YMABaseSession.m in Sources */,
 				CEC381F31BE80B0200700DAF /* YMAHistoryOperationsRequest.m in Sources */,
+				CEF4BFE81C14F13D00DCA458 /* YANUICircleImageView.m in Sources */,
 				36EBC0E5AFC696A4CD9BB7CB /* YANCashOperation.m in Sources */,
 				CEC382031BE80B0200700DAF /* YMAProcessPaymentResponse.m in Sources */,
 				CEC381EF1BE80B0200700DAF /* YMAPaymentInfoModel.m in Sources */,

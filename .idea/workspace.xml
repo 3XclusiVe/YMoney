@@ -49,99 +49,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YANServerProtocol.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANServerProtocol.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1448568401000" expanded="true" signature="202:204" placeholder="..." />
-                <marker date="1448568401000" expanded="true" signature="223:336" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANServerProtocol.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANServerProtocol.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1448568507000" expanded="true" signature="192:194" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANYandexMoneyServer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANYandexMoneyServer.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANKeyStorage.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1448566110000" expanded="true" signature="194:383" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANKeyStorage.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding>
-                <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
-                <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
-                <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
-                <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
-                <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
-                <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
-                <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
-                <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANOperationDateView+YMAHistoryOperationModel.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-              <folding>
-                <element signature="e#124#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YANOperationHistoryViewController.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YANOperationHistoryViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33898306">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YANUICircleImageView.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YANUICircleImageView.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5508475">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -193,6 +125,9 @@
         <option value="$PROJECT_DIR$/Sources/Application/Presentation/OperationDateView+YMAHistoryOperationModel.h" />
         <option value="$PROJECT_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.h" />
         <option value="$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m" />
+        <option value="$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/CircleImage.h" />
+        <option value="$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.h" />
+        <option value="$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.m" />
       </list>
     </option>
   </component>
@@ -204,7 +139,6 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
@@ -413,6 +347,10 @@
               <option name="myItemId" value="Presentation" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartPage" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -433,10 +371,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Presentation" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartPage" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,6 +461,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OperationDateCell" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YMoney" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Presentation" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CircleImage" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -711,8 +671,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="23" width="1440" height="828" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="828" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -725,14 +685,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28313252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -767,40 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1448566110000" expanded="true" signature="194:383" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Domain/Entities/YANBalance.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1447864873000" expanded="true" signature="175:463" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,12 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <marker date="1447878165000" expanded="true" signature="98:162" placeholder="..." />
-            <marker date="1447878165000" expanded="true" signature="191:457" placeholder="..." />
-            <marker date="1447878165000" expanded="true" signature="192:196" placeholder="{...}" />
-            <marker date="1447878165000" expanded="true" signature="247:422" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,33 +789,6 @@
             <marker date="1447880495000" expanded="true" signature="190:226" placeholder="{...}" />
             <marker date="1447880495000" expanded="true" signature="248:358" placeholder="{...}" />
             <marker date="1447880495000" expanded="true" signature="411:528" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1448566110000" expanded="true" signature="194:383" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1087,9 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1447864873000" expanded="true" signature="175:463" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,12 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <marker date="1447878165000" expanded="true" signature="98:162" placeholder="..." />
-            <marker date="1447878165000" expanded="true" signature="191:457" placeholder="..." />
-            <marker date="1447878165000" expanded="true" signature="192:196" placeholder="{...}" />
-            <marker date="1447878165000" expanded="true" signature="247:422" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,84 +1018,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANServerProtocol.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448568401000" expanded="true" signature="202:204" placeholder="..." />
-            <marker date="1448568401000" expanded="true" signature="223:336" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANServerProtocol.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448568507000" expanded="true" signature="192:194" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANYandexMoneyServer.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1448566110000" expanded="true" signature="194:383" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Ifrastructure/YANKeyStorage.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding>
-            <marker date="1448827935000" expanded="true" signature="132:212" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="243:2400" placeholder="..." />
-            <marker date="1448827935000" expanded="true" signature="244:279" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="657:1783" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="1816:1974" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2028:2135" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2179:2259" placeholder="{...}" />
-            <marker date="1448827935000" expanded="true" signature="2285:2336" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/YANOperationDateView+YMAHistoryOperationModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#124#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33898306">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Application/Presentation/CircleImage/YANUICircleImageView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5508475">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
