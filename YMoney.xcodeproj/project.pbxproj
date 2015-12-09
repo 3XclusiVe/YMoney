@@ -25,6 +25,8 @@
 		CE011B1E1BE56BE100D820A3 /* YMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE011B1D1BE56BE100D820A3 /* YMoneyTest.m */; };
 		CE34B4DE1C07A38F00FABC44 /* YANBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */; };
 		CE34B4EA1C0901A700FABC44 /* CustomSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34B4E91C0901A700FABC44 /* CustomSpinner.m */; };
+		CE67FC591C1829F400A6A5F3 /* YANHashStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67FC581C1829F400A6A5F3 /* YANHashStorage.m */; };
+		CE67FC5C1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CE67FC5B1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m */; };
 		CE97936D1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
 		CE97936E1C03CEAF00DAC14B /* YANYandexMoneyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */; };
 		CEA4746E1BFCE22B0073960E /* NSException+POSRx.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA474411BFCE22B0073960E /* NSException+POSRx.m */; };
@@ -75,6 +77,7 @@
 		CED80BA71BDD07AF00159505 /* YANOperationHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED80BA61BDD07AF00159505 /* YANOperationHistoryViewController.m */; };
 		CEF4BFDF1C106D0100DCA458 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */; };
 		CEF4BFE81C14F13D00DCA458 /* YANUICircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4BFE71C14F13D00DCA458 /* YANUICircleImageView.m */; };
+		CEF4BFEF1C16280800DCA458 /* YMAHistoryOperationModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF4BFEC1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.m */; };
 		CEF700651BE9695D00980D2D /* YANKeyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF700641BE9695D00980D2D /* YANKeyStorage.m */; };
 		CEF7C3431C0A83BE0067EDD8 /* YANOperationDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3411C0A83BE0067EDD8 /* YANOperationDateView.m */; };
 		CEF7C3441C0A83BE0067EDD8 /* YANOperationDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3421C0A83BE0067EDD8 /* YANOperationDateView.xib */; };
@@ -176,6 +179,10 @@
 		CE34B4DD1C07A38F00FABC44 /* YANBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANBaseUIViewController.m; sourceTree = "<group>"; };
 		CE34B4E81C0901A700FABC44 /* CustomSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSpinner.h; sourceTree = "<group>"; };
 		CE34B4E91C0901A700FABC44 /* CustomSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSpinner.m; sourceTree = "<group>"; };
+		CE67FC571C1829F400A6A5F3 /* YANHashStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANHashStorage.h; sourceTree = "<group>"; };
+		CE67FC581C1829F400A6A5F3 /* YANHashStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANHashStorage.m; sourceTree = "<group>"; };
+		CE67FC5A1C183B6800A6A5F3 /* YMAAccountInfoModel+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMAAccountInfoModel+NSCoding.h"; sourceTree = "<group>"; };
+		CE67FC5B1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMAAccountInfoModel+NsCoding.m"; sourceTree = "<group>"; };
 		CE97936B1C03CEAF00DAC14B /* YANYandexMoneyServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANYandexMoneyServer.h; sourceTree = "<group>"; };
 		CE97936C1C03CEAF00DAC14B /* YANYandexMoneyServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANYandexMoneyServer.m; sourceTree = "<group>"; };
 		CEA474021BFCE22B0073960E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -284,6 +291,8 @@
 		CEF4BFE11C106E2E00DCA458 /* YMoney-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMoney-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEF4BFE61C14F13D00DCA458 /* YANUICircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANUICircleImageView.h; sourceTree = "<group>"; };
 		CEF4BFE71C14F13D00DCA458 /* YANUICircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANUICircleImageView.m; sourceTree = "<group>"; };
+		CEF4BFEB1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMAHistoryOperationModel+NSCoding.h"; sourceTree = "<group>"; };
+		CEF4BFEC1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMAHistoryOperationModel+NSCoding.m"; sourceTree = "<group>"; };
 		CEF700631BE9695D00980D2D /* YANKeyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANKeyStorage.h; sourceTree = "<group>"; };
 		CEF700641BE9695D00980D2D /* YANKeyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANKeyStorage.m; sourceTree = "<group>"; };
 		CEF7C3401C0A83BE0067EDD8 /* YANOperationDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANOperationDateView.h; sourceTree = "<group>"; };
@@ -462,6 +471,8 @@
 			children = (
 				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
 				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
+				CE67FC571C1829F400A6A5F3 /* YANHashStorage.h */,
+				CE67FC581C1829F400A6A5F3 /* YANHashStorage.m */,
 			);
 			path = KeyStores;
 			sourceTree = "<group>";
@@ -843,6 +854,10 @@
 				36EBCCC518EADF7505E3B087 /* YANCash.m */,
 				36EBCA0F94697E72E920E80A /* YANCashOperation.h */,
 				36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */,
+				CEF4BFEB1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.h */,
+				CEF4BFEC1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.m */,
+				CE67FC5A1C183B6800A6A5F3 /* YMAAccountInfoModel+NSCoding.h */,
+				CE67FC5B1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -1214,11 +1229,13 @@
 				CEC381F51BE80B0200700DAF /* YMAExternalPaymentRequest.m in Sources */,
 				CEC381EA1BE80B0200700DAF /* YMAMoneySourcesModel.m in Sources */,
 				CEC381F71BE80B0200700DAF /* YMAIncomingTransferAcceptRequest.m in Sources */,
+				CE67FC591C1829F400A6A5F3 /* YANHashStorage.m in Sources */,
 				CEC382041BE80B0200700DAF /* YMABaseProcessResponse.m in Sources */,
 				CEF7C4691C0C59DA0067EDD8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				36EBC2E520AE7E540AAD0202 /* YANStartPageViewController.m in Sources */,
 				36EBC548FAD4F91CCBBF9698 /* YANCash.m in Sources */,
 				CEC381E81BE80B0200700DAF /* YMACardsSourceGroupModel.m in Sources */,
+				CE67FC5C1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m in Sources */,
 				CEC3820B1BE80B0200700DAF /* YMAHostsProvider.m in Sources */,
 				CEF7C46B1C0C59DA0067EDD8 /* UIButton+AFNetworking.m in Sources */,
 				CEC381F91BE80B0200700DAF /* YMAPaymentRequest.m in Sources */,
@@ -1234,6 +1251,7 @@
 				CEC381E21BE80B0200700DAF /* YMAAccountInfoModel.m in Sources */,
 				CEF7C4151C0C59D90067EDD8 /* AFURLResponseSerialization.m in Sources */,
 				CEF7C3431C0A83BE0067EDD8 /* YANOperationDateView.m in Sources */,
+				CEF4BFEF1C16280800DCA458 /* YMAHistoryOperationModel+NSCoding.m in Sources */,
 				CEC382011BE80B0200700DAF /* YMAIncomingTransferAcceptResponse.m in Sources */,
 				CEF7C46C1C0C59DA0067EDD8 /* UIImageView+AFNetworking.m in Sources */,
 				CEC3820A1BE80B0200700DAF /* YMAConstants.m in Sources */,

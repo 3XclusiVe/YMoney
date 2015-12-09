@@ -87,6 +87,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCash.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCashOperation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCashOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAHistoryOperationModel+NSCoding.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAHistoryOperationModel+NSCoding.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/Internet/YANServerProtocol.h" isTestSource="false" />

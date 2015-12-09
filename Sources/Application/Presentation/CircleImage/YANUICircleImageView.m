@@ -27,6 +27,10 @@
     [self makeRounded];
 }
 
+-(void)drawRect:(CGRect)rect {
+    [self makeRounded];
+}
+
 - (void)makeRounded {
 
     CGFloat radius = self.frame.size.width / 2;

@@ -16,7 +16,6 @@
     self.operationAmount.text = operation.amount;
     self.operationLabel.text = operation.label;
     self.operationTitle.text = operation.title;
-    
 }
 
 @end

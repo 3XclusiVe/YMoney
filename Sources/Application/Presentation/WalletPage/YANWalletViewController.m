@@ -8,7 +8,7 @@
 
 #import "YANWalletViewController.h"
 
-#import "YANKeyStorage.h"
+#import "YANHashStorage.h"
 #import "YMAAccountInfoModel.h"
 #import "YANYandexMoneyServer.h"
 #import "UIKit+AFNetworking.h"
@@ -68,16 +68,17 @@
     self.userNameLabel.text = accountInfo.account;
     self.balance.text = accountInfo.balance;
     self.currency.text = [self convertCurrencyCodeToSymbol:accountInfo.currency];
-    NSURL *url = [[NSURL alloc] initWithString:@"http://i.stack.imgur.com/yFaJp.png"];
-    [self.avatar setImageWithURL:url];
+    [self.avatar setImageWithURL:accountInfo.avatar.url];
     [_refreshControl endRefreshing];
 }
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
     [self updateAccountInfoPresentation:accountInfo];
+    [self saveDataToStorage:accountInfo];
 }
 
 - (void)responceAccountInfo {
+    [self onInternetConnectionLost];
     [self.yandexMoneyServer performAccountInfoRequest];
 }
 
@@ -86,12 +87,12 @@
     [self updateAccountInfoPresentation:accountInfo];
     
 }
+-(void) saveDataToStorage:(YMAAccountInfoModel *) account {
+    [[YANHashStorage sharedInstance] saveAccountInfo:account];
+}
 
 - (YMAAccountInfoModel *)loadDataFromStorage {
-    YANKeyStorage *keyStorage = [[YANKeyStorage alloc] initForTest];
-    YMAAccountInfoModel *accountInfo = [keyStorage loadData:@"Account"];
-
-    return accountInfo;
+    return [[YANHashStorage sharedInstance] loadAccountInfo];
 }
 
 #pragma mark - Presentation methods

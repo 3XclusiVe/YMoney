@@ -15,23 +15,39 @@
     NSMutableDictionary *store;
 }
 
-POSRX_DEADLY_INITIALIZER(init)
+-(instancetype) init {
+    if(self = [super init]) {
+        store = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
 
 - (id)loadData:(NSString *)key {
     POSRX_CHECK(key);
     if (!store) {
         store = [[NSMutableDictionary alloc] init];
-        return nil;
     }
-    return [store objectForKey:key];
+    id data = [store objectForKey:key];
+    
+    if(data == nil) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        data = [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:key]];
+    }
+    
+    return data;
 }
 
-- (BOOL)saveData:(id *)data withKey:(NSString *)key {
+- (BOOL)saveData:(id)data withKey:(NSString *)key {
 
     POSRX_CHECK(key);
     POSRX_CHECK(data);
 
-    [store setObject:*data forKey:key];
+    [store setObject:data forKey:key];
+    NSData* archivedData = [NSKeyedArchiver archivedDataWithRootObject:data];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:archivedData forKey:key];
+    [defaults synchronize];
 
     return YES;
 }
@@ -48,6 +64,8 @@ POSRX_DEADLY_INITIALIZER(init)
 - (BOOL)cleanKeyStorage {
 
     [store removeAllObjects];
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
 
     return YES;
 };

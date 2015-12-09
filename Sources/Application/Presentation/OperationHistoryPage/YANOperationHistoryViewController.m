@@ -10,8 +10,9 @@
 #import "YANOperationDetailsView.h"
 #import "YANOperationDateView.h"
 #import "YANYandexMoneyServer.h"
-#import "YMAHistoryOperationModel.h"
+#import "YMAHistoryOperationModel+NSCoding.h"
 #import "YANOperationDetailsView+YMAHistoryOperationModel.h"
+#import "YANHashStorage.h"
 
 @interface YANOperationHistoryViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -39,6 +40,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self onInternetConnectionLost];
     [self responceLastOperations];
 }
 
@@ -55,7 +57,7 @@
     YANOperationDetailsView *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YANOperationDetailsView class]) forIndexPath:indexPath];
     
     [cell configureWithOperation:operation];
-
+    
     return cell;
 }
 
@@ -78,6 +80,8 @@
 -(void) onReceiveLastOperations:(NSArray *)operations {
     self.operations = [operations mutableCopy];
     [self updateRepresentation];
+    [[YANHashStorage sharedInstance] saveOperationHistory:operations];
+    
 }
 
 -(void) onReceiveNextOperations:(NSArray *)operations {
@@ -86,6 +90,7 @@
 }
 
 -(void) onInternetConnectionLost {
+    self.operations = [[[YANHashStorage sharedInstance] loadOperationHistory] mutableCopy];
     [self updateRepresentation];
 }
 

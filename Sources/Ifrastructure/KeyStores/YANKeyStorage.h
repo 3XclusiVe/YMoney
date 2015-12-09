@@ -14,7 +14,7 @@
 
 -(id)loadData:(NSString*)key;
 
--(BOOL)saveData:(id*)data
+-(BOOL)saveData:(id)data
         withKey:(NSString*)key;
 
 -(BOOL)deleteDataWithKey:(NSString*)key;
