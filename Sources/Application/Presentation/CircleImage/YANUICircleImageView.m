@@ -10,24 +10,8 @@
 
 @implementation YANUICircleImageView
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        [self makeRounded];
-    }
-    return self;
-}
-
-- (void)layoutIfNeeded {
-    [super layoutIfNeeded];
-    [self makeRounded];
-}
-
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self makeRounded];
-}
-
--(void)drawRect:(CGRect)rect {
     [self makeRounded];
 }
 
