@@ -85,9 +85,6 @@
 		CEF7C34D1C0A96C90067EDD8 /* YANOperationDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C34B1C0A96C90067EDD8 /* YANOperationDetailsView.m */; };
 		CEF7C34E1C0A96C90067EDD8 /* YANOperationDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C34C1C0A96C90067EDD8 /* YANOperationDetailsView.xib */; };
 		CEF7C3541C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3531C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m */; };
-		CEF7C40B1C0C59D90067EDD8 /* .cocoadocs.yml in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C35E1C0C59D80067EDD8 /* .cocoadocs.yml */; };
-		CEF7C40C1C0C59D90067EDD8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C35F1C0C59D80067EDD8 /* .gitignore */; };
-		CEF7C40D1C0C59D90067EDD8 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3601C0C59D80067EDD8 /* .travis.yml */; };
 		CEF7C40E1C0C59D90067EDD8 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3631C0C59D80067EDD8 /* AFHTTPRequestOperation.m */; };
 		CEF7C40F1C0C59D90067EDD8 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3651C0C59D80067EDD8 /* AFHTTPRequestOperationManager.m */; };
 		CEF7C4101C0C59D90067EDD8 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3671C0C59D80067EDD8 /* AFHTTPSessionManager.m */; };
@@ -97,9 +94,6 @@
 		CEF7C4141C0C59D90067EDD8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3701C0C59D80067EDD8 /* AFURLRequestSerialization.m */; };
 		CEF7C4151C0C59D90067EDD8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3721C0C59D80067EDD8 /* AFURLResponseSerialization.m */; };
 		CEF7C4161C0C59D90067EDD8 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3741C0C59D80067EDD8 /* AFURLSessionManager.m */; };
-		CEF7C4171C0C59D90067EDD8 /* AFNetworking.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3751C0C59D80067EDD8 /* AFNetworking.podspec */; };
-		CEF7C4181C0C59D90067EDD8 /* AFNetworking.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3761C0C59D80067EDD8 /* AFNetworking.xcworkspace */; };
-		CEF7C43B1C0C59D90067EDD8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CEF7C3B41C0C59D90067EDD8 /* LICENSE */; };
 		CEF7C4681C0C59DA0067EDD8 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3FA1C0C59D90067EDD8 /* AFNetworkActivityIndicatorManager.m */; };
 		CEF7C4691C0C59DA0067EDD8 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3FC1C0C59D90067EDD8 /* UIActivityIndicatorView+AFNetworking.m */; };
 		CEF7C46A1C0C59DA0067EDD8 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7C3FE1C0C59D90067EDD8 /* UIAlertView+AFNetworking.m */; };
@@ -131,20 +125,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 36EBCDB9B3A5AD0AA8AD9F1F;
 			remoteInfo = YMoney;
-		};
-		CEC382341BE80B0200700DAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 43C6B1A718987C4D001BA093;
-			remoteInfo = "ymcpssdk-os";
-		};
-		CEC382361BE80B0200700DAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 43C6B1D918987E78001BA093;
-			remoteInfo = "ymcpssdk-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -275,12 +255,6 @@
 		CEC3818C1BE80B0200700DAF /* YMAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAConstants.m; sourceTree = "<group>"; };
 		CEC3818D1BE80B0200700DAF /* YMAHostsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMAHostsProvider.h; sourceTree = "<group>"; };
 		CEC3818E1BE80B0200700DAF /* YMAHostsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMAHostsProvider.m; sourceTree = "<group>"; };
-		CEC381D81BE80B0200700DAF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		CEC381DB1BE80B0200700DAF /* ymcpssdk-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ymcpssdk-ios-Prefix.pch"; sourceTree = "<group>"; };
-		CEC381DC1BE80B0200700DAF /* ymcpssdk-os-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ymcpssdk-os-Info.plist"; sourceTree = "<group>"; };
-		CEC381DD1BE80B0200700DAF /* ymcpssdk-os-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ymcpssdk-os-Prefix.pch"; sourceTree = "<group>"; };
-		CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "yandex-money-sdk-objc.xcodeproj"; sourceTree = "<group>"; };
-		CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YandexMoneySDKObjc.podspec; sourceTree = "<group>"; };
 		CED80B9F1BDD032500159505 /* YANAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANAuthorizationViewController.h; sourceTree = "<group>"; };
 		CED80BA01BDD032500159505 /* YANAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = YANAuthorizationViewController.m; sourceTree = "<group>"; };
 		CED80BA21BDD05D600159505 /* YANWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANWalletViewController.h; sourceTree = "<group>"; };
@@ -305,9 +279,6 @@
 		CEF7C34C1C0A96C90067EDD8 /* YANOperationDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YANOperationDetailsView.xib; sourceTree = "<group>"; };
 		CEF7C3531C0AFCD60067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YANOperationDetailsView+YMAHistoryOperationModel.m"; sourceTree = "<group>"; };
 		CEF7C3551C0AFD2A0067EDD8 /* YANOperationDetailsView+YMAHistoryOperationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YANOperationDetailsView+YMAHistoryOperationModel.h"; sourceTree = "<group>"; };
-		CEF7C35E1C0C59D80067EDD8 /* .cocoadocs.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cocoadocs.yml; sourceTree = "<group>"; };
-		CEF7C35F1C0C59D80067EDD8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		CEF7C3601C0C59D80067EDD8 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		CEF7C3621C0C59D80067EDD8 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		CEF7C3631C0C59D80067EDD8 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		CEF7C3641C0C59D80067EDD8 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -327,9 +298,6 @@
 		CEF7C3721C0C59D80067EDD8 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		CEF7C3731C0C59D80067EDD8 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		CEF7C3741C0C59D80067EDD8 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		CEF7C3751C0C59D80067EDD8 /* AFNetworking.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AFNetworking.podspec; sourceTree = "<group>"; };
-		CEF7C3761C0C59D80067EDD8 /* AFNetworking.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = AFNetworking.xcworkspace; sourceTree = "<group>"; };
-		CEF7C3B41C0C59D90067EDD8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CEF7C3F91C0C59D90067EDD8 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		CEF7C3FA1C0C59D90067EDD8 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		CEF7C3FB1C0C59D90067EDD8 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -530,10 +498,6 @@
 			isa = PBXGroup;
 			children = (
 				CEC3812C1BE80B0200700DAF /* Classes */,
-				CEC381DA1BE80B0200700DAF /* SupportingFiles */,
-				CEC381D81BE80B0200700DAF /* LICENSE */,
-				CEC381E11BE80B0200700DAF /* YandexMoneySDKObjc.podspec */,
-				CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */,
 			);
 			path = YandexMoneySdk;
 			sourceTree = "<group>";
@@ -741,25 +705,6 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
-		CEC381DA1BE80B0200700DAF /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				CEC381DB1BE80B0200700DAF /* ymcpssdk-ios-Prefix.pch */,
-				CEC381DC1BE80B0200700DAF /* ymcpssdk-os-Info.plist */,
-				CEC381DD1BE80B0200700DAF /* ymcpssdk-os-Prefix.pch */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		CEC381DF1BE80B0200700DAF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CEC382351BE80B0200700DAF /* ymcpssdk-os.framework */,
-				CEC382371BE80B0200700DAF /* libymcpssdk-ios.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CED80B9E1BDCF67E00159505 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -927,12 +872,6 @@
 			children = (
 				CEF7C3611C0C59D80067EDD8 /* AFNetworking */,
 				CEF7C3F81C0C59D90067EDD8 /* UIKit+AFNetworking */,
-				CEF7C35E1C0C59D80067EDD8 /* .cocoadocs.yml */,
-				CEF7C35F1C0C59D80067EDD8 /* .gitignore */,
-				CEF7C3601C0C59D80067EDD8 /* .travis.yml */,
-				CEF7C3751C0C59D80067EDD8 /* AFNetworking.podspec */,
-				CEF7C3761C0C59D80067EDD8 /* AFNetworking.xcworkspace */,
-				CEF7C3B41C0C59D90067EDD8 /* LICENSE */,
 			);
 			path = "AFNetworking-master";
 			sourceTree = "<group>";
@@ -1093,12 +1032,6 @@
 			mainGroup = 36EBCC89866B793A0110D134;
 			productRefGroup = 36EBC1C1A9A48AAAB8031E8E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CEC381DF1BE80B0200700DAF /* Products */;
-					ProjectRef = CEC381DE1BE80B0200700DAF /* yandex-money-sdk-objc.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				36EBCDB9B3A5AD0AA8AD9F1F /* YMoney */,
@@ -1108,23 +1041,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CEC382351BE80B0200700DAF /* ymcpssdk-os.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = "ymcpssdk-os.framework";
-			remoteRef = CEC382341BE80B0200700DAF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CEC382371BE80B0200700DAF /* libymcpssdk-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libymcpssdk-ios.a";
-			remoteRef = CEC382361BE80B0200700DAF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		36EBC5BCBCA8CE9BEF122C41 /* Resources */ = {
@@ -1146,16 +1062,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36EBCEE936089F9998CD6898 /* Assets.xcassets in Resources */,
-				CEF7C40C1C0C59D90067EDD8 /* .gitignore in Resources */,
-				CEF7C40D1C0C59D90067EDD8 /* .travis.yml in Resources */,
 				36EBCF28D222BDCDAAC7BD11 /* LaunchScreen.storyboard in Resources */,
 				36EBC2E951E0867145D36DFD /* Main.storyboard in Resources */,
 				CEF7C34E1C0A96C90067EDD8 /* YANOperationDetailsView.xib in Resources */,
-				CEF7C40B1C0C59D90067EDD8 /* .cocoadocs.yml in Resources */,
-				CEF7C4181C0C59D90067EDD8 /* AFNetworking.xcworkspace in Resources */,
 				CEF7C3441C0A83BE0067EDD8 /* YANOperationDateView.xib in Resources */,
-				CEF7C4171C0C59D90067EDD8 /* AFNetworking.podspec in Resources */,
-				CEF7C43B1C0C59D90067EDD8 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

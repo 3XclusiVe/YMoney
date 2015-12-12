@@ -16,8 +16,8 @@
     YANKeyStorage * _keyStorage;
 }
 
-NSString const *accountInfoKey = @"accountInfo";
-NSString const *operationHistoryKey = @"operationHistory";
+static NSString *const accountInfoKey = @"accountInfo";
+static NSString *const operationHistoryKey = @"operationHistory";
 
 +(instancetype) sharedInstance {
     static dispatch_once_t pred;

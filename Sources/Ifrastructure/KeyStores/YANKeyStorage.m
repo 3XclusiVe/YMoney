@@ -84,8 +84,8 @@ static NSString *const _defaultToken = @"41001773456006.C561C4B1E9545B58E724FFA6
         YMAAccountInfoModel *account = [YMAAccountInfoModel accountInfoWithAccount:@"105043"
                                                                            balance:@"109"
                                                                           currency:@"P"
-                                                                     accountStatus:nil
-                                                                       accountType:nil
+                                                                     accountStatus:0
+                                                                       accountType:0
                                                                             avatar:nil
                                                                     balanceDetails:nil
                                                                        cardsLinked:nil

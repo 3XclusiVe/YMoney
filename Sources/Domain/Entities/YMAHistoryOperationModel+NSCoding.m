@@ -36,16 +36,7 @@ NSString * kOperationTypeKey = @"type";
     [encoder encodeInt:self.type forKey:kOperationTypeKey];
 }
 
-- (id<NSCoding>)initWithCoder:(NSCoder *)decoder {
-    
-    self = [self decode:decoder];
-    
-    return self;
-}
-
-#pragma mark - Private methods
--(instancetype) decode:(NSCoder *)decoder {
-    
+- (instancetype)initWithCoder:(NSCoder *)decoder {
     NSString* operationId = [decoder decodeObjectForKey:kOperationIdKey];
     YMAHistoryOperationStatus status = [decoder decodeIntForKey:kOperationStatusKey];
     NSDate* date = [decoder decodeObjectForKey:kOperationDateKey];
@@ -56,18 +47,17 @@ NSString * kOperationTypeKey = @"type";
     NSString* label = [decoder decodeObjectForKey:kOperationLabelKey];
     BOOL isFavorite = [decoder decodeBoolForKey:kOperationIsFavoriteKey];
     YMAHistoryOperationType type = [decoder decodeIntForKey:kOperationTypeKey];
-    
-    return [[YMAHistoryOperationModel alloc] initWithOperationId:operationId
-                                                          status:status
-                                                        datetime:date
-                                                           title:title
-                                                       patternId:patternId
-                                                       direction:direction
-                                                          amount:amount
-                                                           label:label
-                                                       favourite:isFavorite
-                                                            type:type];
-    
+
+    return [self initWithOperationId:operationId
+                              status:status
+                            datetime:date
+                               title:title
+                           patternId:patternId
+                           direction:direction
+                              amount:amount
+                               label:label
+                           favourite:isFavorite
+                                type:type];
 }
 
 @end
