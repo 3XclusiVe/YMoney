@@ -381,15 +381,13 @@
 		36EBCC89866B793A0110D134 = {
 			isa = PBXGroup;
 			children = (
-				CEF7C35D1C0C59D80067EDD8 /* AFNetworking-master */,
+				CE2C31F01C1C49F900DD4FCB /* External */,
 				CEE7F4DF1BE5631A00683229 /* InfoPlist */,
-				CEA474011BFCE22B0073960E /* POSRx-master */,
 				36EBC1C1A9A48AAAB8031E8E /* Products */,
 				CEE7F4E01BE5636500683229 /* Resources */,
 				36EBCDB4BD2F202B4AD3BF37 /* Sources */,
 				CE011B1C1BE56BE100D820A3 /* YMoneyTest */,
 				36EBC7787EEB4DF81878A825 /* YMoneyUITests */,
-				CEC3812B1BE80B0200700DAF /* YandexMoneySdk */,
 			);
 			sourceTree = "<group>";
 		};
@@ -424,6 +422,25 @@
 			path = YMoneyTest;
 			sourceTree = "<group>";
 		};
+		CE2C31F01C1C49F900DD4FCB /* External */ = {
+			isa = PBXGroup;
+			children = (
+				CEF7C35D1C0C59D80067EDD8 /* AFNetworking-master */,
+				CEA474011BFCE22B0073960E /* POSRx-master */,
+				CE2C31F11C1C4A9100DD4FCB /* SwiftSpinner */,
+				CEC3812B1BE80B0200700DAF /* YandexMoneySdk */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		CE2C31F11C1C4A9100DD4FCB /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */,
+			);
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
 		CE34B4D61C07891F00FABC44 /* Internet */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,10 +454,10 @@
 		CE34B4D71C07894900FABC44 /* KeyStores */ = {
 			isa = PBXGroup;
 			children = (
-				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
-				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
 				CE67FC571C1829F400A6A5F3 /* YANHashStorage.h */,
 				CE67FC581C1829F400A6A5F3 /* YANHashStorage.m */,
+				CEF700631BE9695D00980D2D /* YANKeyStorage.h */,
+				CEF700641BE9695D00980D2D /* YANKeyStorage.m */,
 			);
 			path = KeyStores;
 			sourceTree = "<group>";
@@ -459,7 +476,6 @@
 			children = (
 				CE34B4E81C0901A700FABC44 /* CustomSpinner.h */,
 				CE34B4E91C0901A700FABC44 /* CustomSpinner.m */,
-				CEF4BFDE1C106D0100DCA458 /* SwiftSpinner.swift */,
 				CEF4BFE11C106E2E00DCA458 /* YMoney-Bridging-Header.h */,
 			);
 			path = Spinner;
@@ -799,10 +815,10 @@
 				36EBCCC518EADF7505E3B087 /* YANCash.m */,
 				36EBCA0F94697E72E920E80A /* YANCashOperation.h */,
 				36EBCAF01DB7118B006F36D8 /* YANCashOperation.m */,
-				CEF4BFEB1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.h */,
-				CEF4BFEC1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.m */,
 				CE67FC5A1C183B6800A6A5F3 /* YMAAccountInfoModel+NSCoding.h */,
 				CE67FC5B1C183B6800A6A5F3 /* YMAAccountInfoModel+NsCoding.m */,
+				CEF4BFEB1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.h */,
+				CEF4BFEC1C15A31D00DCA458 /* YMAHistoryOperationModel+NSCoding.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
