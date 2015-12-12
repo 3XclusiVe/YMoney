@@ -12,7 +12,7 @@
 
 + (instancetype)loadFromNib;
 
-@property (weak, nonatomic) IBOutlet UIImage *operationTypeImage;
+@property (weak, nonatomic) IBOutlet UIImageView *operationTypeImage;
 @property (weak, nonatomic) IBOutlet UILabel *operationTitle;
 @property (weak, nonatomic) IBOutlet UILabel *operationLabel;
 

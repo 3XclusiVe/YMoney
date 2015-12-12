@@ -64,10 +64,10 @@
 /**
  * для использования refreshcontrollвнизу
  **/
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    scrollView.contentOffset.y;
-    [self.operationHistory indexPathsForVisibleRows];
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    scrollView.contentOffset.y;
+//    [self.operationHistory indexPathsForVisibleRows];
+//}
 
 #pragma mark - Private methods
 

@@ -56,7 +56,7 @@ static NSString *const _permissions = @"account-info operation-history";
                          [observer onTokenAccepted];
                      } else {
                          [observer onNeedToRefreshToken];
-                         NSLog(error.description);
+                         NSLog(@"%@", error);
                      }
 
                  }];
@@ -101,7 +101,7 @@ static NSString *const _permissions = @"account-info operation-history";
                      } else {
                          [self handleError:error.code];
                          
-                         NSLog(error.description);
+                         NSLog(@"%@", error);
                      }
                      
                  }];
@@ -120,8 +120,8 @@ static NSString *const _permissions = @"account-info operation-history";
                       error:&error]) {
         
         if(error == nil) {
-            NSString * authCode = authInfo[@"code"];
-        
+//            NSString * authCode = authInfo[@"code"];
+
         } else {
             [self handleError:error.code];
         }
@@ -154,7 +154,7 @@ static NSString *const _permissions = @"account-info operation-history";
                           
                       } else {
                           [self handleError:error.code];
-                          NSLog(error.description);
+                          NSLog(@"%@", error);
                       }
                       
                   }];
@@ -179,7 +179,7 @@ static NSString *const _permissions = @"account-info operation-history";
                           
                       } else {
                           [self handleError:error.code];
-                          NSLog(error.description);
+                          NSLog(@"%@", error);
                       }
                       
                       [self stopTimeout];
@@ -217,7 +217,7 @@ static NSString *const _permissions = @"account-info operation-history";
                           
                       } else {
                           [self handleError:error.code];
-                          NSLog(error.description);
+                          NSLog(@"%@", error);
                       }
                       
                       [self stopTimeout];
