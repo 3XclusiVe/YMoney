@@ -18,6 +18,7 @@
 
 static NSString *const accountInfoKey = @"accountInfo";
 static NSString *const operationHistoryKey = @"operationHistory";
+static NSString *const accessTokenKey = @"Token";
 
 +(instancetype) sharedInstance {
     static dispatch_once_t pred;
@@ -33,6 +34,14 @@ static NSString *const operationHistoryKey = @"operationHistory";
         _keyStorage = [[YANKeyStorage alloc] init];
     }
     return self;
+}
+
+-(void) saveAccessToken:(NSString *)token {
+    [_keyStorage saveData:token withKey:accessTokenKey];
+}
+
+-(NSString*) loadAccessToken {
+    return [_keyStorage loadData:accessTokenKey];
 }
 
 -(void) saveAccountInfo:(YMAAccountInfoModel*) accountInfo {
@@ -53,6 +62,15 @@ static NSString *const operationHistoryKey = @"operationHistory";
 
 -(void) cleanStorage {
     [_keyStorage cleanKeyStorage];
+}
+
+-(BOOL) isEmpty {
+    YMAAccountInfoModel* accountInfo = [_keyStorage loadData:accountInfoKey];
+    if(accountInfo == nil) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end

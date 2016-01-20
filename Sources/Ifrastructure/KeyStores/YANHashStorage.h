@@ -17,6 +17,9 @@
 -(instancetype) init __attribute__((unavailable("init not available, call sharedInstance instead")));
 +(instancetype) new __attribute__((unavailable("new not available, call sharedInstance instead")));
 
+-(void) saveAccessToken:(NSString*) token;
+-(NSString *)loadAccessToken;
+
 -(void) saveOperationHistory:(NSArray<YMAHistoryOperationModel*> *) operations;
 -(NSArray<YMAHistoryOperationModel*> *) loadOperationHistory;
 
@@ -24,5 +27,6 @@
 -(void) saveAccountInfo:(YMAAccountInfoModel*) accountInfo;
 
 -(void) cleanStorage;
+-(BOOL) isEmpty;
 
 @end

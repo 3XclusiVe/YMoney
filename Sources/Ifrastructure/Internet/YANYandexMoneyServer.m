@@ -64,8 +64,6 @@ static NSString *const _permissions = @"account-info operation-history";
 
 
 - (instancetype)initWithAccessToken:(nonnull NSString *)accessToken {
-
-    POSRX_CHECK_EX(accessToken != nil, @"missing access token");
     
     if (self = [super init]) {
         _accessToken = [accessToken copy];
@@ -335,6 +333,7 @@ POSRX_DEADLY_INITIALIZER(init);
 -(void) onUnexpectedError {
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"Unexpected error");
+        [self onBadToken];
     });
 }
 

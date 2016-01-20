@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="585" height="67"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="DVM-iQ-ay3" customClass="YANUICircleImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shop" translatesAutoresizingMaskIntoConstraints="NO" id="DVM-iQ-ay3" customClass="YANUICircleImageView">
                         <rect key="frame" x="13" y="12" width="44" height="44"/>
                         <animations/>
                         <constraints>
@@ -30,32 +30,35 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-b4-XRr">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-b4-XRr">
                         <rect key="frame" x="540" y="23" width="32" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oco-cY-lNA">
-                        <rect key="frame" x="495" y="23" width="35" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oco-cY-lNA">
+                        <rect key="frame" x="527" y="23" width="35" height="21"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="xVc-0O-mCC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-dR-cbe">
-                        <rect key="frame" x="72" y="13" width="42" height="21"/>
-                        <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-Ey-uDJ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcX-Ey-uDJ">
                         <rect key="frame" x="72" y="40" width="42" height="21"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-dR-cbe">
+                        <rect key="frame" x="72" y="13" width="25" height="43"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -65,14 +68,19 @@
                     <constraint firstItem="Xth-dR-cbe" firstAttribute="top" secondItem="Tfo-39-gh1" secondAttribute="topMargin" constant="5" id="5xW-vA-2Y8"/>
                     <constraint firstItem="CcX-Ey-uDJ" firstAttribute="baseline" secondItem="DVM-iQ-ay3" secondAttribute="baseline" id="7aH-0p-Iob"/>
                     <constraint firstItem="Xth-dR-cbe" firstAttribute="leading" secondItem="CcX-Ey-uDJ" secondAttribute="leading" id="7ni-Qq-URD"/>
+                    <constraint firstItem="Oco-cY-lNA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xth-dR-cbe" secondAttribute="trailing" priority="750" constant="5" id="APU-jR-j9e"/>
+                    <constraint firstItem="Xth-dR-cbe" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="GGp-f9-Ihe"/>
                     <constraint firstItem="Oco-cY-lNA" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="Itc-Bw-cVx"/>
                     <constraint firstItem="vZE-b4-XRr" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="PWa-Nh-fd2"/>
                     <constraint firstItem="Xth-dR-cbe" firstAttribute="leading" secondItem="DVM-iQ-ay3" secondAttribute="trailing" constant="15" id="SYm-Rv-NZc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="vZE-b4-XRr" secondAttribute="trailing" constant="5" id="Zpy-Dt-4Pn"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="centerY" secondItem="Tfo-39-gh1" secondAttribute="centerY" id="bZ8-tA-gfz"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="leading" secondItem="Tfo-39-gh1" secondAttribute="leadingMargin" constant="5" id="jEl-oi-BqW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DVM-iQ-ay3" secondAttribute="bottom" constant="5" id="kMJ-PQ-nFk"/>
                     <constraint firstItem="DVM-iQ-ay3" firstAttribute="top" secondItem="Tfo-39-gh1" secondAttribute="topMargin" constant="5" id="qX4-9E-z2x"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Oco-cY-lNA" secondAttribute="trailing" constant="5" id="uvV-ja-dge"/>
+                    <constraint firstItem="DVM-iQ-ay3" firstAttribute="top" secondItem="Tfo-39-gh1" secondAttribute="topMargin" constant="5" id="tL7-8A-FGd"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Oco-cY-lNA" secondAttribute="trailing" constant="10" id="uvV-ja-dge"/>
+                    <constraint firstItem="DVM-iQ-ay3" firstAttribute="leading" secondItem="Tfo-39-gh1" secondAttribute="leadingMargin" constant="5" id="wUM-qB-ZCC"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -92,6 +100,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Avatar" width="697" height="469"/>
+        <image name="shop" width="50" height="50"/>
     </resources>
 </document>

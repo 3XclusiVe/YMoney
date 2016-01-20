@@ -105,18 +105,7 @@
 
 -(NSString*) convertCurrencyCodeToSymbol:(NSString *)currencyCode {
     
-    NSLocale *locale = [NSLocale currentLocale];
-    for (NSString *code in [NSLocale ISOCurrencyCodes]) {
-        NSLog(@"%@ : %@", code, [locale displayNameForKey:NSLocaleCurrencyCode value:code]);
-    }
-    
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    
-    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
-    [formatter setLocale:locale];
-    
-    NSString *currencySymbol = [NSString stringWithFormat:@"%@",[locale displayNameForKey:NSLocaleCurrencySymbol value:currencyCode]];
-    NSLog(@"Currency Symbol : %@", currencySymbol);
+    NSString *currencySymbol = @"₽";
     
     return currencySymbol;
 }

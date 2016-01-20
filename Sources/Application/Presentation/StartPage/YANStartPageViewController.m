@@ -13,6 +13,7 @@
 #import "YANYandexMoneyServer.h"
 #import "YANKeyStorage.h"
 #import "CustomSpinner.h"
+#import "YANHashStorage.h"
 
 
 @interface YANStartPageViewController ()  <AuthorizationViewControllerDelegate>
@@ -63,7 +64,10 @@
 
 - (void)onInternetConnectionLost {
     [CustomSpinner hide:@"Отсутвует подключение к интернету"];
-    [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
+    
+    if(![[YANHashStorage sharedInstance] isEmpty]) {
+        [self performSegueWithIdentifier:@"goToWalletPage" sender:self];
+    }
 }
 
 - (void)onReceiveAccountInfo:(YMAAccountInfoModel *)accountInfo {
@@ -71,7 +75,7 @@
 }
 
 - (void)onNeedToRefreshToken {
-
+    [CustomSpinner hide:@"Необходима авторизация"];
 }
 
 - (void)onReceiveToken:(NSString *)accessToken {

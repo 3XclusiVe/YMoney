@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *operationHistory;
 @property (weak, nonatomic) IBOutlet UITabBarItem *operationHistoryButton;
 @property (strong, nonatomic) NSMutableArray<YMAHistoryOperationModel*> *operations;
+@property (strong, nonatomic) NSMutableDictionary<NSDateComponents*, NSMutableArray<YMAHistoryOperationModel*>*> *sections;
 
 @end
 
@@ -31,6 +32,8 @@
     [self registerCell:[YANOperationDateView class]];
     [self registerCell:[YANOperationDetailsView class]];
     [self addRefreshController:@selector(responceLastOperations)];
+    self.operationHistory.estimatedRowHeight = 80;
+    self.operationHistory.rowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,18 +50,32 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.operations.count;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    YMAHistoryOperationModel* operation = self.operations[indexPath.row];
+    YMAHistoryOperationModel* operation = self.operations[indexPath.section];
     
     YANOperationDetailsView *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YANOperationDetailsView class]) forIndexPath:indexPath];
     
     [cell configureWithOperation:operation];
     
     return cell;
+}
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.operations.count;
+}
+
+
+-(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    YMAHistoryOperationModel* operation = self.operations[section];
+    NSDateComponents * date = [self convertToDayDate:operation.datetime];
+    NSInteger year = [date year];
+    NSInteger month = [date month];
+    NSInteger day = [date day];
+    return [NSString stringWithFormat:@"%d-%d-%d", day, month, year];
 }
 
 /**
@@ -68,6 +85,15 @@
 //    scrollView.contentOffset.y;
 //    [self.operationHistory indexPathsForVisibleRows];
 //}
+
+#pragma mark - Group in sections
+
+-(NSDateComponents *) convertToDayDate:(NSDate *) date {
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+    return components;
+}
+
 
 #pragma mark - Private methods
 

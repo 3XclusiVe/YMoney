@@ -10,6 +10,7 @@
 #import "YMAAccountInfoModel.h"
 #import "YANYandexMoneyServer.h"
 #import "YANKeyStorage.h"
+#import "YANHashStorage.h"
 
 @interface YANBaseUIViewController ()
 
@@ -28,7 +29,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSString* token = [self loadTokenFromStorage];
+    NSString* token = [[YANHashStorage sharedInstance] loadAccessToken];
     self.yandexMoneyServer = [[YANYandexMoneyServer alloc] initWithAccessToken:token];
     [self.yandexMoneyServer subscribeOnEvents:self];
 }
@@ -47,7 +48,11 @@
 }
 
 - (void)onNeedToRefreshToken {
-    
+    NSString * storyboardName = @"Main";
+    NSString * viewControllerID = @"Auth";
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    YANBaseUIViewController * controller = (YANBaseUIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 -(void) onTokenAccepted {

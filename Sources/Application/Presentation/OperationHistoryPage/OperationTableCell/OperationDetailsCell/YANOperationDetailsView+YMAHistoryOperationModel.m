@@ -13,7 +13,15 @@
     
     POSRX_CHECK_EX(operation != nil, @"missing operation");
     
-    self.operationAmount.text = operation.amount;
+    self.operationTitle.lineBreakMode = NSLineBreakByWordWrapping;
+    self.operationLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    
+    if(operation.direction == YMAHistoryOperationDirectionIn) {
+        self.operationAmount.text = [NSString stringWithFormat:@"+%@ ₽",operation.amount];
+        self.operationAmount.textColor = [UIColor colorWithRed:(32/255.f) green:(205/255.f) blue:(32/255.f) alpha:1];
+    } else {
+        self.operationAmount.text = [NSString stringWithFormat:@"-%@ ₽",operation.amount];
+    }
     self.operationLabel.text = operation.label;
     self.operationTitle.text = operation.title;
 }
