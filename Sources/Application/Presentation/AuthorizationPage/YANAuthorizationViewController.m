@@ -91,7 +91,6 @@ YMAAPISession *_session = nil;
                         completion:^(NSString *instanceId, NSError *error) {
                             if (error == nil && instanceId != nil && instanceId.length > 0) {
                                 _accessToken = instanceId;
-                                NSLog(_accessToken);
                                 [[YANHashStorage sharedInstance] saveAccessToken:_accessToken];
                                 [self performSegueWithIdentifier:@"LoginSuccess" sender:instanceId];
                             } else {

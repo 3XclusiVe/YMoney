@@ -19,6 +19,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self customizeView];
+    [self setUserInteractionEnabled:NO];
 }
 
 -(void) customizeView {

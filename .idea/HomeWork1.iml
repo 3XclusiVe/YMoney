@@ -2,56 +2,135 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.cocoadocs.yml" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.gitignore" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/.travis.yml" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking.podspec" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking.xcworkspace" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPSessionManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFHTTPSessionManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFSecurityPolicy.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFSecurityPolicy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLConnectionOperation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLConnectionOperation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLRequestSerialization.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLRequestSerialization.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLResponseSerialization.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLResponseSerialization.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLSessionManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/AFNetworking/AFURLSessionManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/LICENSE" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImage+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIKit+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPRequestOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPRequestOperationManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPSessionManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFHTTPSessionManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFNetworkReachabilityManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFSecurityPolicy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFSecurityPolicy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLConnectionOperation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLConnectionOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLRequestSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLRequestSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLResponseSerialization.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLResponseSerialization.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLSessionManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/AFNetworking/AFURLSessionManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIAlertView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIButton+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIImage+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIImageView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIKit+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIProgressView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/AFNetworking-master/UIKit+AFNetworking/UIWebView+AFNetworking.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/.gitignore" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/LICENSE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/POSRx.podspec" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/POSRx/Utils/NSException+POSRx.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/POSRx/Utils/NSException+POSRx.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/POSRx-master/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/SwiftSpinner/SwiftSpinner.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAAvatarModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAAvatarModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMABalanceDetailsModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMABalanceDetailsModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAHistoryOperationModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAHistoryOperationModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAOperationDetailsModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/AccountInfo/YMAOperationDetailsModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/ExternalPayment/YMAExternalPaymentInfoModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/ExternalPayment/YMAExternalPaymentInfoModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMACardsSourceGroupModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMACardsSourceGroupModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourceModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourceModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourcesModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourcesModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAWalletSourceGroupModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAWalletSourceGroupModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAAscModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAAscModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMADigitalGoodsModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMADigitalGoodsModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAGoodsModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAGoodsModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentInfoModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentInfoModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentResultModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentResultModel.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAAccountInfoRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAAccountInfoRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAChangeAvatarRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAChangeAvatarRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAHistoryOperationsRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAHistoryOperationsRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAOperationDetailsRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/AccountInfo/YMAOperationDetailsRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAExternalPaymentRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAExternalPaymentRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferAcceptRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferAcceptRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferRejectRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferRejectRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAPaymentRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAPaymentRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAProcessPaymentRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/PaymentProcess/YMAProcessPaymentRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/YMABaseRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Request/YMABaseRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAAccountInfoResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAAccountInfoResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAHistoryOperationsResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAHistoryOperationsResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAOperationDetailsResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/AccountInfo/YMAOperationDetailsResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAExternalPaymentResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAExternalPaymentResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAIncomingTransferAcceptResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAIncomingTransferAcceptResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAPaymentResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAPaymentResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAProcessPaymentResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/PaymentProcess/YMAProcessPaymentResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/YMABaseProcessResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/YMABaseProcessResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/YMABaseResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Response/YMABaseResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMAAPISession.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMAAPISession.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMABaseSession.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMABaseSession.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMAExternalPaymentSession.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/Session/YMAExternalPaymentSession.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAConnection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAConnection.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAConstants.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAConstants.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAHostsProvider.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/External/YandexMoneySdk/Classes/YMAHostsProvider.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/InfoPlist/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/.gitignore" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/LICENSE" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/POSRx.podspec" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/POSRx/Utils/NSException+POSRx.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/POSRx/Utils/NSException+POSRx.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/POSRx-master/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Base.lproj/Main.storyboard" isTestSource="false" />
@@ -75,7 +154,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/OperationHistoryPage/YANOperationHistoryViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/CustomSpinner.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/CustomSpinner.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/SwiftSpinner.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/Spinner/YMoney-Bridging-Header.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Application/Presentation/StartPage/YANStartPageViewController.m" isTestSource="false" />
@@ -87,6 +165,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCash.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCashOperation.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YANCashOperation.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAAccountInfoModel+NSCoding.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAAccountInfoModel+NsCoding.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAHistoryOperationModel+NSCoding.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Entities/YMAHistoryOperationModel+NSCoding.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Domain/Services/YANOperationHistory.h" isTestSource="false" />
@@ -94,6 +174,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/Internet/YANServerProtocol.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/Internet/YANYandexMoneyServer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/Internet/YANYandexMoneyServer.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStores/YANHashStorage.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStores/YANHashStorage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStores/YANKeyStorage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Ifrastructure/KeyStores/YANKeyStorage.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Supporting Files/main.m" isTestSource="false" />
@@ -103,95 +185,6 @@
       <sourceFolder url="file://$MODULE_DIR$/YMoneyTest/YMoneyTest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/YMoneyUITests/YANYMoneyUITests.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAccountInfoModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAvatarModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAAvatarModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMABalanceDetailsModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMABalanceDetailsModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAHistoryOperationModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAHistoryOperationModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAOperationDetailsModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/AccountInfo/YMAOperationDetailsModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/ExternalPayment/YMAExternalPaymentInfoModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/ExternalPayment/YMAExternalPaymentInfoModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMACardsSourceGroupModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMACardsSourceGroupModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourceModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourceModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourcesModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAMoneySourcesModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAWalletSourceGroupModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/MoneySources/YMAWalletSourceGroupModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAAscModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAAscModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMADigitalGoodsModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMADigitalGoodsModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAGoodsModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAGoodsModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentInfoModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentInfoModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentResultModel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Models/PaymentProcess/YMAPaymentResultModel.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAAccountInfoRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAAccountInfoRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAChangeAvatarRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAChangeAvatarRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAHistoryOperationsRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAHistoryOperationsRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAOperationDetailsRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/AccountInfo/YMAOperationDetailsRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAExternalPaymentRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAExternalPaymentRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferAcceptRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferAcceptRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferRejectRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAIncomingTransferRejectRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAPaymentRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAPaymentRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAProcessPaymentRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/PaymentProcess/YMAProcessPaymentRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/YMABaseRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Request/YMABaseRequest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAAccountInfoResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAAccountInfoResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAHistoryOperationsResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAHistoryOperationsResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAOperationDetailsResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/AccountInfo/YMAOperationDetailsResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAExternalPaymentResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAExternalPaymentResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/ExternalPayment/YMAProcessExternalPaymentResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAIncomingTransferAcceptResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAIncomingTransferAcceptResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAPaymentResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAPaymentResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAProcessPaymentResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/PaymentProcess/YMAProcessPaymentResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/YMABaseProcessResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/YMABaseProcessResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/YMABaseResponse.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Response/YMABaseResponse.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMAAPISession.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMAAPISession.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMABaseSession.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMABaseSession.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMAExternalPaymentSession.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/Session/YMAExternalPaymentSession.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAConnection.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAConnection.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAConstants.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAConstants.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAHostsProvider.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/Classes/YMAHostsProvider.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/LICENSE" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/SupportingFiles/ymcpssdk-ios-Prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/SupportingFiles/ymcpssdk-os-Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/SupportingFiles/ymcpssdk-os-Prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/YandexMoneySdk/YandexMoneySDKObjc.podspec" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -283,7 +276,7 @@
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/iAd.framework/Headers" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1" />
-          <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
+          <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/include" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
         </CLASSES>
@@ -373,7 +366,7 @@
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/iAd.framework/Headers" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1" />
-          <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
+          <root url="file:///Applications/AppleDev/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/include" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/DTPerformanceSession.framework/Headers" />
           <root url="file:///Applications/AppleDev/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Frameworks/InterfaceBuilderKit.framework/Headers" />
         </SOURCES>

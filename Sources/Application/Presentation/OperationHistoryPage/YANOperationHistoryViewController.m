@@ -75,7 +75,7 @@
     NSInteger year = [date year];
     NSInteger month = [date month];
     NSInteger day = [date day];
-    return [NSString stringWithFormat:@"%d-%d-%d", day, month, year];
+    return [NSString stringWithFormat:@"%ld-%ld-%ld", (long)day, (long)month, (long)year];
 }
 
 /**
